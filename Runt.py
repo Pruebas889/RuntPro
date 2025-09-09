@@ -107,19 +107,22 @@ def guardar_en_sheets(resultados):
         logging.error(f"Error al guardar en Google Sheets: {e}")
 
 # --- Driver ---
-def iniciar_driver() -> Optional[webdriver.Chrome]:
-    try:
-        options = webdriver.ChromeOptions()
-        options.add_argument("--ignore-certificate-errors")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-blink-features=AutomationControlled")
-        service = ChromeService(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=options)
-        return driver
-    except WebDriverException as e:
-        logging.error("Error al iniciar el driver: %s", e)
-        return None
+def iniciar_driver(max_attempts=3):
+    for attempt in range(max_attempts):
+        try:
+            options = webdriver.ChromeOptions()
+            options.add_argument("--ignore-certificate-errors")
+            options.add_argument("--disable-gpu")
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-blink-features=AutomationControlled")
+            service = ChromeService(ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service, options=options)
+            return driver
+        except WebDriverException as e:
+            logging.error(f"Intento {attempt + 1} fallido al iniciar driver: {e}")
+            time.sleep(2)
+    logging.error("No se pudo iniciar el driver tras varios intentos.")
+    return None
 
 def cerrar_driver(driver: webdriver.Chrome) -> None:
     try:
@@ -190,15 +193,13 @@ def capturar_captcha(driver, carpeta_temp=CAPTCHA_FOLDER):
         logging.error(f"Error al capturar o procesar el captcha del navegador: {e}")
         return None, None
 
-# --- OCR para resolver Captcha ---
 def resolver_captcha(path: str, img_pil: Image.Image) -> Optional[str]:
     logging.info(f"Intentando resolver captcha con Tesseract para: {os.path.basename(path)}")
-    custom_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' # En caso de caracteres adicionarlos 
+    custom_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     try:
-        text_tesseract = pytesseract.image_to_string(img_pil, config=custom_config)
-        text_tesseract = text_tesseract.strip()
+        text_tesseract = pytesseract.image_to_string(img_pil, config=custom_config).strip()
 
-        if len(text_tesseract) != 1 and all(c.isalnum() for c in text_tesseract):
+        if text_tesseract and all(c.isalnum() for c in text_tesseract):
             logging.info(f"Captcha resuelto por Tesseract: '{text_tesseract}'")
             return text_tesseract
         else:
@@ -211,7 +212,6 @@ def resolver_captcha(path: str, img_pil: Image.Image) -> Optional[str]:
     except Exception as e:
         logging.error(f"Error al resolver captcha con Tesseract: {e}")
         return None
-
 
 # --- Función para aceptar alerta de CAPTCHA inválido ---
 def aceptar_alerta(driver):
@@ -271,7 +271,7 @@ def extraer_datos_tabla(driver, titulo_panel):
         if header.get_attribute("aria-expanded") == "false":
             driver.execute_script("arguments[0].click();", header)
 
-        time.sleep(3)
+        time.sleep(3.5)
 
         # 3. Esperamos el contenido del panel
         panel_contenido = WebDriverWait(driver, 10).until(
@@ -331,6 +331,13 @@ def procesar_consulta(driver, cedula: str, placa: str):
             time.sleep(3)
             
             try:
+                WebDriverWait(driver, 5).until(
+                    EC.invisibility_of_element_located((By.CSS_SELECTOR, "div.swal2-container"))
+                )
+            except:
+                pass  # Si no existe, seguimos normal
+
+            try:
                 placa_input = WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, 'input[formcontrolname="placa"]'))
                 )
@@ -360,8 +367,12 @@ def procesar_consulta(driver, cedula: str, placa: str):
 
             captcha_text = resolver_captcha(captcha_path, captcha_img)
 
-            if not captcha_text:
-                raise Exception("No se pudo resolver el captcha automáticamente ni manualmente.")
+            if captcha_text is None:
+                logging.warning(f"Captcha no resuelto para {cedula}, {placa}. Reiniciando navegador...")
+                cerrar_driver(driver)
+                
+                # Reintentamos la consulta con los mismos datos
+                return procesar_consulta(driver, cedula, placa)
 
             try:
                 # Campo Captcha (si existe con formcontrolname)
@@ -386,10 +397,10 @@ def procesar_consulta(driver, cedula: str, placa: str):
             # Verificar y aceptar alerta/popup de CAPTCHA inválido
             if aceptar_alerta(driver):
                 intentos += 0
-                time.sleep(2)  # Esperar antes de reintentar
+                time.sleep(1)  # Esperar antes de reintentar
                 continue
 
-            time.sleep(3)
+            time.sleep(1)
 
             # Esperar la página de resultados
             WebDriverWait(driver, 20).until(
@@ -501,7 +512,7 @@ def main():
                 logging.info(f"Resultado para {cedula}, {placa}: {resultado}")
 
                 # Guardamos cada 5 resultados para ver el avance en tiempo real
-                if len(resultados) == 5:
+                if len(resultados) == 10:
                     guardar_en_sheets(resultados)
                     logging.info("✅ Datos guardados en Sheets.")
                     resultados.clear()  # Limpiamos la lista para el siguiente bloque
@@ -509,19 +520,25 @@ def main():
                 # Clic en "Realizar otra consulta" si no es la última
                 if i < len(datos_unicos) - 1:
                     try:
+                        # Esperamos a que el overlay desaparezca
+                        WebDriverWait(driver, 10).until(
+                            EC.invisibility_of_element_located((By.CSS_SELECTOR, "div.backdrop"))
+                        )
+
                         otra_consulta_btn = WebDriverWait(driver, 10).until(
                             EC.element_to_be_clickable((By.CSS_SELECTOR, "mat-card-actions.btn-return button.mat-raised-button"))
                         )
                         driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", otra_consulta_btn)
-                        otra_consulta_btn.click()
-                        logging.info("Clic en 'Realizar otra consulta' exitoso.")
-                        time.sleep(3)
+                        driver.execute_script("arguments[0].scrollIntoView(true);", otra_consulta_btn)
+                        driver.execute_script("arguments[0].click();", otra_consulta_btn)
+
+                        time.sleep(2)
                     except TimeoutException:
                         logging.error("No se encontró el botón 'Realizar otra consulta'.")
             time.sleep(5)
 
         # Guardamos si queda algún bloque pendiente al final
-        if resultados:
+        if resultados != []:
             guardar_en_sheets(resultados)
 
         logging.info("Proceso completado. Todos los datos fueron guardados.")
