@@ -2686,3 +2686,45 @@
 2025-09-09 08:41:25,038 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
 2025-09-09 08:41:25,039 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
 2025-09-09 08:41:25,333 - INFO - Captcha resuelto por Tesseract: 'Ku2mU'
+2025-09-09 08:41:39,608 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.
+2025-09-09 08:41:48,900 - INFO - Resultado para 1047339288, NHZ81F: {'Tiempo ejecucion': '2025-09-09 08:41:48', 'cedula': '1047339288', 'placa': 'NHZ81F', 'datos_soat': ['890115113420100', '01/06/2025', '02/06/2025', '01/06/2026', 'SEGUROS COMERCIALES BOLIVAR S.A', '120', '✅ VIGENTE'], 'datos_técnicos': ['REVISION TECNICO-MECANICO', '16/08/2025', '16/08/2026', 'CDA TECNIAUTOS DEL CARIBE S.A.S.', 'SI', '183270728', 'SI', 'download']}
+2025-09-09 08:42:00,824 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:42:00,853 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:42:00,889 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:42:00,890 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:42:01,404 - INFO - Captcha resuelto por Tesseract: 'RAekN'
+2025-09-09 08:42:15,606 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.
+2025-09-09 08:42:24,132 - INFO - Resultado para 8486541, VME78G: {'Tiempo ejecucion': '2025-09-09 08:42:24', 'cedula': '8486541', 'placa': 'VME78G', 'datos_soat': ['89902708', '03/12/2024', '05/12/2024', '04/12/2025', 'COMPAÑIA MUNDIAL DE SEGUROS S A', '120', '✅ VIGENTE'], 'datos_técnicos': 'No se encontraron datos para Certificado de revisión técnico mecánica y de emisiones contaminantes (RTM)'}
+2025-09-09 08:42:35,940 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:42:35,967 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:42:36,000 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:42:36,001 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:42:36,231 - INFO - Captcha resuelto por Tesseract: 'RtaeJ'
+2025-09-09 08:42:50,150 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.
+2025-09-09 08:42:59,716 - INFO - Resultado para 72333789, UAA87F: {'Tiempo ejecucion': '2025-09-09 08:42:59', 'cedula': '72333789', 'placa': 'UAA87F', 'datos_soat': ['890115685510100', '27/06/2025', '29/06/2025', '28/06/2026', 'SEGUROS COMERCIALES BOLIVAR S.A', '120', '✅ VIGENTE'], 'datos_técnicos': ['REVISION TECNICO-MECANICO', '03/07/2025', '03/07/2026', 'CDA MAR Y RIO S.A.S', 'SI', '182212101', 'SI', 'download']}
+2025-09-09 08:43:12,706 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:43:12,741 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:43:12,785 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:43:12,785 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:43:13,195 - INFO - Captcha resuelto por Tesseract: 'ViOyw'
+2025-09-09 08:43:20,454 - INFO - Botón 'Aceptar' en popup de CAPTCHA inválido clicado.
+2025-09-09 08:43:26,683 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:43:26,719 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:43:26,763 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:43:26,763 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:43:27,103 - INFO - Captcha resuelto por Tesseract: '6Npdp'
+2025-09-09 08:43:40,846 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.
+2025-09-09 08:43:50,143 - INFO - Resultado para 72001701, EXD86F: {'Tiempo ejecucion': '2025-09-09 08:43:50', 'cedula': '72001701', 'placa': 'EXD86F', 'datos_soat': ['10564300830960', '23/07/2025', '13/08/2025', '12/08/2026', 'SEGUROS DEL ESTADO S.A.', '120', '✅ VIGENTE'], 'datos_técnicos': ['REVISION TECNICO-MECANICO', '02/09/2025', '02/09/2026', 'CENTRO DE DIAGNOSTICO AUTOMOTOR ROJI BLANCO TIBURON S.A.S', 'SI', '183642502', 'SI', 'download']}
+2025-09-09 08:44:02,440 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:44:02,471 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:44:02,518 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:44:02,519 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:44:03,123 - INFO - Captcha resuelto por Tesseract: 'RnA26'
+2025-09-09 08:44:16,966 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.
+2025-09-09 08:44:26,244 - INFO - Resultado para 72229085, MLZ05D: {'Tiempo ejecucion': '2025-09-09 08:44:26', 'cedula': '72229085', 'placa': 'MLZ05D', 'datos_soat': ['14289410708940', '20/09/2024', '04/10/2024', '03/10/2025', 'SEGUROS DEL ESTADO S.A.', '120', '✅ VIGENTE'], 'datos_técnicos': ['REVISION TECNICO-MECANICO', '20/09/2024', '20/09/2025', 'CENTRO DE DIAGNOSTICO AUTOMOTOR LAS TORRES SAS', 'SI', '176024938', 'SI', 'download']}
+2025-09-09 08:44:40,128 - INFO - Coordenadas de imgCaptcha: x=458, y=289, w=350, h=100
+2025-09-09 08:44:40,254 - INFO - Coordenadas de captcha_div: x=458, y=227
+2025-09-09 08:44:40,319 - INFO - Captcha inicial capturado y guardado en: C:\Users\svega\Downloads\Motos_Runt\captchas\captcha_temp_.png
+2025-09-09 08:44:40,324 - INFO - Intentando resolver captcha con Tesseract para: captcha_temp_.png
+2025-09-09 08:44:40,912 - INFO - Captcha resuelto por Tesseract: 'bnoys'
+2025-09-09 08:44:55,112 - WARNING - No se encontró alerta ni popup de CAPTCHA inválido.

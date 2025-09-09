@@ -195,7 +195,7 @@ def capturar_captcha(driver, carpeta_temp=CAPTCHA_FOLDER):
 
 def resolver_captcha(path: str, img_pil: Image.Image) -> Optional[str]:
     logging.info(f"Intentando resolver captcha con Tesseract para: {os.path.basename(path)}")
-    custom_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    custom_config = r'--oem 3 --psm 7 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'  # En caso de caracteres adicionarlos 
     try:
         text_tesseract = pytesseract.image_to_string(img_pil, config=custom_config).strip()
 
