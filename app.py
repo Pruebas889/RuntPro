@@ -19,9 +19,9 @@ def run_Extraccion():
     }
 
 @app.get("/Runt")
-def run_Runt():
+def run_Vigencias():
     resultado = subprocess.run(
-        ["python", "C:\\Users\\cmarroquin\\Music\\RuntPro\\Runt.py"],
+        ["python", "C:\\Users\\cmarroquin\\Music\\RuntPro\\Runt_Actualizar_Vigencias.py"],
         capture_output=True,
         text=True,
         check=True

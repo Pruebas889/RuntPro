@@ -35,11 +35,17 @@ CAPTCHA_LEIDOS_FOLDER.mkdir(parents=True, exist_ok=True)
 TEMPLATE_FOLDER = BASE_PATH / "templates"
 TEMPLATE_FOLDER.mkdir(parents=True, exist_ok=True)
 
+LOGS_FOLDER = BASE_PATH / "Escritura_Runt_principal"
+LOGS_FOLDER.mkdir(parents=True, exist_ok=True)
+
 TESSERACT_PATH = r"C:\Users\cmarroquin\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 
 GOOGLE_CREDS = BASE_PATH / "prueba-de-gmail-486215-345473339c47.json"
-ESTADO_FILE = "estado_runt.json"
+ESTADO_FILE = str(LOGS_FOLDER / "estado_runt.json")
+
+
+REGISTROS_ANTES_REINICIO = 6  # Reiniciar sesión cada 6 registros
 
 # ═════════════════════════════════════════════════════════════
 # LOGGING
@@ -50,30 +56,77 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("automatizacion.log", encoding='utf-8')
+        logging.FileHandler(str(LOGS_FOLDER / "automatizacion.log"), encoding='utf-8')
     ]
 )
 
 captcha_logger = logging.getLogger('captcha_logger')
 captcha_logger.setLevel(logging.INFO)
 captcha_logger.propagate = False
-file_handler_captcha = logging.FileHandler("captcha_retroalimentacion.log", encoding='utf-8')
+file_handler_captcha = logging.FileHandler(str(LOGS_FOLDER / "captcha_retroalimentacion.log"), encoding='utf-8')
 formatter_captcha = logging.Formatter('%(message)s')
 file_handler_captcha.setFormatter(formatter_captcha)
 captcha_logger.addHandler(file_handler_captcha)
+
+
+def reiniciar_sesion_periodico(driver, contador):
+    """
+    Reinicia la sesión cada 5 registros procesados
+    VERSIÓN AGRESIVA: Entra a otra URL y vuelve
+    """
+    
+    if contador > 0 and contador % 5 == 0:
+        logging.info(f"\n{'='*70}")
+        logging.info(f"⏸️  PAUSA PROGRAMADA: {contador} registros procesados")
+        logging.info(f"{'='*70}")
+        logging.info(f"⏱️  Esperando 10 segundos antes de refrescar...")
+        
+        for segundo in range(10, 0, -1):
+            if segundo % 5 == 0 or segundo <= 3:
+                logging.info(f"   ⏳ {segundo} segundos restantes...")
+            time.sleep(1)
+        
+        logging.info(f"🔄 RECARGANDO PÁGINA (CAMBIO DE URL VISIBLE)...")
+        try:
+            # Paso 1: Ir a Google (visible)
+            logging.info(f"   → Yendo a Google...")
+            driver.get("https://www.google.com")
+            time.sleep(2)
+            
+            # Paso 2: Volver a RUNT
+            logging.info(f"   → Volviendo a RUNT...")
+            driver.get("https://portalpublico.runt.gov.co/#/consulta-vehiculo/consulta/consulta-ciudadana")
+            time.sleep(5)
+            
+            # Paso 3: Limpiar
+            logging.info(f"   → Limpiando campos...")
+            limpiar_todos_los_campos(driver)
+            time.sleep(2)
+            
+            logging.info(f"✅ SESIÓN REINICIADA - Listo para continuar")
+            logging.info(f"{'='*70}\n")
+            return True
+            
+        except Exception as e:
+            logging.error(f"❌ Error en reinicio: {e}")
+            logging.info(f"{'='*70}\n")
+            return False
+    
+    return False
 
 # ═══════════════════════════��═════════════════════════════════
 # MANEJO DE ESTADO (REANUDACIÓN)
 # ═════════════════════════════════════════════════════════════
 
 def estructura_estado_inicial():
-    """Crea la estructura inicial del archivo de estado"""
+    """Crea la estructura inicial del archivo de estado - SIMPLIFICADO"""
     return {
+        "resumen": {
+            "placas_procesadas": {},  # {"PLACA001": "Exitoso", "PLACA002": "Pendiente"}
+            "ultima_actualizacion": datetime.now().isoformat()
+        },
+        "historial_completo": [],  # Mantiene todos los detalles históricos
         "last_execution": None,
-        "last_cedula": None,
-        "last_placa": None,
-        "last_status": None,
-        "processed_records": [],
         "current_index": 0,
         "total_records": 0
     }
@@ -90,9 +143,17 @@ def cargar_estado():
     return estructura_estado_inicial()
 
 def guardar_estado(cedula, placa, status, index, total, datos_vehiculo=None, datos_soat=None, datos_tecnica=None):
-    """Guarda el estado actual con información detallada"""
+    """Guarda el estado actual - Actualiza RESUMEN e HISTORIAL"""
     estado_anterior = cargar_estado()
     
+    # Normalizar status a Exitoso/Pendiente para el resumen
+    estado_resumen = "Exitoso" if "Exitoso" in status else "Pendiente"
+    
+    # Actualizar RESUMEN con la placa y estado
+    estado_anterior["resumen"]["placas_procesadas"][placa] = estado_resumen
+    estado_anterior["resumen"]["ultima_actualizacion"] = datetime.now().isoformat()
+    
+    # Agregar al HISTORIAL COMPLETO
     registro_actual = {
         "timestamp": datetime.now().isoformat(),
         "cedula": cedula,
@@ -103,28 +164,37 @@ def guardar_estado(cedula, placa, status, index, total, datos_vehiculo=None, dat
         "datos_tecnica": datos_tecnica or []
     }
     
-    historial = estado_anterior.get("processed_records", [])
-    historial.append(registro_actual)
+    estado_anterior["historial_completo"].append(registro_actual)
     
-    estado = {
-        "last_execution": datetime.now().isoformat(),
-        "last_cedula": cedula,
-        "last_placa": placa,
-        "last_status": status,
-        "processed_records": historial,
-        "current_index": index,
-        "total_records": total
-    }
+    # Actualizar índices
+    estado_anterior["last_execution"] = datetime.now().isoformat()
+    estado_anterior["current_index"] = index
+    estado_anterior["total_records"] = total
     
+    # Guardar en archivo
     with open(ESTADO_FILE, "w", encoding="utf-8") as f:
-        json.dump(estado, f, indent=2, ensure_ascii=False)
+        json.dump(estado_anterior, f, indent=2, ensure_ascii=False)
     
-    logging.info(f"💾 Estado guardado: {placa} - {status} (Total historial: {len(historial)} registros)")
+    total_historial = len(estado_anterior["historial_completo"])
+    logging.info(f"💾 Estado guardado: {placa} - {estado_resumen} (Total historial: {total_historial} registros)")
+
+
 
 def agregar_registro_procesado(cedula, placa, status, datos_vehiculo=None, datos_soat=None, datos_tecnica=None):
-    """Agrega un registro a la lista de procesados"""
+    """Agrega un registro a la lista de procesados - Mantiene RESUMEN + HISTORIAL"""
     estado = cargar_estado()
     
+    # Normalizar status a Exitoso/Pendiente para el resumen
+    estado_resumen = "Exitoso" if "Exitoso" in status else "Pendiente"
+    
+    # Actualizar RESUMEN
+    if "resumen" not in estado:
+        estado["resumen"] = {"placas_procesadas": {}, "ultima_actualizacion": None}
+    
+    estado["resumen"]["placas_procesadas"][placa] = estado_resumen
+    estado["resumen"]["ultima_actualizacion"] = datetime.now().isoformat()
+    
+    # Agregar al HISTORIAL COMPLETO
     registro = {
         "timestamp": datetime.now().isoformat(),
         "cedula": cedula,
@@ -135,13 +205,21 @@ def agregar_registro_procesado(cedula, placa, status, datos_vehiculo=None, datos
         "datos_tecnica": datos_tecnica or []
     }
     
-    if "processed_records" not in estado:
-        estado["processed_records"] = []
+    if "historial_completo" not in estado:
+        estado["historial_completo"] = []
     
-    estado["processed_records"].append(registro)
+    estado["historial_completo"].append(registro)
     
+    # Guardar
     with open(ESTADO_FILE, "w", encoding="utf-8") as f:
         json.dump(estado, f, indent=2, ensure_ascii=False)
+
+
+
+
+
+
+
 # ═════════════════════════════════════════════════════════════
 # DICCIONARIO DE TEMPLATES (CAPTCHA)
 # ═════════════════════════════════════════════════════════════
@@ -184,9 +262,9 @@ def obtener_datos_unicos():
     - Motos 0_5, Motos 6_10, Motos 11_15, Motos 16_25
     
     De cada sheet extrae:
-    - Columna A: Cédula asociado
-    - Columna C: Cédula propietario  
-    - Columna E: Placa
+    - Columna B (índice 1): Cédula asociado
+    - Columna D (índice 3): Cédula propietario  
+    - Columna F (índice 5): Placa
     
     Retorna: [(cedula_asociado, cedula_propietario, placa, numero_fila, nombre_sheet), ...]
     """
@@ -207,11 +285,8 @@ def obtener_datos_unicos():
         
         nombres_sheets = ["Motos 0_5", "Motos 6_10", "Motos 11_15", "Motos 16_25"]
         datos = []
-        vistos = set()
+        # vistos = set()
         
-        # ═════════════════════════════════════════════════════════════
-        # 🆕 ESTADÍSTICAS POR SHEET
-        # ═════════════════════════════════════════════════════════════
         estadisticas_sheets = {}
         total_recopilado = 0
         
@@ -220,21 +295,53 @@ def obtener_datos_unicos():
                 worksheet = sheet.worksheet(nombre_sheet)
                 logging.info(f"📊 Leyendo sheet: {nombre_sheet}")
                 
-                cedulas_asociado = worksheet.col_values(2)  # Columna B
-                cedulas_propietario = worksheet.col_values(4)  # Columna D
-                placas = worksheet.col_values(6)  # Columna F
+                # ═══ OBTENER TODAS LAS FILAS ═══
+                todas_filas = worksheet.get_all_values()
+                logging.info(f"   📍 Total de filas en sheet: {len(todas_filas)}")
                 
-                registros_sheet = 0  # Contador para este sheet
+                if len(todas_filas) <= 1:
+                    logging.warning(f"   ⚠️  Sheet '{nombre_sheet}' vacío o solo tiene encabezados")
+                    estadisticas_sheets[nombre_sheet] = 0
+                    continue
                 
-                for i in range(1, min(len(cedulas_asociado), len(cedulas_propietario), len(placas))):
+                # ═══ DIAGNÓSTICO: MOSTRAR PRIMERAS FILAS ═══
+                logging.info(f"   🔍 DIAGNÓSTICO - Primeras 3 filas del sheet:")
+                for row_idx, fila in enumerate(todas_filas[:3]):
+                    logging.info(f"      Fila {row_idx}: {fila}")
+                
+                # ═══ LEER COLUMNAS CON VALIDACIÓN ═══
+                cedulas_asociado = worksheet.col_values(2)   # Columna B (índice 1)
+                cedulas_propietario = worksheet.col_values(4) # Columna D (índice 3)
+                placas = worksheet.col_values(6)              # Columna F (índice 5)
+                
+                logging.info(f"   📋 Columna B (Cédula Asociado): {cedulas_asociado[:3]}")
+                logging.info(f"   📋 Columna D (Cédula Propietario): {cedulas_propietario[:3]}")
+                logging.info(f"   📋 Columna F (Placa): {placas[:3]}")
+                
+                registros_sheet = 0
+                
+                # ═══ PROCESAR FILAS (saltando encabezado en fila 0) ═══
+                min_len = min(len(cedulas_asociado), len(cedulas_propietario), len(placas))
+                
+                for i in range(1, min_len):  # Comienza en 1 para saltar encabezado
                     cedula_asoc = str(cedulas_asociado[i]).strip()
                     cedula_prop = str(cedulas_propietario[i]).strip()
                     placa = str(placas[i]).strip()
                     
-                    if placa and (cedula_asoc, placa) not in vistos:
-                        vistos.add((cedula_asoc, placa))
-                        datos.append((cedula_asoc, cedula_prop, placa, i + 1, nombre_sheet))
-                        registros_sheet += 1  # Incrementar contador
+                    # ═══ VALIDACIÓN BÁSICA ═══
+                    if not placa or placa.lower() == "nan":
+                        continue
+                    
+                    if not cedula_asoc or cedula_asoc.lower() == "nan":
+                        continue
+                    
+                    
+                    # ═══ PERMITIR DUPLICADOS ENTRE HOJAS ═══
+                    datos.append((cedula_asoc, cedula_prop, placa, i + 1, nombre_sheet))
+                    registros_sheet += 1
+                    
+                    if registros_sheet <= 3:
+                        logging.info(f"      ✓ Fila {i+1}: {cedula_asoc} | {cedula_prop} | {placa}")
                 
                 estadisticas_sheets[nombre_sheet] = registros_sheet
                 total_recopilado += registros_sheet
@@ -245,9 +352,13 @@ def obtener_datos_unicos():
                 logging.warning(f"⚠️  Sheet '{nombre_sheet}' no encontrada")
                 estadisticas_sheets[nombre_sheet] = 0
                 continue
+            except Exception as e:
+                logging.error(f"❌ Error leyendo sheet '{nombre_sheet}': {e}")
+                estadisticas_sheets[nombre_sheet] = 0
+                continue
         
         # ═════════════════════════════════════════════════════════════
-        # 🆕 MOSTRAR ESTADÍSTICAS RESUMIDAS
+        # MOSTRAR ESTADÍSTICAS RESUMIDAS
         # ═════════════════════════════════════════════════════════════
         logging.info("\n" + "="*70)
         logging.info("📊 ESTADÍSTICAS DE DATOS RECOPILADOS")
@@ -270,8 +381,467 @@ def obtener_datos_unicos():
         return datos
     
     except Exception as e:
-        logging.error(f"❌ Error obteniendo datos de Sheets: {e}")
+        logging.error(f"❌ Error obteniendo datos de Sheets: {e}", exc_info=True)
         return []
+
+
+def validar_registro(cedula_asoc, cedula_prop, placa):
+    """
+    Valida que los datos NO contengan 'sin información' o similares
+    Retorna: True si es válido, False si debe ignorarse
+    """
+    # Palabras clave que indican datos REALMENTE inválidos
+    palabras_invalidas = [
+        "sin información", 
+        "sin info",
+        "n/a",
+        "na",
+        "null",
+    ]
+    
+    # Convertir a strings
+    cedula_asoc_str = str(cedula_asoc).strip().lower()
+    cedula_prop_str = str(cedula_prop).strip().lower()
+    placa_str = str(placa).strip().upper()
+    
+    # ❌ RECHAZAR SOLO si está LITERALMENTE vacío
+    if not cedula_asoc_str or cedula_asoc_str == "nan":
+        logging.warning(f"   ❌ Rechazado: Cédula asociado vacía")
+        return False
+    
+    if not placa_str or placa_str == "NAN":
+        logging.warning(f"   ❌ Rechazado: Placa vacía")
+        return False
+    
+    # ❌ RECHAZAR solo si contiene las palabras clave de "sin información"
+    for palabra_invalida in palabras_invalidas:
+        if palabra_invalida in cedula_asoc_str:
+            logging.warning(f"   ❌ Rechazado: Cédula contiene '{palabra_invalida}'")
+            return False
+        if palabra_invalida in placa_str.lower():
+            logging.warning(f"   ❌ Rechazado: Placa contiene '{palabra_invalida}'")
+            return False
+    
+    # ✅ TODO DEMÁS ES VÁLIDO
+    return True
+
+def filtrar_datos_validos(datos_unicos):
+    """
+    Filtra los datos y retorna estadísticas
+    """
+    logging.info("\n" + "="*70)
+    logging.info("🔍 VALIDANDO DATOS DESDE GOOGLE SHEETS...")
+    logging.info("="*70)
+    
+    datos_validos = []
+    datos_invalidos = []
+    
+    for cedula_asoc, cedula_prop, placa, fila, sheet_name in datos_unicos:
+        if validar_registro(cedula_asoc, cedula_prop, placa):
+            datos_validos.append((cedula_asoc, cedula_prop, placa, fila, sheet_name))
+        else:
+            datos_invalidos.append({
+                "cedula_asoc": cedula_asoc,
+                "cedula_prop": cedula_prop,
+                "placa": placa,
+                "sheet": sheet_name,
+                "razon": "Datos incompletos o inválidos"
+            })
+    
+    # ═══ MOSTRAR ESTADÍSTICAS ═══
+    logging.info("\n" + "="*70)
+    logging.info("📊 VALIDACIÓN DE DATOS COMPLETADA")
+    logging.info("="*70)
+    logging.info(f"✅ Datos válidos: {len(datos_validos)} registros")
+    logging.info(f"❌ Datos inválidos: {len(datos_invalidos)} registros")
+    logging.info("="*70 + "\n")
+    
+    if datos_invalidos:
+        logging.warning("⚠️  Registros ignorados por datos incompletos:")
+        for inv in datos_invalidos[:10]:  # Mostrar máximo 10
+            logging.warning(f"   - Placa: {inv['placa']}, Cédula: {inv['cedula_asoc']}, Sheet: {inv['sheet']}")
+        if len(datos_invalidos) > 10:
+            logging.warning(f"   ... y {len(datos_invalidos) - 10} más")
+    
+    return datos_validos, datos_invalidos
+
+
+
+
+# ═════════════════════════════════════════════════════════════
+# ⭐ NUEVA FUNCIÓN: OBTENER ÍNDICE DESDE ÚLTIMO EXITOSO
+# ═════════════════════════════════════════════════════════════
+
+def obtener_indice_reanudacion_desde_ultimo_exitoso(datos_validos, placas_procesadas):
+    """
+    🎯 Encuentra el ÚLTIMO registro con "Exitoso" en el JSON
+    y retorna el índice del SIGUIENTE registro por procesar
+    
+    Returns:
+        (indice_inicio, ultima_placa_exitosa, total_exitosos_anteriores)
+    """
+    
+    if not placas_procesadas:
+        logging.info("📊 Estado vacío - Iniciando desde el primer registro (índice 0)")
+        return 0, None, 0
+    
+    # 🔍 BUSCAR EN ORDEN EL ÚLTIMO QUE DICE "EXITOSO"
+    ultima_exitosa_encontrada = None
+    ultima_posicion_exitosa = -1
+    total_exitosos = 0
+    
+    logging.info("\n🔍 Buscando el ÚLTIMO registro 'EXITOSO' en JSON...")
+    logging.info(f"   Total de placas en JSON: {len(placas_procesadas)}")
+    
+    # Iterar datos_validos en ORDEN
+    for idx, (cedula_a, cedula_p, placa, fila, sheet) in enumerate(datos_validos):
+        estado = placas_procesadas.get(placa)
+        
+        # Si encuentra "Exitoso", lo guarda (sobrescribe cada vez que encuentra uno más nuevo)
+        if estado == "Exitoso":
+            ultima_exitosa_encontrada = placa
+            ultima_posicion_exitosa = idx
+            total_exitosos += 1
+            logging.info(f"   ✓ Exitoso #{total_exitosos}: {placa} (posición {idx})")
+    
+    if ultima_exitosa_encontrada is None:
+        logging.warning("⚠️  No se encontró ningún 'Exitoso' en el JSON")
+        logging.warning("   → Iniciando desde el primer registro (índice 0)")
+        return 0, None, 0
+    
+    # El siguiente índice es el que viene después del último exitoso
+    proximo_indice = ultima_posicion_exitosa + 1
+    
+    logging.info("\n" + "="*70)
+    logging.info(f"✅ ÚLTIMO EXITOSO ENCONTRADO: {ultima_exitosa_encontrada}")
+    logging.info(f"   Posición en lista: {ultima_posicion_exitosa}")
+    logging.info(f"   Total exitosos antes: {total_exitosos}")
+    logging.info(f"   PRÓXIMO POR PROCESAR → Índice {proximo_indice}")
+    logging.info("="*70 + "\n")
+    
+    return proximo_indice, ultima_exitosa_encontrada, total_exitosos
+
+
+# ═════════════════════════════════════════════════════════════
+# ⭐ NUEVA FUNCIÓN: REINTENTOS FINALES DE PENDIENTES
+# ═════════════════════════════════════════════════════════════
+
+def procesar_reintentos_finales_pendientes(driver, datos_validos, max_intentos=5):
+    """
+    🔴 AL FINAL: Reintenta SOLO los "Pendiente" hasta {max_intentos} veces
+    para confirmar si es error de captcha o "sin personas"
+    
+    NO toca Exitoso ni Sin_Personas
+    """
+    
+    estado = cargar_estado()
+    placas_procesadas = estado.get("resumen", {}).get("placas_procesadas", {})
+    
+    # Obtener SOLO los Pendiente
+    pendientes = {placa: est for placa, est in placas_procesadas.items() if est == "Pendiente"}
+    
+    if not pendientes:
+        logging.info(f"\n✅ No hay registros 'Pendiente' por reintentar")
+        return None
+    
+    logging.info(f"\n{'='*70}")
+    logging.info(f"🔴 FASE FINAL: REINTENTANDO {len(pendientes)} PENDIENTES")
+    logging.info(f"Max intentos por registro: {max_intentos}")
+    logging.info(f"{'='*70}\n")
+    
+    resultados_finales = {
+        "recuperados": [],
+        "sin_personas_confirmado": [],
+        "fallidos_permanentes": []
+    }
+    
+    for idx_registro, placa in enumerate(sorted(pendientes.keys()), 1):
+        logging.info(f"\n{'='*70}")
+        logging.info(f"🔴 [{idx_registro}/{len(pendientes)}] Reintentando: {placa}")
+        logging.info(f"{'='*70}")
+        
+        # Encontrar datos de esta placa
+        datos_encontrados = None
+        for cedula_a, cedula_p, plac, fila, sheet in datos_validos:
+            if plac == placa:
+                datos_encontrados = (cedula_a, cedula_p, plac, fila)
+                break
+        
+        if not datos_encontrados:
+            logging.warning(f"⚠️  No se encontraron datos para {placa}, saltando...")
+            continue
+        
+        cedula_a, cedula_p, placa_found, fila = datos_encontrados
+        
+        # 🔄 REINTENTOS
+        exitoso_en_reintento = False
+        sin_personas_confirmado = False
+        
+        for intento_actual in range(1, max_intentos + 1):
+            logging.info(f"\n🔄 Intento {intento_actual}/{max_intentos}")
+            
+            # Intentar con asociado
+            logging.info(f"   → Probando con cédula ASOCIADO...")
+            resultado, _ = procesar_consulta_interno(
+                driver,
+                cedula_a,
+                placa,
+                fila,
+                es_reintento=True,
+                max_intentos_internos=1
+            )
+            
+            if resultado and resultado.get("estado") == "Exitoso":
+                logging.info(f"   ✅ ¡ÉXITO CON ASOCIADO!")
+                exitoso_en_reintento = True
+                
+                # Actualizar JSON de Pendiente → Exitoso
+                guardar_estado(cedula_a, placa, "Exitoso", idx_registro, len(pendientes),
+                              resultado.get("datos_vehiculo"), resultado.get("datos_soat"), 
+                              resultado.get("datos_técnicos"))
+                
+                # Guardar en sheets (ACTUALIZAR fila existente)
+                guardar_en_sheets([resultado], actualizar_existente=True)
+                escribir_datos_vehiculo_en_sheets(resultado.get("datos_vehiculo", {}), cedula_a, placa)
+                guardar_resultado_en_resultados(cedula_a, cedula_p, placa, cedula_a, "Exitoso")
+                
+                resultados_finales["recuperados"].append({
+                    "placa": placa,
+                    "cedula_usada": cedula_a,
+                    "intento": intento_actual
+                })
+                break
+            
+            elif resultado and resultado.get("estado") == "Exitoso - Sin personas asociadas":
+                logging.warning(f"   ⚠️  Sin personas con ASOCIADO, probando PROPIETARIO...")
+                
+                # Intentar con propietario
+                resultado_prop, _ = procesar_consulta_interno(
+                    driver,
+                    cedula_p,
+                    placa,
+                    fila,
+                    es_reintento=True,
+                    max_intentos_internos=1
+                )
+                
+                if resultado_prop and resultado_prop.get("estado") == "Exitoso":
+                    logging.info(f"   ✅ ¡ÉXITO CON PROPIETARIO!")
+                    exitoso_en_reintento = True
+                    
+                    guardar_estado(cedula_a, placa, "Exitoso", idx_registro, len(pendientes),
+                                  resultado_prop.get("datos_vehiculo"), resultado_prop.get("datos_soat"),
+                                  resultado_prop.get("datos_técnicos"))
+                    
+                    guardar_en_sheets([resultado_prop], actualizar_existente=True)
+                    escribir_datos_vehiculo_en_sheets(resultado_prop.get("datos_vehiculo", {}), cedula_a, placa)
+                    guardar_resultado_en_resultados(cedula_a, cedula_p, placa, cedula_p, "Exitoso")
+                    
+                    resultados_finales["recuperados"].append({
+                        "placa": placa,
+                        "cedula_usada": cedula_p,
+                        "intento": intento_actual
+                    })
+                    break
+                else:
+                    # SIN PERSONAS EN AMBAS
+                    logging.error(f"   ❌ Sin personas en AMBAS cédulas (confirmado)")
+                    sin_personas_confirmado = True
+                    break
+            else:
+                # Error técnico
+                logging.warning(f"   ⚠️  Error técnico en intento {intento_actual}")
+                if intento_actual < max_intentos:
+                    logging.info(f"   ⏳ Esperando 5 segundos...")
+                    time.sleep(5)
+                    continue
+        
+        # ═══ GUARDAR RESULTADO FINAL ═══
+        if exitoso_en_reintento:
+            logging.info(f"✅ {placa}: RECUPERADO")
+        
+        elif sin_personas_confirmado:
+            logging.error(f"❌ {placa}: Sin personas (CONFIRMADO)")
+            
+            # Cambiar estado de Pendiente → Sin_Personas
+            estado = cargar_estado()
+            estado["resumen"]["placas_procesadas"][placa] = "Sin_Personas"
+            with open(ESTADO_FILE, "w", encoding="utf-8") as f:
+                json.dump(estado, f, indent=2, ensure_ascii=False)
+            
+            guardar_resultado_en_resultados(cedula_a, cedula_p, placa, cedula_a, "Falló - Sin personas")
+            
+            resultados_finales["sin_personas_confirmado"].append({
+                "placa": placa,
+                "razon": "No hay personas en ambas cédulas"
+            })
+        
+        else:
+            logging.error(f"❌ {placa}: SIGUE SIENDO PENDIENTE tras {max_intentos} intentos")
+            resultados_finales["fallidos_permanentes"].append({
+                "placa": placa,
+                "razon": f"Error técnico persistente tras {max_intentos} intentos"
+            })
+        
+        # Preparar siguiente
+        try:
+            limpiar_todos_los_campos(driver)
+            time.sleep(1)
+            driver.get("https://portalpublico.runt.gov.co/#/consulta-vehiculo/consulta/consulta-ciudadana")
+            time.sleep(3)
+        except:
+            pass
+    
+    # ═══ REPORTE FINAL ═══
+    generar_reporte_reintentos_finales(resultados_finales)
+    return resultados_finales
+
+
+# ═════════════════════════════════════════════════════════════
+# ⭐ NUEVA FUNCIÓN: REPORTE DE REINTENTOS FINALES
+# ═════════════════════════════════════════════════════════════
+
+def generar_reporte_reintentos_finales(resultados):
+    """Genera reporte de reintentos finales"""
+    
+    logging.info(f"\n{'='*70}")
+    logging.info(f"📊 REPORTE FINAL DE REINTENTOS DE PENDIENTES")
+    logging.info(f"{'='*70}")
+    
+    recuperados = len(resultados["recuperados"])
+    sin_personas = len(resultados["sin_personas_confirmado"])
+    fallidos = len(resultados["fallidos_permanentes"])
+    total = recuperados + sin_personas + fallidos
+    
+    logging.info(f"\n✅ RECUPERADOS: {recuperados} registros")
+    if resultados["recuperados"]:
+        for item in resultados["recuperados"]:
+            logging.info(f"   ✓ {item['placa']} (intento {item['intento']})")
+    
+    logging.info(f"\n❌ SIN PERSONAS (Confirmado): {sin_personas} registros")
+    if resultados["sin_personas_confirmado"]:
+        for item in resultados["sin_personas_confirmado"]:
+            logging.info(f"   ✗ {item['placa']}")
+    
+    logging.info(f"\n⚠️  FALLIDOS PERMANENTES: {fallidos} registros")
+    if resultados["fallidos_permanentes"]:
+        for item in resultados["fallidos_permanentes"]:
+            logging.info(f"   ⚠️  {item['placa']}")
+    
+    if total > 0:
+        porcentaje = (recuperados / total * 100)
+        logging.info(f"\n{'='*70}")
+        logging.info(f"📈 RESUMEN: {recuperados}/{total} recuperados ({porcentaje:.1f}%)")
+        logging.info(f"{'='*70}\n")
+    else:
+        logging.info(f"\n{'='*70}")
+        logging.info(f"ℹ️  No había registros pendientes para reintentar")
+        logging.info(f"{'='*70}\n")
+
+
+
+# ═════════════════════════════════════════════════════════════
+# 📊 TRACKING DE RESULTADOS PARA REINTENTOS
+# ═════════════════════════════════════════════════════════════
+
+def crear_estructura_resultados():
+    """Crea la estructura para guardar resultados de cada intento"""
+    return {
+        "intento_1": {
+            "exitosos": [],
+            "fallos_tecnica": [],
+            "fallos_datos": [],
+            "sin_procesar": []
+        },
+        "intento_2": {
+            "exitosos": [],
+            "fallos_tecnica": [],
+            "fallos_datos": []
+        },
+        "intento_3": {
+            "exitosos": [],
+            "fallos_tecnica": [],
+            "fallos_datos": []
+        }
+    }
+
+def agregar_resultado_tracking(tracking, intento, placa, cedula, estado, razon=""):
+    """
+    Agrega un resultado al tracking
+    estado: "exitoso", "fallo_tecnica", "fallo_datos"
+    """
+    clave_intento = f"intento_{intento}"
+    
+    if estado == "exitoso":
+        tracking[clave_intento]["exitosos"].append({
+            "placa": placa,
+            "cedula": cedula,
+            "timestamp": datetime.now().isoformat()
+        })
+    elif estado == "fallo_tecnica":
+        tracking[clave_intento]["fallos_tecnica"].append({
+            "placa": placa,
+            "cedula": cedula,
+            "razon": razon,
+            "timestamp": datetime.now().isoformat()
+        })
+    elif estado == "fallo_datos":
+        tracking[clave_intento]["fallos_datos"].append({
+            "placa": placa,
+            "cedula": cedula,
+            "razon": razon,
+            "timestamp": datetime.now().isoformat()
+        })
+
+def generar_reporte_final(tracking):
+    """Genera reporte ejecutivo final"""
+    logging.info("\n" + "="*70)
+    logging.info("📊 REPORTE FINAL EJECUTIVO")
+    logging.info("="*70)
+    
+    total_exitosos = (
+        len(tracking["intento_1"]["exitosos"]) +
+        len(tracking["intento_2"]["exitosos"]) +
+        len(tracking["intento_3"]["exitosos"])
+    )
+    
+    total_fallos_tecnica = (
+        len(tracking["intento_1"]["fallos_tecnica"]) +
+        len(tracking["intento_2"]["fallos_tecnica"]) +
+        len(tracking["intento_3"]["fallos_tecnica"])
+    )
+    
+    total_fallos_datos = (
+        len(tracking["intento_1"]["fallos_datos"]) +
+        len(tracking["intento_2"]["fallos_datos"]) +
+        len(tracking["intento_3"]["fallos_datos"])
+    )
+    
+    total_procesados = total_exitosos + total_fallos_tecnica + total_fallos_datos
+    
+    logging.info(f"\n✅ EXITOSOS: {total_exitosos} registros")
+    logging.info(f"⚠️  ERROR TÉCNICO (tras reintentos): {total_fallos_tecnica} registros")
+    logging.info(f"❌ ERROR DE DATOS (sin asociados, placa inexistente): {total_fallos_datos} registros")
+    logging.info(f"\n📈 TOTAL PROCESADO: {total_procesados} registros")
+    logging.info("="*70 + "\n")
+    
+    # Detalles por intento
+    logging.info("\n📋 DETALLES POR INTENTO:")
+    logging.info(f"\n  🔄 INTENTO 1 (Inicial):")
+    logging.info(f"     ✅ Exitosos: {len(tracking['intento_1']['exitosos'])}")
+    logging.info(f"     ⚠️  Fallos técnica: {len(tracking['intento_1']['fallos_tecnica'])}")
+    logging.info(f"     ❌ Fallos datos: {len(tracking['intento_1']['fallos_datos'])}")
+    
+    logging.info(f"\n  🔄 INTENTO 2 (Reintento técnica):")
+    logging.info(f"     ✅ Exitosos: {len(tracking['intento_2']['exitosos'])}")
+    logging.info(f"     ⚠️  Fallos técnica: {len(tracking['intento_2']['fallos_tecnica'])}")
+    
+    logging.info(f"\n  🔄 INTENTO 3 (Segundo reintento):")
+    logging.info(f"     ✅ Exitosos: {len(tracking['intento_3']['exitosos'])}")
+    logging.info(f"     ⚠️  Fallos técnica: {len(tracking['intento_3']['fallos_tecnica'])}")
+    
+    return tracking
+
 
 
 # ═════════════════════════════════════════════════════════════
@@ -288,7 +858,8 @@ def guardar_resultado_en_resultados(cedula_asociado, cedula_propietario, placa, 
     - E: "Funcionó" o "Falló"
     - F: Cédula que funcionó o falló (asociado o propietario)
     
-    ⭐ ESCRIBE DESDE LA FILA 2 (sin tocar encabezados)
+    ⭐ BUSCA LA FILA EXISTENTE Y LA ACTUALIZA (sin duplicados)
+    ⭐ SI NO EXISTE, CREA UNA NUEVA
     """
     try:
         SCOPES = [
@@ -305,19 +876,35 @@ def guardar_resultado_en_resultados(cedula_asociado, cedula_propietario, placa, 
         client = gspread.authorize(creds)
         sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
         
-        # ═══ OBTENER WORKSHEET (asumiendo que ya existe con encabezados) ═══
-        worksheet = sheet.worksheet("Resultados")
-        logging.info("✅ Hoja 'Resultados' encontrada")
+        # ═══ OBTENER WORKSHEET ═══
+        try:
+            worksheet = sheet.worksheet("Resultados")
+            logging.info("✅ Hoja 'Resultados' encontrada")
+        except gspread.WorksheetNotFound:
+            logging.error(f"❌ Hoja 'Resultados' NO encontrada. Debes crearla manualmente con los encabezados en la fila 1")
+            return
         
-        # ═══ BUSCAR PRIMERA FILA VACÍA (a partir de fila 2) ═══
+        # ═══ OBTENER TODAS LAS FILAS ═══
         todas_filas = worksheet.get_all_values()
-        fila_nueva = len(todas_filas) + 1  # Próxima fila después de las existentes
+        logging.info(f"📊 Total de filas en Resultados: {len(todas_filas)}")
         
-        # Si la fila calculada es menor a 2, entonces es la primera vez
-        if fila_nueva < 2:
-            fila_nueva = 2
+        # ═══ BUSCAR SI YA EXISTE ESTA PLACA + CÉDULA ASOCIADO ═══
+        fila_existente = None
+        numero_fila_existente = None
         
-        logging.info(f"📝 Escribiendo en fila {fila_nueva}")
+        for idx, fila in enumerate(todas_filas[1:], start=2):  # Comienza desde fila 2 (saltando encabezado)
+            # Columna C (índice 2) es la placa
+            # Columna A (índice 0) es la cédula asociado
+            if len(fila) > 2:
+                placa_en_fila = fila[2].strip() if len(fila) > 2 else ""
+                cedula_en_fila = fila[0].strip() if len(fila) > 0 else ""
+                
+                if placa_en_fila == placa.strip() and cedula_en_fila == cedula_asociado.strip():
+                    fila_existente = fila
+                    numero_fila_existente = idx
+                    logging.info(f"🔍 Fila existente encontrada en fila {numero_fila_existente}")
+                    logging.info(f"   Contenido actual: {fila}")
+                    break
         
         # ═══ PREPARAR DATOS ═══
         estado_texto = "Funcionó" if estado_final == "Exitoso" else "Falló"
@@ -330,19 +917,43 @@ def guardar_resultado_en_resultados(cedula_asociado, cedula_propietario, placa, 
             cedula_usada
         ]
         
-        # ═══ ESCRIBIR DATOS (SIN TOCAR FILA 1) ═══
-        rango = f"A{fila_nueva}:F{fila_nueva}"
-        worksheet.update([nueva_fila], range_name=rango, value_input_option="RAW")
+        # ═══ ACTUALIZAR O CREAR NUEVA ═══
+        if numero_fila_existente:
+            # ⭐ ACTUALIZAR FILA EXISTENTE (SIN DUPLICAR)
+            logging.info(f"\n🔄 ACTUALIZANDO fila {numero_fila_existente}")
+            logging.info(f"   Anterior: {fila_existente}")
+            logging.info(f"   Nuevo:    {nueva_fila}")
+            
+            rango = f"A{numero_fila_existente}:F{numero_fila_existente}"
+            worksheet.update([nueva_fila], range_name=rango, value_input_option="RAW")
+            
+            logging.info(f"✅ Resultado ACTUALIZADO en 'Resultados' (fila {numero_fila_existente}):")
+            logging.info(f"   Cédula Asociado: {cedula_asociado}")
+            logging.info(f"   Cédula Propietario: {cedula_propietario}")
+            logging.info(f"   Placa: {placa}")
+            logging.info(f"   Estado: {estado_texto}")
+            logging.info(f"   Cédula Usada: {cedula_usada}")
+            
+        else:
+            # ⭐ CREAR NUEVA FILA (al final, sin duplicados)
+            fila_nueva = len(todas_filas) + 1
+            
+            if fila_nueva < 2:
+                fila_nueva = 2
+            
+            logging.info(f"\n📝 CREANDO nueva fila {fila_nueva}")
+            logging.info(f"   (No existía previamente)")
+            
+            rango = f"A{fila_nueva}:F{fila_nueva}"
+            worksheet.update([nueva_fila], range_name=rango, value_input_option="RAW")
+            
+            logging.info(f"✅ Resultado INSERTADO en 'Resultados' (fila {fila_nueva}):")
+            logging.info(f"   Cédula Asociado: {cedula_asociado}")
+            logging.info(f"   Cédula Propietario: {cedula_propietario}")
+            logging.info(f"   Placa: {placa}")
+            logging.info(f"   Estado: {estado_texto}")
+            logging.info(f"   Cédula Usada: {cedula_usada}")
         
-        logging.info(f"✅ Resultado guardado en 'Resultados' (fila {fila_nueva}):")
-        logging.info(f"   Cédula Asociado: {cedula_asociado}")
-        logging.info(f"   Cédula Propietario: {cedula_propietario}")
-        logging.info(f"   Placa: {placa}")
-        logging.info(f"   Estado: {estado_texto}")
-        logging.info(f"   Cédula Usada: {cedula_usada}")
-        
-    except gspread.WorksheetNotFound:
-        logging.error(f"❌ Hoja 'Resultados' NO encontrada. Debes crearla manualmente con los encabezados en la fila 1")
     except Exception as e:
         logging.error(f"❌ Error escribiendo en 'Resultados': {e}", exc_info=True)
 
@@ -421,8 +1032,13 @@ def escribir_datos_vehiculo_sheets(datos_vehiculo, fila_destino=None):
 
 # ==================== FUNCIÓN MODIFICADA: guardar_en_sheets ====================
 
-def guardar_en_sheets(resultados):
-    """Guarda los resultados en Google Sheets - Cilindraje en columna D"""
+def guardar_en_sheets(resultados, actualizar_existente=False):
+    """
+    Guarda los resultados en Google Sheets - Cilindraje en columna D
+    
+    Si actualizar_existente=True: Busca la placa y actualiza la fila existente
+    Si actualizar_existente=False: Agrega nueva fila al final
+    """
     try:
         SCOPES = [
             "https://spreadsheets.google.com/feeds",
@@ -439,7 +1055,7 @@ def guardar_en_sheets(resultados):
         sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
         worksheet = sheet.worksheet("Datos Runt")
 
-        filas = []
+        # ═══ PROCESAR CADA RESULTADO ═══
         for r in resultados:
             # SOAT: 7 columnas
             soat_data = r.get("datos_soat")
@@ -460,24 +1076,112 @@ def guardar_en_sheets(resultados):
             # L-R: RTM (7 columnas)
             # S: estado
             
-            fila = [
+            fila_valores = [
                 r["Tiempo ejecucion"],  # A
                 r["cedula"],             # B
                 r["placa"],              # C
                 r.get("cilindraje", "No disponible"),  # D (NUEVO - independiente)
             ] + soat_data + rtm_data + [r["estado"]]   # E en adelante
             
-            filas.append(fila)
+            placa = r["placa"]
+            
+            # ═══ OBTENER TODAS LAS FILAS PARA BUSCAR PLACA ═══
+            todas_filas = worksheet.get_all_values()
+            logging.info(f"📊 Buscando placa {placa} en {len(todas_filas)} filas...")
+            
+            # ═══ BUSCAR LA FILA DONDE ESTÁ ESTA PLACA (columna C = índice 2) ═══
+            numero_fila_existente = None
+            
+            for idx, fila in enumerate(todas_filas):
+                if len(fila) > 2:  # Asegurar que tiene al menos 3 columnas
+                    placa_en_fila = fila[2].strip() if fila[2] else ""
+                    
+                    if placa_en_fila == placa.strip():
+                        numero_fila_existente = idx + 1  # +1 porque Google Sheets es 1-indexed
+                        logging.info(f"🔍 ¡PLACA ENCONTRADA en fila {numero_fila_existente}!")
+                        break
+            
+            # ═══ ACTUALIZAR O CREAR NUEVA ═══
+            if numero_fila_existente and actualizar_existente:
+                # ⭐ ACTUALIZAR FILA EXISTENTE (COMPLETA, SIN ROMPER ORDEN)
+                logging.info(f"\n🔄 ACTUALIZANDO fila {numero_fila_existente}")
+                logging.info(f"   Placa: {placa}")
+                logging.info(f"   Tiempo: {r['Tiempo ejecucion']}")
+                logging.info(f"   Estado: {r['estado']}")
+                
+                # Calcular el rango dinámicamente (A:S o más allá si hay más columnas)
+                num_columnas = len(fila_valores)
+                col_final = chr(64 + num_columnas)  # A=65, B=66, etc.
+                
+                rango = f"A{numero_fila_existente}:{col_final}{numero_fila_existente}"
+                
+                try:
+                    worksheet.update([fila_valores], range_name=rango, value_input_option="RAW")
+                    logging.info(f"✅ FILA ACTUALIZADA en {rango}")
+                    logging.info(f"   ✓ Tiempo ejecucion: {r['Tiempo ejecucion']}")
+                    logging.info(f"   ✓ Cedula: {r['cedula']}")
+                    logging.info(f"   ✓ Placa: {placa}")
+                    logging.info(f"   ✓ Cilindraje: {r.get('cilindraje', 'No disponible')}")
+                    logging.info(f"   ✓ Estado: {r['estado']}")
+                    
+                except Exception as e:
+                    logging.error(f"❌ Error en update: {e}")
+                    logging.warning("🔄 Intentando método alternativo...")
+                    
+                    # Método alternativo: actualizar celda por celda
+                    for col_num, valor in enumerate(fila_valores, start=1):
+                        try:
+                            worksheet.update_cell(numero_fila_existente, col_num, valor)
+                            time.sleep(0.05)
+                        except Exception as cell_error:
+                            logging.warning(f"⚠️ Error actualizando celda ({numero_fila_existente},{col_num}): {cell_error}")
+                    
+                    logging.info(f"✅ Fila actualizada (método celda por celda)")
+            
+            elif numero_fila_existente and not actualizar_existente:
+                # ⭐ SI LA PLACA EXISTE PERO NO QUEREMOS ACTUALIZAR
+                logging.info(f"⏭️  Placa {placa} ya existe en fila {numero_fila_existente}")
+                logging.info(f"   (actualizar_existente={actualizar_existente}, saltando...)")
+            
+            else:
+                # ⭐ CREAR NUEVA FILA (NO EXISTE LA PLACA)
+                fila_nueva = len(todas_filas) + 1
+                
+                if fila_nueva < 3:
+                    fila_nueva = 3
+                
+                logging.info(f"\n📝 CREANDO NUEVA FILA {fila_nueva}")
+                logging.info(f"   (Placa {placa} no existía previamente)")
+                
+                num_columnas = len(fila_valores)
+                col_final = chr(64 + num_columnas)
+                
+                rango = f"A{fila_nueva}:{col_final}{fila_nueva}"
+                
+                try:
+                    worksheet.update([fila_valores], range_name=rango, value_input_option="RAW")
+                    logging.info(f"✅ NUEVA FILA INSERTADA en {rango}")
+                    logging.info(f"   ✓ Placa: {placa}")
+                    logging.info(f"   ✓ Estado: {r['estado']}")
+                    
+                except Exception as e:
+                    logging.error(f"❌ Error en insert: {e}")
+                    logging.warning("🔄 Intentando método alternativo...")
+                    
+                    for col_num, valor in enumerate(fila_valores, start=1):
+                        try:
+                            worksheet.update_cell(fila_nueva, col_num, valor)
+                            time.sleep(0.05)
+                        except Exception as cell_error:
+                            logging.warning(f"⚠️ Error insertando en ({fila_nueva},{col_num}): {cell_error}")
+                    
+                    logging.info(f"✅ Nueva fila insertada (método celda por celda)")
 
-        fila_inicio = max(len(worksheet.get_all_values()) + 1, 3)
-        rango_inicio = f"A{fila_inicio}"
-
-        worksheet.update(values=filas, range_name=rango_inicio, value_input_option="RAW")
-
-        logging.info(f"✅ Se guardaron {len(filas)} filas en Google Sheets con cilindraje en columna D")
+        logging.info(f"\n✅ PROCESO DE GUARDADO COMPLETADO")
 
     except Exception as e:
-        logging.error(f"❌ Error al guardar en Google Sheets: {e}")
+        logging.error(f"❌ Error grave al guardar en Google Sheets: {e}", exc_info=True)
+
 # ==================== FIN FUNCIÓN MODIFICADA ====================
 
 
@@ -1596,11 +2300,12 @@ def procesar_consulta(driver, cedula_asociado, cedula_propietario, placa, fila_n
         return None, fila_numero
 
 
-def procesar_consulta_interno(driver, cedula, placa, fila_numero, es_reintento=False):
+def procesar_consulta_interno(driver, cedula, placa, fila_numero, es_reintento=False, max_intentos_internos=2):
     """
     Lógica interna de procesamiento
+    max_intentos_internos: Número de reintentos internos (default 2, reducir a 1 en reintentos)
     """
-    max_reintentos = 2
+    max_reintentos = max_intentos_internos
     
     for reintento_general in range(max_reintentos):
         try:
@@ -1843,12 +2548,8 @@ def procesar_consulta_interno(driver, cedula, placa, fila_numero, es_reintento=F
     agregar_registro_procesado(cedula, placa, "Falló - Error técnico")
     return None, fila_numero
 
-# ═════════════════════════════════════════════════════════════
-# MAIN
-# ═════════════════════════════════════════════════════════════
-
 def main():
-    """Función principal CON SOPORTE DE REANUDACIÓN MEJORADO"""
+    """Función principal CON VALIDACIÓN, REINTENTOS INTELIGENTES Y REANUDACIÓN"""
     driver = iniciar_driver()
     if not driver:
         logging.error("❌ No se pudo inicializar el driver")
@@ -1857,60 +2558,72 @@ def main():
     driver.maximize_window()
 
     try:
-        # ═══ CARGAR DATOS Y ESTADO ANTERIOR ═══
-        datos_unicos = obtener_datos_unicos()
-        estado_anterior = cargar_estado()
+        # ═══ CARGAR DATOS Y VALIDAR ═══
+        datos_brutos = obtener_datos_unicos()
+        datos_validos, datos_invalidos = filtrar_datos_validos(datos_brutos)
         
-        last_cedula = estado_anterior.get("last_cedula")
-        last_placa = estado_anterior.get("last_placa")
-        last_status = estado_anterior.get("last_status")
-        
-        logging.info(f"\n{'='*70}")
-        logging.info(f"📋 ESTADO ANTERIOR CARGADO")
-        logging.info(f"   Última placa: {last_placa}")
-        logging.info(f"   Última cédula: {last_cedula}")
-        logging.info(f"   Último estado: {last_status}")
-        logging.info(f"{'='*70}\n")
-        
-        if not datos_unicos:
+        if not datos_validos:
             logging.info(f"\n{'='*70}")
-            logging.info(f"✅ NO HAY REGISTROS PENDIENTES POR PROCESAR")
+            logging.info(f"❌ NO HAY REGISTROS VÁLIDOS POR PROCESAR")
+            logging.info(f"   Total cargado: {len(datos_brutos)}")
+            logging.info(f"   Todos tienen datos incompletos")
             logging.info(f"{'='*70}\n")
-            captcha_logger.info(f"✅ NO HAY REGISTROS PENDIENTES")
             return
         
-        # ═══ LÓGICA DE REANUDACIÓN ═══
-        inicio_desde = 0
-        
-        if last_placa and last_status:
-            for idx, (ced_asoc, ced_prop, plac, fil, sheet_name) in enumerate(datos_unicos):
-                if plac == last_placa and ced_asoc == last_cedula:
-                    if last_status == "Exitoso":
-                        inicio_desde = idx + 1
-                        logging.info(f"✅ Retomando desde índice {inicio_desde} (después de {last_placa})")
-                    elif last_status in ["Pendiente", "Error", "Falló"]:
-                        inicio_desde = idx
-                        logging.info(f"🔄 Reintentando desde índice {inicio_desde} ({last_placa})")
-                    else:
-                        inicio_desde = idx
-                    break
+                # ═══ CARGAR ESTADO PREVIO Y DETERMINAR PUNTO DE INICIO ═══
+        estado_actual = cargar_estado()
+        placas_procesadas = estado_actual.get("resumen", {}).get("placas_procesadas", {})
         
         logging.info(f"\n{'='*70}")
-        logging.info(f"🚀 Iniciando proceso para {len(datos_unicos)} registros PENDIENTES")
-        logging.info(f"   Comenzando desde: índice {inicio_desde}")
+        logging.info(f"📋 VERIFICANDO PUNTO DE REANUDACIÓN...")
+        logging.info(f"{'='*70}")
+        
+        # 🎯 OBTENER ÍNDICE DESDE ÚLTIMO EXITOSO (NO DESDE ÚLTIMO PROCESADO)
+        indice_reanudacion, ultima_exitosa, registros_exitosos = obtener_indice_reanudacion_desde_ultimo_exitoso(
+            datos_validos,
+            placas_procesadas
+        )
+        
+        # ✂️ CORTAR DESDE EL PUNTO DE REANUDACIÓN
+        datos_por_procesar = datos_validos[indice_reanudacion:]
+        
+        logging.info(f"\n{'='*70}")
+        logging.info(f"📊 RESUMEN DE REANUDACIÓN")
+        logging.info(f"{'='*70}")
+        logging.info(f"Total en Google Sheets: {len(datos_validos)} registros")
+        logging.info(f"Ya exitosos: {registros_exitosos} registros")
+        logging.info(f"Pendientes por procesar: {len(datos_por_procesar)} registros")
+        if ultima_exitosa:
+            logging.info(f"Último exitoso: {ultima_exitosa}")
+            if datos_por_procesar:
+                logging.info(f"Próximo a procesar: {datos_por_procesar[0][2]}")
         logging.info(f"{'='*70}\n")
         
-        captcha_logger.info(f"{'='*70}")
-        captcha_logger.info(f"🚀 INICIANDO - {len(datos_unicos)} REGISTROS PENDIENTES")
-        captcha_logger.info(f"   Desde índice: {inicio_desde}")
-        captcha_logger.info(f"{'='*70}\n")
-
-        # ═══ PROCESAR REGISTROS ═══
-        for i in range(inicio_desde, len(datos_unicos)):
-            cedula_asociado, cedula_propietario, placa, fila_numero, sheet_origen = datos_unicos[i]
+        if not datos_por_procesar:
+            logging.info(f"\n{'='*70}")
+            logging.info(f"✅ TODOS LOS REGISTROS DE SHEETS YA FUERON PROCESADOS")
+            logging.info(f"   Total: {registros_exitosos} exitosos")
+            logging.info(f"{'='*70}\n")
+            return
+        
+        logging.info(f"\n{'='*70}")
+        logging.info(f"🚀 INICIANDO PROCESAMIENTO - {len(datos_por_procesar)} REGISTROS PENDIENTES")
+        logging.info(f"{'='*70}\n")
+        
+        # ═══ INICIALIZAR TRACKING ═══
+        tracking_resultados = crear_estructura_resultados()
+        
+        # ═══ INTENTO 1: PROCESAMIENTO INICIAL ═══
+        registros_procesados_contador = 0
+        
+        for i, (cedula_asociado, cedula_propietario, placa, fila_numero, sheet_origen) in enumerate(datos_por_procesar):
+            
+            # 🔄 REINICIO PERIÓDICO CADA 5 REGISTROS
+            reiniciar_sesion_periodico(driver, registros_procesados_contador)
+            registros_procesados_contador += 1
             
             logging.info(f"\n{'='*70}")
-            logging.info(f"📊 Procesando [{i + 1}/{len(datos_unicos)}]: Placa {placa} (desde {sheet_origen})")
+            logging.info(f"📊 Procesando [{i + 1}/{len(datos_por_procesar)}]: Placa {placa}")
             logging.info(f"{'='*70}")
             
             resultado, fila = procesar_consulta(
@@ -1923,53 +2636,47 @@ def main():
 
             if resultado:
                 estado_resultado = resultado.get("estado", "Pendiente")
-                guardar_estado(
-                    cedula_asociado, 
-                    placa, 
-                    estado_resultado, 
-                    i, 
-                    len(datos_unicos),
-                    resultado.get("datos_vehiculo"),  # NUEVO
-                    resultado.get("datos_soat"),
-                    resultado.get("datos_técnicos")
-                )
                 
-                # Guardar en hoja "Datos Runt"
+                # Clasificar resultado
+                if estado_resultado == "Exitoso":
+                    agregar_resultado_tracking(tracking_resultados, 1, placa, cedula_asociado, "exitoso")
+                elif estado_resultado == "Exitoso - Sin personas asociadas":
+                    agregar_resultado_tracking(tracking_resultados, 1, placa, cedula_asociado, "fallo_datos", 
+                                             "No hay personas asociadas al vehículo")
+                else:
+                    agregar_resultado_tracking(tracking_resultados, 1, placa, cedula_asociado, "fallo_tecnica",
+                                             "Error en consulta RUNT")
+                
+                guardar_estado(cedula_asociado, placa, estado_resultado, i, len(datos_por_procesar))
                 guardar_en_sheets([resultado])
-                
-                # ==================== NUEVO: Guardar en hoja "Datos Vehiculo" ====================
-                # INSERTA ESTAS LÍNEAS DESPUÉS DE guardar_en_sheets
                 
                 if "datos_vehiculo" in resultado and resultado["datos_vehiculo"]:
                     escribir_datos_vehiculo_sheets(resultado["datos_vehiculo"])
-                    logging.info(f"✅ Datos completos de {placa} guardados en 'Datos Vehiculo'")
-                # ==================== FIN NUEVO ====================
-                
-                logging.info(f"✅ Datos de {placa} guardados en Sheets")
+                    
+                logging.info(f"✅ Datos de {placa} guardados")
+            else:
+                agregar_resultado_tracking(tracking_resultados, 1, placa, cedula_asociado, "fallo_tecnica",
+                                         "No retornó resultado")
+                guardar_estado(cedula_asociado, placa, "Pendiente", i, len(datos_por_procesar))
 
-            # ═══ PREPARAR SIGUIENTE CONSULTA ═══
-            if i < len(datos_unicos) - 1:
+            # Preparar siguiente consulta
+            if i < len(datos_por_procesar) - 1:
                 try:
                     logging.info("🔄 Preparando siguiente consulta...")
                     limpiar_todos_los_campos(driver)
                     time.sleep(1)
                     
-                    # Intentar con diferentes selectores
                     try:
                         otra_consulta_btn = WebDriverWait(driver, 10).until(
                             EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Otra consulta')]"))
                         )
                     except:
-                        try:
-                            otra_consulta_btn = WebDriverWait(driver, 10).until(
-                                EC.element_to_be_clickable((By.CSS_SELECTOR, "button.mat-raised-button"))
-                            )
-                        except:
-                            logging.warning("⚠️ No se encontró botón 'Otra consulta', recargando página...")
-                            driver.get("https://portalpublico.runt.gov.co/#/consulta-vehiculo/consulta/consulta-ciudadana")
-                            time.sleep(3)
-                            limpiar_todos_los_campos(driver)
-                            continue
+                        logging.warning("⚠️  Recargando página...")
+                        driver.get("https://portalpublico.runt.gov.co/#/consulta-vehiculo/consulta/consulta-ciudadana")
+                        time.sleep(3)
+                        limpiar_todos_los_campos(driver)
+                        continue
+                    
                     driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", otra_consulta_btn)
                     time.sleep(1)
                     driver.execute_script("arguments[0].click();", otra_consulta_btn)
@@ -1978,20 +2685,160 @@ def main():
                     time.sleep(1)
                     
                 except Exception as e:
-                    logging.error(f"⚠️ Error al siguiente: {e}")
-                    logging.info("🔄 Recargando página...")
+                    logging.error(f"⚠️  Error: {e}")
                     driver.get("https://portalpublico.runt.gov.co/#/consulta-vehiculo/consulta/consulta-ciudadana")
                     time.sleep(3)
                     limpiar_todos_los_campos(driver)
-                    time.sleep(1)
-
-        logging.info(f"\n{'='*70}")
-        logging.info(f"✅ PROCESO FINALIZADO - TODOS LOS REGISTROS PROCESADOS")
+        
+        # ═══ INTENTO 2: REINTENTAR SOLO FALLOS TÉCNICOS ═══
+        fallos_tecnica_intento1 = tracking_resultados["intento_1"]["fallos_tecnica"]
+        
+        if fallos_tecnica_intento1:
+            logging.info(f"\n{'='*70}")
+            logging.info(f"🔄 INTENTO 2 - REINTENTANDO {len(fallos_tecnica_intento1)} FALLOS TÉCNICOS")
+            logging.info(f"{'='*70}\n")
+            
+            contador_intento2 = 0
+            for fallo in fallos_tecnica_intento1:
+                
+                # 🔄 REINICIO PERIÓDICO CADA 5 REGISTROS
+                reiniciar_sesion_periodico(driver, contador_intento2)
+                contador_intento2 += 1
+                placa_reintento = fallo["placa"]
+                cedula_reintento = fallo["cedula"]
+                
+                # Encontrar el cedula_propietario correspondiente
+                cedula_prop_reintento = cedula_reintento
+                for ced_a, ced_p, plac, _, _ in datos_validos:
+                    if plac == placa_reintento:
+                        cedula_prop_reintento = ced_p
+                        break
+                
+                logging.info(f"\n🔄 INTENTO 2 - Reintentando: {placa_reintento}")
+                
+                # ⭐ NUEVO: Solo 1 intento interno en reintento
+                resultado_reintento, _ = procesar_consulta_interno(
+                    driver,
+                    cedula_reintento,
+                    placa_reintento,
+                    0,
+                    es_reintento=True,
+                    max_intentos_internos=1
+                )
+                
+                if resultado_reintento and resultado_reintento.get("estado") == "Exitoso":
+                    agregar_resultado_tracking(tracking_resultados, 2, placa_reintento, cedula_reintento, "exitoso")
+                    logging.info(f"✅ Recuperado en intento 2: {placa_reintento}")
+                    guardar_en_sheets([resultado_reintento], actualizar_existente=True)
+                    guardar_estado(cedula_reintento, placa_reintento, "Exitoso", 0, len(datos_por_procesar))
+                
+                elif resultado_reintento and resultado_reintento.get("estado") == "Exitoso - Sin personas asociadas":
+                    # ⭐ NUEVO: Si sin personas con asociado, probar con propietario
+                    logging.warning(f"⚠️  Sin personas con asociado, probando con propietario...")
+                    
+                    resultado_con_prop, _ = procesar_consulta_interno(
+                        driver,
+                        cedula_prop_reintento,
+                        placa_reintento,
+                        0,
+                        es_reintento=True,
+                        max_intentos_internos=1
+                    )
+                    
+                    if resultado_con_prop and resultado_con_prop.get("estado") == "Exitoso":
+                        agregar_resultado_tracking(tracking_resultados, 2, placa_reintento, cedula_reintento, "exitoso")
+                        logging.info(f"✅ Recuperado en intento 2 (con propietario): {placa_reintento}")
+                        guardar_en_sheets([resultado_con_prop], actualizar_existente=True)
+                        guardar_estado(cedula_reintento, placa_reintento, "Exitoso", 0, len(datos_por_procesar))
+                    else:
+                        # ⭐ NUEVO: Confirmar sin personas y TERMINAR
+                        agregar_resultado_tracking(tracking_resultados, 2, placa_reintento, cedula_reintento, 
+                                                 "fallo_datos", "Confirmado: Sin personas asociadas en ambas cédulas")
+                        logging.error(f"❌ Confirmado: Sin personas asociadas (asociado + propietario): {placa_reintento}")
+                        
+                        guardar_resultado_en_resultados(
+                            cedula_reintento,
+                            cedula_prop_reintento,
+                            placa_reintento,
+                            cedula_reintento,
+                            "Falló - Sin personas asociadas"
+                        )
+                        guardar_estado(cedula_reintento, placa_reintento, "Pendiente", 0, len(datos_por_procesar))
+                else:
+                    agregar_resultado_tracking(tracking_resultados, 2, placa_reintento, cedula_reintento, 
+                                             "fallo_tecnica", "Error técnico persistió")
+                    logging.warning(f"⚠️  Error técnico persistió en intento 2: {placa_reintento}")
+                    guardar_estado(cedula_reintento, placa_reintento, "Pendiente", 0, len(datos_por_procesar))
+                
+                time.sleep(2)
+        
+        # ═══ INTENTO 3: SEGUNDO REINTENTO (SOLO TÉCNICOS) ═══
+        fallos_tecnica_intento2 = tracking_resultados["intento_2"]["fallos_tecnica"]
+        
+        if fallos_tecnica_intento2:
+            logging.info(f"\n{'='*70}")
+            logging.info(f"🔄 INTENTO 3 - SEGUNDO REINTENTO DE {len(fallos_tecnica_intento2)} REGISTROS")
+            logging.info(f"{'='*70}\n")
+            
+            contador_intento3 = 0
+            for fallo in fallos_tecnica_intento2:
+                
+                    # 🔄 REINICIO PERIÓDICO CADA 5 REGISTROS
+                reiniciar_sesion_periodico(driver, contador_intento3)
+                contador_intento3 += 1
+                placa_reintento = fallo["placa"]
+                cedula_reintento = fallo["cedula"]
+                
+                cedula_prop_reintento = cedula_reintento
+                for ced_a, ced_p, plac, _, _ in datos_validos:
+                    if plac == placa_reintento:
+                        cedula_prop_reintento = ced_p
+                        break
+                
+                logging.info(f"\n🔄 INTENTO 3 - Segundo reintento: {placa_reintento}")
+                
+                # ⭐ NUEVO: Solo 1 intento interno en tercer intento
+                resultado_reintento, _ = procesar_consulta_interno(
+                    driver,
+                    cedula_reintento,
+                    placa_reintento,
+                    0,
+                    es_reintento=True,
+                    max_intentos_internos=1
+                )
+                
+                if resultado_reintento and resultado_reintento.get("estado") == "Exitoso":
+                    agregar_resultado_tracking(tracking_resultados, 3, placa_reintento, cedula_reintento, "exitoso")
+                    logging.info(f"✅ Recuperado en intento 3: {placa_reintento}")
+                    guardar_en_sheets([resultado_reintento], actualizar_existente=True)
+                    guardar_estado(cedula_reintento, placa_reintento, "Exitoso", 0, len(datos_por_procesar))
+                else:
+                    agregar_resultado_tracking(tracking_resultados, 3, placa_reintento, cedula_reintento, 
+                                             "fallo_tecnica", "Falló en todos los intentos")
+                    logging.error(f"❌ Falló permanentemente tras 3 intentos: {placa_reintento}")
+                    guardar_estado(cedula_reintento, placa_reintento, "Pendiente", 0, len(datos_por_procesar))
+                
+                time.sleep(2)
+        
+                # ═══ GENERAR REPORTE FINAL DE INTENTOS 1-3 ═══
+        generar_reporte_final(tracking_resultados)
+        
+        # 🔴 FASE FINAL: REINTENTAR PENDIENTES PARA CONFIRMAR ESTADO
+        logging.info(f"\n\n{'='*70}")
+        logging.info(f"⭐ INICIANDO FASE FINAL: VALIDAR PENDIENTES")
         logging.info(f"{'='*70}\n")
         
-        captcha_logger.info(f"\n{'='*70}")
-        captcha_logger.info(f"✅ PROCESO FINALIZADO")
-        captcha_logger.info(f"{'='*70}\n")
+        resultados_finales = procesar_reintentos_finales_pendientes(
+            driver,
+            datos_validos,
+            max_intentos=5  # ← Máximo 5 intentos por pendiente
+        )
+        
+        # ═════════════════════════════════════════════════════════════
+        
+        logging.info(f"\n{'='*70}")
+        logging.info(f"✅ PROCESO COMPLETADO EXITOSAMENTE")
+        logging.info(f"{'='*70}\n")
 
     except Exception as e:
         logging.error(f"❌ Error principal: {e}", exc_info=True)
