@@ -1,0 +1,2595 @@
+2026-03-31 10:18:29,086 - INFO - ✅ Diccionario cargado: 28 variaciones para 28 caracteres
+2026-03-31 10:18:29,087 - INFO -    Caracteres disponibles: ['2', '4', '5', '6', '8', 'A', 'B', 'D', 'G', 'J', 'K', 'Q', 'S', 'Y', 'Z', 'a', 'b', 'd', 'g', 'i', 'j', 'k', 'o', 'q', 'r', 's', 'y', 'z']
+2026-03-31 10:18:29,088 - INFO - ✅ Funciones core de Runt.py importadas correctamente
+2026-03-31 10:18:29,088 - INFO - 
+================================================================================
+2026-03-31 10:18:29,088 - INFO - 🚀 INICIANDO BOT VERIFICADOR DE FALLOS RUNT
+2026-03-31 10:18:29,088 - INFO - 📅 Fecha/Hora: 2026-03-31 10:18:29
+2026-03-31 10:18:29,089 - INFO - ================================================================================
+2026-03-31 10:18:29,167 - INFO - ✅ Conexión a Google Sheets establecida para Verificación
+2026-03-31 10:19:21,330 - INFO - ✅ Diccionario cargado: 28 variaciones para 28 caracteres
+2026-03-31 10:19:21,331 - INFO -    Caracteres disponibles: ['2', '4', '5', '6', '8', 'A', 'B', 'D', 'G', 'J', 'K', 'Q', 'S', 'Y', 'Z', 'a', 'b', 'd', 'g', 'i', 'j', 'k', 'o', 'q', 'r', 's', 'y', 'z']
+2026-03-31 10:19:21,332 - INFO - ✅ Funciones core de Runt.py importadas correctamente
+2026-03-31 10:19:21,332 - INFO - 
+================================================================================
+2026-03-31 10:19:21,332 - INFO - 🚀 INICIANDO BOT VERIFICADOR DE FALLOS RUNT
+2026-03-31 10:19:21,332 - INFO - 📅 Fecha/Hora: 2026-03-31 10:19:21
+2026-03-31 10:19:21,332 - INFO - ================================================================================
+2026-03-31 10:19:21,405 - INFO - ✅ Conexión a Google Sheets establecida para Verificación
+2026-03-31 10:19:23,913 - INFO - 📊 Se encontraron 97 registros marcados como 'Falló' para verificar.
+2026-03-31 10:19:24,528 - INFO - 📝 Creando hoja 'Sin Asociados' con encabezados...
+2026-03-31 10:19:24,812 - ERROR - ❌ Error garantizando hoja 'Sin Asociados': APIError: [400]: Invalid requests[0].addSheet: A sheet with the name "Sin Asociados" already exists. Please enter another name.
+2026-03-31 10:19:24,812 - ERROR - ❌ No se pudo garantizar la hoja 'Sin Asociados'. Abortando por seguridad.
+2026-03-31 10:19:52,032 - INFO - ✅ Diccionario cargado: 28 variaciones para 28 caracteres
+2026-03-31 10:19:52,033 - INFO -    Caracteres disponibles: ['2', '4', '5', '6', '8', 'A', 'B', 'D', 'G', 'J', 'K', 'Q', 'S', 'Y', 'Z', 'a', 'b', 'd', 'g', 'i', 'j', 'k', 'o', 'q', 'r', 's', 'y', 'z']
+2026-03-31 10:19:52,033 - INFO - ✅ Funciones core de Runt.py importadas correctamente
+2026-03-31 10:19:52,034 - INFO - 
+================================================================================
+2026-03-31 10:19:52,034 - INFO - 🚀 INICIANDO BOT VERIFICADOR DE FALLOS RUNT
+2026-03-31 10:19:52,034 - INFO - 📅 Fecha/Hora: 2026-03-31 10:19:52
+2026-03-31 10:19:52,034 - INFO - ================================================================================
+2026-03-31 10:19:52,095 - INFO - ✅ Conexión a Google Sheets establecida para Verificación
+2026-03-31 10:19:54,345 - INFO - 📊 Se encontraron 97 registros marcados como 'Falló' para verificar.
+2026-03-31 10:19:54,737 - INFO - 📝 Creando hoja 'Sin Asociados' con encabezados...
+2026-03-31 10:19:54,955 - ERROR - ❌ Error garantizando hoja 'Sin Asociados': APIError: [400]: Invalid requests[0].addSheet: A sheet with the name "Sin Asociados" already exists. Please enter another name.
+2026-03-31 10:19:54,956 - ERROR - ❌ No se pudo garantizar la hoja 'Sin Asociados'. Abortando por seguridad.
+2026-03-31 10:22:31,689 - INFO - ✅ Diccionario cargado: 28 variaciones para 28 caracteres
+2026-03-31 10:22:31,690 - INFO -    Caracteres disponibles: ['2', '4', '5', '6', '8', 'A', 'B', 'D', 'G', 'J', 'K', 'Q', 'S', 'Y', 'Z', 'a', 'b', 'd', 'g', 'i', 'j', 'k', 'o', 'q', 'r', 's', 'y', 'z']
+2026-03-31 10:22:31,690 - INFO - ✅ Funciones core de Runt.py importadas correctamente
+2026-03-31 10:22:31,691 - INFO - 
+================================================================================
+2026-03-31 10:22:31,691 - INFO - 🚀 INICIANDO BOT VERIFICADOR DE FALLOS RUNT
+2026-03-31 10:22:31,691 - INFO - 📅 Fecha/Hora: 2026-03-31 10:22:31
+2026-03-31 10:22:31,692 - INFO - ================================================================================
+2026-03-31 10:22:31,757 - INFO - ✅ Conexión a Google Sheets establecida para Verificación
+2026-03-31 10:22:34,416 - INFO - 📊 Se encontraron 83 registros marcados como 'Falló' para verificar.
+2026-03-31 10:22:34,812 - INFO - 📝 Creando hoja 'Sin Asociados' con encabezados...
+2026-03-31 10:22:35,581 - INFO - ✅ Hoja 'Sin Asociados' creada correctamente.
+2026-03-31 10:22:35,583 - WARNING - ⚠️ Archivo de estado JSON corrupto, creando nuevo...
+2026-03-31 10:22:35,586 - INFO - ====== WebDriver manager ======
+2026-03-31 10:22:36,961 - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-31 10:22:37,989 - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-31 10:22:38,917 - INFO - Driver [C:\Users\cmarroquin\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 10:22:39,959 - INFO - 
+============================================================
+2026-03-31 10:22:39,959 - INFO - 🔍 VERIFICANDO PLACA: ACB63H
+2026-03-31 10:22:39,959 - INFO -    CedAsoc: 1000460240, CedProp: 1000460240
+2026-03-31 10:22:39,960 - INFO - ============================================================
+2026-03-31 10:22:39,960 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1000460240)...
+2026-03-31 10:22:39,960 - INFO - 
+======================================================================
+2026-03-31 10:22:39,961 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:22:39,961 - INFO - Cédula: 1000460240, Placa: ACB63H
+2026-03-31 10:22:39,962 - INFO - ======================================================================
+2026-03-31 10:22:46,054 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:22:50,043 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:22:51,097 - INFO - 📝 Llenando placa...
+2026-03-31 10:22:55,585 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:22:56,978 - INFO - ✅ Placa escrita: ACB63H
+2026-03-31 10:22:57,520 - INFO - 📝 Llenando cédula...
+2026-03-31 10:23:01,920 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:23:03,874 - INFO - ✅ Cédula escrita: 1000460240
+2026-03-31 10:23:04,875 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:23:06,884 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:23:06,884 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:23:08,657 - INFO - 📝 Tesseract extrajo: 'qzqUD'
+2026-03-31 10:23:08,658 - INFO - 📝 Después limpieza básica: 'qzqUD'
+2026-03-31 10:23:08,658 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:23:08,659 - INFO -    Carácter 1: 'q'
+2026-03-31 10:23:08,659 - INFO -    ✅ 'q' ENCONTRADO en templates
+2026-03-31 10:23:08,660 - INFO -    Carácter 2: 'z'
+2026-03-31 10:23:08,660 - INFO -    ✅ 'z' ENCONTRADO en templates
+2026-03-31 10:23:08,661 - INFO -    Carácter 3: 'q'
+2026-03-31 10:23:08,661 - INFO -    ✅ 'q' ENCONTRADO en templates
+2026-03-31 10:23:08,661 - INFO -    Carácter 4: 'U'
+2026-03-31 10:23:08,662 - INFO -    ⚠️ 'U' NO en diccionario, manteniendo...
+2026-03-31 10:23:08,662 - INFO -    Carácter 5: 'D'
+2026-03-31 10:23:08,662 - INFO -    ✅ 'D' ENCONTRADO en templates
+2026-03-31 10:23:08,662 - INFO - ✅ Captcha después verificación: 'qzqUD'
+2026-03-31 10:23:08,663 - INFO - 📝 Captcha final a escribir: qzqUD
+2026-03-31 10:23:08,715 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:23:12,580 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:23:13,082 - INFO - ⌨️ Escribiendo: qzqUD
+2026-03-31 10:23:14,288 - INFO - ✅ Captcha escrito
+2026-03-31 10:23:15,328 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:23:15,433 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:23:16,435 - INFO -    (1/4s) Verificando...
+2026-03-31 10:23:16,435 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:23:16,461 - INFO - ✅ Modal detectado
+2026-03-31 10:23:17,499 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:23:17,500 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:23:17,500 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:23:17,500 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:23:19,501 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:23:19,524 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:23:19,525 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:23:19,525 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:23:19,543 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:23:19,560 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:23:19,620 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:23:19,669 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:23:19,698 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:23:20,103 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:23:22,160 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:23:22,160 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:23:22,208 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para ACB63H.
+2026-03-31 10:23:22,209 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1000460240)...
+2026-03-31 10:23:25,220 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:23:28,117 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:23:28,117 - INFO - 
+======================================================================
+2026-03-31 10:23:28,118 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:23:28,118 - INFO - Cédula: 1000460240, Placa: ACB63H
+2026-03-31 10:23:28,118 - INFO - ======================================================================
+2026-03-31 10:23:32,131 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:23:34,958 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:23:35,993 - INFO - 📝 Llenando placa...
+2026-03-31 10:23:40,391 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:23:41,769 - INFO - ✅ Placa escrita: ACB63H
+2026-03-31 10:23:42,309 - INFO - 📝 Llenando cédula...
+2026-03-31 10:23:46,670 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:23:48,587 - INFO - ✅ Cédula escrita: 1000460240
+2026-03-31 10:23:49,587 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:23:51,596 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:23:51,596 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:23:53,363 - INFO - 📝 Tesseract extrajo: 'mCXRp'
+2026-03-31 10:23:53,363 - INFO - 📝 Después limpieza básica: 'mCXRp'
+2026-03-31 10:23:53,364 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:23:53,364 - INFO -    Carácter 1: 'm'
+2026-03-31 10:23:53,364 - INFO -    ⚠️ 'm' NO en diccionario, manteniendo...
+2026-03-31 10:23:53,364 - INFO -    Carácter 2: 'C'
+2026-03-31 10:23:53,365 - INFO -    ⚠️ 'C' NO en diccionario, manteniendo...
+2026-03-31 10:23:53,365 - INFO -    Carácter 3: 'X'
+2026-03-31 10:23:53,365 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:23:53,366 - INFO -    Carácter 4: 'R'
+2026-03-31 10:23:53,366 - INFO -    ⚠️ 'R' NO en diccionario, manteniendo...
+2026-03-31 10:23:53,366 - INFO -    Carácter 5: 'p'
+2026-03-31 10:23:53,367 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:23:53,368 - INFO - ✅ Captcha después verificación: 'mCXRp'
+2026-03-31 10:23:53,368 - INFO - 📝 Captcha final a escribir: mCXRp
+2026-03-31 10:23:53,419 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:23:57,243 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:23:57,743 - INFO - ⌨️ Escribiendo: mCXRp
+2026-03-31 10:23:58,955 - INFO - ✅ Captcha escrito
+2026-03-31 10:23:59,993 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:24:00,087 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:24:01,088 - INFO -    (1/4s) Verificando...
+2026-03-31 10:24:01,088 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:24:01,115 - INFO - ✅ Modal detectado
+2026-03-31 10:24:02,136 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:24:02,137 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:24:02,137 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:24:02,137 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:24:04,138 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:24:04,165 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:24:04,165 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:24:04,166 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:24:04,181 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:24:04,194 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:24:04,207 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:24:04,221 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:24:04,248 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:24:04,653 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:24:06,696 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:24:06,696 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:24:06,740 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para ACB63H.
+2026-03-31 10:24:06,741 - INFO - 🔍 Verificando si placa ACB63H ya está en 'Sin Asociados'...
+2026-03-31 10:24:07,375 - INFO - ✅ Placa ACB63H registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:24:08,142 - INFO - ✅ Hoja Resultados actualizada (Fila 7): Estado=Sin personas asociadas, Cédula=Asoc:1000460240 / Prop:1000460240
+2026-03-31 10:24:08,144 - INFO - ✅ Avance ciclo Verificación: 1/83 procesados.
+2026-03-31 10:24:11,144 - INFO - 
+============================================================
+2026-03-31 10:24:11,145 - INFO - 🔍 VERIFICANDO PLACA: AOJ96G
+2026-03-31 10:24:11,146 - INFO -    CedAsoc: 1152709973, CedProp: 1152709973
+2026-03-31 10:24:11,146 - INFO - ============================================================
+2026-03-31 10:24:11,147 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1152709973)...
+2026-03-31 10:24:11,147 - INFO - 
+======================================================================
+2026-03-31 10:24:11,148 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:24:11,148 - INFO - Cédula: 1152709973, Placa: AOJ96G
+2026-03-31 10:24:11,149 - INFO - ======================================================================
+2026-03-31 10:24:15,159 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:24:18,050 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:24:19,081 - INFO - 📝 Llenando placa...
+2026-03-31 10:24:23,461 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:24:24,817 - INFO - ✅ Placa escrita: AOJ96G
+2026-03-31 10:24:25,355 - INFO - 📝 Llenando cédula...
+2026-03-31 10:24:29,816 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:24:31,730 - INFO - ✅ Cédula escrita: 1152709973
+2026-03-31 10:24:32,732 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:24:34,742 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:24:34,742 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:24:36,400 - INFO - 📝 Tesseract extrajo: 'UxZyh'
+2026-03-31 10:24:36,401 - INFO - 📝 Después limpieza básica: 'UxZyh'
+2026-03-31 10:24:36,401 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:24:36,402 - INFO -    Carácter 1: 'U'
+2026-03-31 10:24:36,402 - INFO -    ⚠️ 'U' NO en diccionario, manteniendo...
+2026-03-31 10:24:36,402 - INFO -    Carácter 2: 'x'
+2026-03-31 10:24:36,402 - INFO -    ⚠️ 'x' NO en diccionario, manteniendo...
+2026-03-31 10:24:36,403 - INFO -    Carácter 3: 'Z'
+2026-03-31 10:24:36,403 - INFO -    ✅ 'Z' ENCONTRADO en templates
+2026-03-31 10:24:36,404 - INFO -    Carácter 4: 'y'
+2026-03-31 10:24:36,404 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:24:36,405 - INFO -    Carácter 5: 'h'
+2026-03-31 10:24:36,405 - INFO -    ⚠️ 'h' NO en diccionario, manteniendo...
+2026-03-31 10:24:36,406 - INFO - ✅ Captcha después verificación: 'UxZyh'
+2026-03-31 10:24:36,407 - INFO - 📝 Captcha final a escribir: UxZyh
+2026-03-31 10:24:36,487 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:24:40,451 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:24:40,952 - INFO - ⌨️ Escribiendo: UxZyh
+2026-03-31 10:24:42,152 - INFO - ✅ Captcha escrito
+2026-03-31 10:24:43,193 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:24:43,301 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:24:44,302 - INFO -    (1/4s) Verificando...
+2026-03-31 10:24:44,313 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:24:44,359 - INFO - ✅ Modal detectado
+2026-03-31 10:24:45,385 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:24:45,385 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:24:45,386 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:24:45,387 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:24:47,387 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:24:47,409 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:24:47,410 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:24:47,410 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:24:47,424 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:24:47,436 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:24:47,449 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:24:47,464 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:24:47,487 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:24:47,868 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:24:49,913 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:24:49,913 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:24:49,963 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para AOJ96G.
+2026-03-31 10:24:49,964 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1152709973)...
+2026-03-31 10:24:52,975 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:24:55,986 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:24:55,986 - INFO - 
+======================================================================
+2026-03-31 10:24:55,987 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:24:55,987 - INFO - Cédula: 1152709973, Placa: AOJ96G
+2026-03-31 10:24:55,988 - INFO - ======================================================================
+2026-03-31 10:25:00,005 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:25:02,906 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:25:03,940 - INFO - 📝 Llenando placa...
+2026-03-31 10:25:08,291 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:25:09,637 - INFO - ✅ Placa escrita: AOJ96G
+2026-03-31 10:25:10,175 - INFO - 📝 Llenando cédula...
+2026-03-31 10:25:14,562 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:25:16,493 - INFO - ✅ Cédula escrita: 1152709973
+2026-03-31 10:25:17,493 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:25:19,503 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:25:19,504 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:25:21,203 - INFO - 📝 Tesseract extrajo: 'bTnMyY'
+2026-03-31 10:25:21,204 - INFO - 📝 Después limpieza básica: 'bTnMyY'
+2026-03-31 10:25:21,204 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:25:21,204 - INFO -    Carácter 1: 'b'
+2026-03-31 10:25:21,205 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:25:21,205 - INFO -    Carácter 2: 'T'
+2026-03-31 10:25:21,206 - INFO -    ⚠️ 'T' NO en diccionario, manteniendo...
+2026-03-31 10:25:21,206 - INFO -    Carácter 3: 'n'
+2026-03-31 10:25:21,206 - INFO -    ⚠️ 'n' NO en diccionario, manteniendo...
+2026-03-31 10:25:21,207 - INFO -    Carácter 4: 'M'
+2026-03-31 10:25:21,208 - INFO -    ⚠️ 'M' NO en diccionario, manteniendo...
+2026-03-31 10:25:21,208 - INFO -    Carácter 5: 'y'
+2026-03-31 10:25:21,209 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:25:21,209 - INFO -    Carácter 6: 'Y'
+2026-03-31 10:25:21,210 - INFO -    ✅ 'Y' ENCONTRADO en templates
+2026-03-31 10:25:21,210 - INFO - ✅ Captcha después verificación: 'bTnMyY'
+2026-03-31 10:25:21,210 - INFO - 📝 Captcha final a escribir: bTnMyY
+2026-03-31 10:25:21,264 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:25:25,136 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:25:25,636 - INFO - ⌨️ Escribiendo: bTnMyY
+2026-03-31 10:25:27,082 - INFO - ✅ Captcha escrito
+2026-03-31 10:25:28,121 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:25:28,220 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:25:29,221 - INFO -    (1/4s) Verificando...
+2026-03-31 10:25:29,221 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:25:29,243 - INFO - ✅ Modal detectado
+2026-03-31 10:25:30,270 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:25:30,270 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:25:30,271 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:25:30,271 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:25:32,272 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:25:32,291 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:25:32,291 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:25:32,291 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:25:32,302 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:25:32,313 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:25:32,327 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:25:32,339 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:25:32,360 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:25:32,757 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:25:34,808 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:25:34,808 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:25:34,809 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:25:34,809 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:25:36,442 - INFO - 📝 Tesseract extrajo: 'SggZ8'
+2026-03-31 10:25:36,442 - INFO - 📝 Después limpieza básica: 'SggZ8'
+2026-03-31 10:25:36,443 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:25:36,443 - INFO -    Carácter 1: 'S'
+2026-03-31 10:25:36,443 - INFO -    ✅ 'S' ENCONTRADO en templates
+2026-03-31 10:25:36,444 - INFO -    Carácter 2: 'g'
+2026-03-31 10:25:36,444 - INFO -    ✅ 'g' ENCONTRADO en templates
+2026-03-31 10:25:36,444 - INFO -    Carácter 3: 'g'
+2026-03-31 10:25:36,445 - INFO -    ✅ 'g' ENCONTRADO en templates
+2026-03-31 10:25:36,445 - INFO -    Carácter 4: 'Z'
+2026-03-31 10:25:36,445 - INFO -    ✅ 'Z' ENCONTRADO en templates
+2026-03-31 10:25:36,446 - INFO -    Carácter 5: '8'
+2026-03-31 10:25:36,446 - INFO -    ✅ '8' ENCONTRADO en templates
+2026-03-31 10:25:36,447 - INFO - ✅ Captcha después verificación: 'SggZ8'
+2026-03-31 10:25:36,447 - INFO - 📝 Captcha final a escribir: SggZ8
+2026-03-31 10:25:36,510 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:25:40,365 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:25:40,866 - INFO - ⌨️ Escribiendo: SggZ8
+2026-03-31 10:25:42,078 - INFO - ✅ Captcha escrito
+2026-03-31 10:25:43,115 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:25:43,210 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:25:44,212 - INFO -    (1/4s) Verificando...
+2026-03-31 10:25:44,212 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:25:44,240 - INFO - ✅ Modal detectado
+2026-03-31 10:25:45,264 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:25:45,265 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:25:45,265 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:25:45,265 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:25:47,266 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:25:47,290 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:25:47,290 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:25:47,291 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:25:47,306 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:25:47,316 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:25:47,331 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:25:47,345 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:25:47,369 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:25:47,763 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:25:49,806 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:25:49,807 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:25:49,853 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para AOJ96G.
+2026-03-31 10:25:49,854 - INFO - 🔍 Verificando si placa AOJ96G ya está en 'Sin Asociados'...
+2026-03-31 10:25:50,439 - INFO - ✅ Placa AOJ96G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:25:51,294 - INFO - ✅ Hoja Resultados actualizada (Fila 24): Estado=Sin personas asociadas, Cédula=Asoc:1152709973 / Prop:1152709973
+2026-03-31 10:25:51,297 - INFO - ✅ Avance ciclo Verificación: 2/83 procesados.
+2026-03-31 10:25:54,297 - INFO - 
+============================================================
+2026-03-31 10:25:54,298 - INFO - 🔍 VERIFICANDO PLACA: BKZ94F
+2026-03-31 10:25:54,298 - INFO -    CedAsoc: 1122653313, CedProp: 1122653313
+2026-03-31 10:25:54,299 - INFO - ============================================================
+2026-03-31 10:25:54,299 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1122653313)...
+2026-03-31 10:25:54,299 - INFO - 
+======================================================================
+2026-03-31 10:25:54,300 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:25:54,300 - INFO - Cédula: 1122653313, Placa: BKZ94F
+2026-03-31 10:25:54,301 - INFO - ======================================================================
+2026-03-31 10:25:58,312 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:26:01,271 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:26:02,305 - INFO - 📝 Llenando placa...
+2026-03-31 10:26:06,792 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:26:08,143 - INFO - ✅ Placa escrita: BKZ94F
+2026-03-31 10:26:08,683 - INFO - 📝 Llenando cédula...
+2026-03-31 10:26:13,006 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:26:14,935 - INFO - ✅ Cédula escrita: 1122653313
+2026-03-31 10:26:15,936 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:26:17,949 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:26:17,950 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:26:19,697 - INFO - 📝 Tesseract extrajo: 'Guihp'
+2026-03-31 10:26:19,698 - INFO - 📝 Después limpieza básica: 'Guihp'
+2026-03-31 10:26:19,698 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:26:19,699 - INFO -    Carácter 1: 'G'
+2026-03-31 10:26:19,699 - INFO -    ✅ 'G' ENCONTRADO en templates
+2026-03-31 10:26:19,700 - INFO -    Carácter 2: 'u'
+2026-03-31 10:26:19,700 - INFO -    ⚠️ 'u' NO en diccionario, manteniendo...
+2026-03-31 10:26:19,701 - INFO -    Carácter 3: 'i'
+2026-03-31 10:26:19,701 - INFO -    ✅ 'i' ENCONTRADO en templates
+2026-03-31 10:26:19,702 - INFO -    Carácter 4: 'h'
+2026-03-31 10:26:19,702 - INFO -    ⚠️ 'h' NO en diccionario, manteniendo...
+2026-03-31 10:26:19,702 - INFO -    Carácter 5: 'p'
+2026-03-31 10:26:19,703 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:26:19,703 - INFO - ✅ Captcha después verificación: 'Guihp'
+2026-03-31 10:26:19,703 - INFO - 📝 Captcha final a escribir: Guihp
+2026-03-31 10:26:19,756 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:26:23,816 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:26:24,317 - INFO - ⌨️ Escribiendo: Guihp
+2026-03-31 10:26:25,514 - INFO - ✅ Captcha escrito
+2026-03-31 10:26:26,547 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:26:26,649 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:26:27,650 - INFO -    (1/4s) Verificando...
+2026-03-31 10:26:27,650 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:26:27,674 - INFO - ✅ Modal detectado
+2026-03-31 10:26:28,706 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:26:28,706 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:26:28,707 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:26:28,707 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:26:30,708 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:26:30,735 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:26:30,735 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:26:30,736 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:26:30,750 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:26:30,762 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:26:30,775 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:26:30,788 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:26:30,812 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:26:31,192 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:26:33,238 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:26:33,238 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:26:33,292 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para BKZ94F.
+2026-03-31 10:26:33,293 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1122653313)...
+2026-03-31 10:26:36,304 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:26:39,236 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:26:39,236 - INFO - 
+======================================================================
+2026-03-31 10:26:39,237 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:26:39,237 - INFO - Cédula: 1122653313, Placa: BKZ94F
+2026-03-31 10:26:39,237 - INFO - ======================================================================
+2026-03-31 10:26:43,246 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:26:46,104 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:26:47,132 - INFO - 📝 Llenando placa...
+2026-03-31 10:26:51,405 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:26:52,724 - INFO - ✅ Placa escrita: BKZ94F
+2026-03-31 10:26:53,254 - INFO - 📝 Llenando cédula...
+2026-03-31 10:26:57,540 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:26:59,417 - INFO - ✅ Cédula escrita: 1122653313
+2026-03-31 10:27:00,418 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:27:02,426 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:27:02,427 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:27:04,073 - INFO - 📝 Tesseract extrajo: 'X2ieF'
+2026-03-31 10:27:04,074 - INFO - 📝 Después limpieza básica: 'X2ieF'
+2026-03-31 10:27:04,074 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:27:04,075 - INFO -    Carácter 1: 'X'
+2026-03-31 10:27:04,075 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:27:04,076 - INFO -    Carácter 2: '2'
+2026-03-31 10:27:04,076 - INFO -    ✅ '2' ENCONTRADO en templates
+2026-03-31 10:27:04,076 - INFO -    Carácter 3: 'i'
+2026-03-31 10:27:04,077 - INFO -    ✅ 'i' ENCONTRADO en templates
+2026-03-31 10:27:04,077 - INFO -    Carácter 4: 'e'
+2026-03-31 10:27:04,077 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:27:04,077 - INFO -    Carácter 5: 'F'
+2026-03-31 10:27:04,078 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:27:04,078 - INFO - ✅ Captcha después verificación: 'X2ieF'
+2026-03-31 10:27:04,078 - INFO - 📝 Captcha final a escribir: X2ieF
+2026-03-31 10:27:04,128 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:27:07,970 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:27:08,471 - INFO - ⌨️ Escribiendo: X2ieF
+2026-03-31 10:27:09,658 - INFO - ✅ Captcha escrito
+2026-03-31 10:27:10,688 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:27:10,768 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:27:11,769 - INFO -    (1/4s) Verificando...
+2026-03-31 10:27:11,769 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:27:11,793 - INFO - ✅ Modal detectado
+2026-03-31 10:27:12,816 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:27:12,816 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:27:12,817 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:27:12,817 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:27:14,817 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:27:14,839 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:27:14,839 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:27:14,839 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:27:14,854 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:27:14,868 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:27:14,881 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:27:14,893 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:27:14,916 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:27:15,296 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:27:17,341 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:27:17,342 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:27:17,342 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:27:17,342 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:27:18,937 - INFO - 📝 Tesseract extrajo: 'UEEjw'
+2026-03-31 10:27:18,937 - INFO - 📝 Después limpieza básica: 'UEEjw'
+2026-03-31 10:27:18,937 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:27:18,938 - INFO -    Carácter 1: 'U'
+2026-03-31 10:27:18,938 - INFO -    ⚠️ 'U' NO en diccionario, manteniendo...
+2026-03-31 10:27:18,938 - INFO -    Carácter 2: 'E'
+2026-03-31 10:27:18,939 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:27:18,939 - INFO -    Carácter 3: 'E'
+2026-03-31 10:27:18,939 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:27:18,939 - INFO -    Carácter 4: 'j'
+2026-03-31 10:27:18,940 - INFO -    ✅ 'j' ENCONTRADO en templates
+2026-03-31 10:27:18,940 - INFO -    Carácter 5: 'w'
+2026-03-31 10:27:18,940 - INFO -    ⚠️ 'w' NO en diccionario, manteniendo...
+2026-03-31 10:27:18,940 - INFO - ✅ Captcha después verificación: 'UEEjw'
+2026-03-31 10:27:18,941 - INFO - 📝 Captcha final a escribir: UEEjw
+2026-03-31 10:27:18,982 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:27:22,755 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:27:23,256 - INFO - ⌨️ Escribiendo: UEEjw
+2026-03-31 10:27:24,450 - INFO - ✅ Captcha escrito
+2026-03-31 10:27:25,481 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:27:25,565 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:27:26,566 - INFO -    (1/4s) Verificando...
+2026-03-31 10:27:26,567 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:27:26,592 - INFO - ✅ Modal detectado
+2026-03-31 10:27:27,616 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:27:27,616 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:27:27,616 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:27:27,617 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:27:29,617 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:27:29,638 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:27:29,638 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:27:29,638 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:27:29,653 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:27:29,664 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:27:29,676 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:27:29,688 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:27:29,709 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:27:30,086 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:27:32,131 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:27:32,131 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:27:32,174 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para BKZ94F.
+2026-03-31 10:27:32,175 - INFO - 🔍 Verificando si placa BKZ94F ya está en 'Sin Asociados'...
+2026-03-31 10:27:32,642 - INFO - ✅ Placa BKZ94F registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:27:33,400 - INFO - ✅ Hoja Resultados actualizada (Fila 52): Estado=Sin personas asociadas, Cédula=Asoc:1122653313 / Prop:1122653313
+2026-03-31 10:27:33,402 - INFO - ✅ Avance ciclo Verificación: 3/83 procesados.
+2026-03-31 10:27:36,403 - INFO - 
+============================================================
+2026-03-31 10:27:36,403 - INFO - 🔍 VERIFICANDO PLACA: CUX71G
+2026-03-31 10:27:36,403 - INFO -    CedAsoc: 1015404781, CedProp: 1015404781
+2026-03-31 10:27:36,404 - INFO - ============================================================
+2026-03-31 10:27:36,404 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1015404781)...
+2026-03-31 10:27:36,404 - INFO - 
+======================================================================
+2026-03-31 10:27:36,404 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:27:36,405 - INFO - Cédula: 1015404781, Placa: CUX71G
+2026-03-31 10:27:36,405 - INFO - ======================================================================
+2026-03-31 10:27:40,418 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:27:43,324 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:27:44,417 - INFO - 📝 Llenando placa...
+2026-03-31 10:27:49,021 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:27:50,385 - INFO - ✅ Placa escrita: CUX71G
+2026-03-31 10:27:50,923 - INFO - 📝 Llenando cédula...
+2026-03-31 10:27:55,247 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:27:57,144 - INFO - ✅ Cédula escrita: 1015404781
+2026-03-31 10:27:58,145 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:28:00,153 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:28:00,153 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:28:01,811 - INFO - 📝 Tesseract extrajo: 'puFtd'
+2026-03-31 10:28:01,811 - INFO - 📝 Después limpieza básica: 'puFtd'
+2026-03-31 10:28:01,812 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:28:01,812 - INFO -    Carácter 1: 'p'
+2026-03-31 10:28:01,812 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:28:01,813 - INFO -    Carácter 2: 'u'
+2026-03-31 10:28:01,813 - INFO -    ⚠️ 'u' NO en diccionario, manteniendo...
+2026-03-31 10:28:01,813 - INFO -    Carácter 3: 'F'
+2026-03-31 10:28:01,813 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:28:01,814 - INFO -    Carácter 4: 't'
+2026-03-31 10:28:01,814 - INFO -    ⚠️ 't' NO en diccionario, manteniendo...
+2026-03-31 10:28:01,814 - INFO -    Carácter 5: 'd'
+2026-03-31 10:28:01,815 - INFO -    ✅ 'd' ENCONTRADO en templates
+2026-03-31 10:28:01,815 - INFO - ✅ Captcha después verificación: 'puFtd'
+2026-03-31 10:28:01,815 - INFO - 📝 Captcha final a escribir: puFtd
+2026-03-31 10:28:01,864 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:28:05,790 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:28:06,290 - INFO - ⌨️ Escribiendo: puFtd
+2026-03-31 10:28:07,479 - INFO - ✅ Captcha escrito
+2026-03-31 10:28:08,513 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:28:08,608 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:28:09,608 - INFO -    (1/4s) Verificando...
+2026-03-31 10:28:09,609 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:28:09,631 - INFO - ✅ Modal detectado
+2026-03-31 10:28:10,658 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:28:10,658 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:28:10,659 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:28:10,659 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:28:12,660 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:28:12,684 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:28:12,684 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:28:12,685 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:28:12,700 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:28:12,711 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:28:12,723 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:28:12,736 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:28:12,761 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:28:13,139 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:28:15,178 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:28:15,179 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:28:15,226 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para CUX71G.
+2026-03-31 10:28:15,227 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1015404781)...
+2026-03-31 10:28:18,240 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:28:21,138 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:28:21,139 - INFO - 
+======================================================================
+2026-03-31 10:28:21,139 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:28:21,140 - INFO - Cédula: 1015404781, Placa: CUX71G
+2026-03-31 10:28:21,140 - INFO - ======================================================================
+2026-03-31 10:28:25,153 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:28:28,022 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:28:29,054 - INFO - 📝 Llenando placa...
+2026-03-31 10:28:33,428 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:28:34,764 - INFO - ✅ Placa escrita: CUX71G
+2026-03-31 10:28:35,297 - INFO - 📝 Llenando cédula...
+2026-03-31 10:28:39,663 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:28:41,621 - INFO - ✅ Cédula escrita: 1015404781
+2026-03-31 10:28:42,622 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:28:44,633 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:28:44,633 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:28:46,373 - INFO - 📝 Tesseract extrajo: 'Ru7Re'
+2026-03-31 10:28:46,374 - INFO - 📝 Después limpieza básica: 'Ru7Re'
+2026-03-31 10:28:46,374 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:28:46,375 - INFO -    Carácter 1: 'R'
+2026-03-31 10:28:46,375 - INFO -    ⚠️ 'R' NO en diccionario, manteniendo...
+2026-03-31 10:28:46,376 - INFO -    Carácter 2: 'u'
+2026-03-31 10:28:46,376 - INFO -    ⚠️ 'u' NO en diccionario, manteniendo...
+2026-03-31 10:28:46,376 - INFO -    Carácter 3: '7'
+2026-03-31 10:28:46,377 - INFO -    ⚠️ '7' NO en diccionario, manteniendo...
+2026-03-31 10:28:46,377 - INFO -    Carácter 4: 'R'
+2026-03-31 10:28:46,377 - INFO -    ⚠️ 'R' NO en diccionario, manteniendo...
+2026-03-31 10:28:46,378 - INFO -    Carácter 5: 'e'
+2026-03-31 10:28:46,378 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:28:46,378 - INFO - ✅ Captcha después verificación: 'Ru7Re'
+2026-03-31 10:28:46,378 - INFO - 📝 Captcha final a escribir: Ru7Re
+2026-03-31 10:28:46,425 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:28:50,236 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:28:50,737 - INFO - ⌨️ Escribiendo: Ru7Re
+2026-03-31 10:28:51,935 - INFO - ✅ Captcha escrito
+2026-03-31 10:28:52,966 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:28:53,052 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:28:54,052 - INFO -    (1/4s) Verificando...
+2026-03-31 10:28:54,053 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:28:54,074 - INFO - ✅ Modal detectado
+2026-03-31 10:28:55,098 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:28:55,099 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:28:55,099 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:28:55,099 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:28:57,100 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:28:57,122 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:28:57,122 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:28:57,122 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:28:57,137 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:28:57,149 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:28:57,162 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:28:57,174 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:28:57,199 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:28:57,585 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:28:59,629 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:28:59,630 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:28:59,682 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para CUX71G.
+2026-03-31 10:28:59,683 - INFO - 🔍 Verificando si placa CUX71G ya está en 'Sin Asociados'...
+2026-03-31 10:29:00,178 - INFO - ✅ Placa CUX71G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:29:01,011 - INFO - ✅ Hoja Resultados actualizada (Fila 106): Estado=Sin personas asociadas, Cédula=Asoc:1015404781 / Prop:1015404781
+2026-03-31 10:29:01,013 - INFO - ✅ Avance ciclo Verificación: 4/83 procesados.
+2026-03-31 10:29:04,014 - INFO - 
+============================================================
+2026-03-31 10:29:04,015 - INFO - 🔍 VERIFICANDO PLACA: DBX57G
+2026-03-31 10:29:04,015 - INFO -    CedAsoc: 1035231530, CedProp: 1035231530
+2026-03-31 10:29:04,015 - INFO - ============================================================
+2026-03-31 10:29:04,016 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1035231530)...
+2026-03-31 10:29:04,016 - INFO - 
+======================================================================
+2026-03-31 10:29:04,016 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:29:04,017 - INFO - Cédula: 1035231530, Placa: DBX57G
+2026-03-31 10:29:04,017 - INFO - ======================================================================
+2026-03-31 10:29:08,026 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:29:10,944 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:29:11,975 - INFO - 📝 Llenando placa...
+2026-03-31 10:29:16,350 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:29:17,715 - INFO - ✅ Placa escrita: DBX57G
+2026-03-31 10:29:18,253 - INFO - 📝 Llenando cédula...
+2026-03-31 10:29:22,565 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:29:24,446 - INFO - ✅ Cédula escrita: 1035231530
+2026-03-31 10:29:25,447 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:29:27,457 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:29:27,457 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:29:29,108 - INFO - 📝 Tesseract extrajo: 'FbPg7'
+2026-03-31 10:29:29,109 - INFO - 📝 Después limpieza básica: 'FbPg7'
+2026-03-31 10:29:29,109 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:29:29,109 - INFO -    Carácter 1: 'F'
+2026-03-31 10:29:29,110 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:29:29,110 - INFO -    Carácter 2: 'b'
+2026-03-31 10:29:29,111 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:29:29,111 - INFO -    Carácter 3: 'P'
+2026-03-31 10:29:29,112 - INFO -    ⚠️ 'P' NO en diccionario, manteniendo...
+2026-03-31 10:29:29,112 - INFO -    Carácter 4: 'g'
+2026-03-31 10:29:29,112 - INFO -    ✅ 'g' ENCONTRADO en templates
+2026-03-31 10:29:29,113 - INFO -    Carácter 5: '7'
+2026-03-31 10:29:29,113 - INFO -    ⚠️ '7' NO en diccionario, manteniendo...
+2026-03-31 10:29:29,114 - INFO - ✅ Captcha después verificación: 'FbPg7'
+2026-03-31 10:29:29,114 - INFO - 📝 Captcha final a escribir: FbPg7
+2026-03-31 10:29:29,162 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:29:33,060 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:29:33,561 - INFO - ⌨️ Escribiendo: FbPg7
+2026-03-31 10:29:34,759 - INFO - ✅ Captcha escrito
+2026-03-31 10:29:35,801 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:29:35,891 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:29:36,893 - INFO -    (1/4s) Verificando...
+2026-03-31 10:29:36,893 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:29:36,916 - INFO - ✅ Modal detectado
+2026-03-31 10:29:37,944 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:29:37,945 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:29:37,945 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:29:37,946 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:29:39,946 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:29:39,967 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:29:39,967 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:29:39,967 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:29:39,981 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:29:39,994 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:29:40,008 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:29:40,025 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:29:40,048 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:29:40,434 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:29:42,480 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:29:42,481 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:29:42,542 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para DBX57G.
+2026-03-31 10:29:42,542 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1035231530)...
+2026-03-31 10:29:45,554 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:29:48,490 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:29:48,490 - INFO - 
+======================================================================
+2026-03-31 10:29:48,490 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:29:48,491 - INFO - Cédula: 1035231530, Placa: DBX57G
+2026-03-31 10:29:48,491 - INFO - ======================================================================
+2026-03-31 10:29:52,501 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:29:55,459 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:29:56,496 - INFO - 📝 Llenando placa...
+2026-03-31 10:30:01,153 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:30:02,563 - INFO - ✅ Placa escrita: DBX57G
+2026-03-31 10:30:03,161 - INFO - 📝 Llenando cédula...
+2026-03-31 10:30:07,892 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:30:09,863 - INFO - ✅ Cédula escrita: 1035231530
+2026-03-31 10:30:10,864 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:30:12,875 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:30:12,876 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:30:14,585 - INFO - 📝 Tesseract extrajo: 'fZayd'
+2026-03-31 10:30:14,586 - INFO - 📝 Después limpieza básica: 'fZayd'
+2026-03-31 10:30:14,586 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:30:14,587 - INFO -    Carácter 1: 'f'
+2026-03-31 10:30:14,587 - INFO -    ⚠️ 'f' NO en diccionario, manteniendo...
+2026-03-31 10:30:14,588 - INFO -    Carácter 2: 'Z'
+2026-03-31 10:30:14,588 - INFO -    ✅ 'Z' ENCONTRADO en templates
+2026-03-31 10:30:14,588 - INFO -    Carácter 3: 'a'
+2026-03-31 10:30:14,589 - INFO -    ✅ 'a' ENCONTRADO en templates
+2026-03-31 10:30:14,589 - INFO -    Carácter 4: 'y'
+2026-03-31 10:30:14,589 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:30:14,590 - INFO -    Carácter 5: 'd'
+2026-03-31 10:30:14,590 - INFO -    ✅ 'd' ENCONTRADO en templates
+2026-03-31 10:30:14,591 - INFO - ✅ Captcha después verificación: 'fZayd'
+2026-03-31 10:30:14,592 - INFO - 📝 Captcha final a escribir: fZayd
+2026-03-31 10:30:14,644 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:30:18,487 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:30:18,988 - INFO - ⌨️ Escribiendo: fZayd
+2026-03-31 10:30:20,172 - INFO - ✅ Captcha escrito
+2026-03-31 10:30:21,210 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:30:21,305 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:30:22,306 - INFO -    (1/4s) Verificando...
+2026-03-31 10:30:22,306 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:30:22,331 - INFO - ✅ Modal detectado
+2026-03-31 10:30:23,365 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:30:23,365 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:30:23,366 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:30:23,366 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:30:25,367 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:30:25,389 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:30:25,389 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:30:25,390 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:30:25,475 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:30:25,500 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:30:25,514 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:30:25,529 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:30:25,552 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:30:25,926 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:30:27,972 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:30:27,972 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:30:28,020 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para DBX57G.
+2026-03-31 10:30:28,020 - INFO - 🔍 Verificando si placa DBX57G ya está en 'Sin Asociados'...
+2026-03-31 10:30:28,683 - INFO - ✅ Placa DBX57G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:30:29,479 - INFO - ✅ Hoja Resultados actualizada (Fila 119): Estado=Sin personas asociadas, Cédula=Asoc:1035231530 / Prop:1035231530
+2026-03-31 10:30:29,481 - INFO - ✅ Avance ciclo Verificación: 5/83 procesados.
+2026-03-31 10:30:32,481 - INFO - 
+============================================================
+2026-03-31 10:30:32,482 - INFO - 🔍 VERIFICANDO PLACA: DRW68G
+2026-03-31 10:30:32,482 - INFO -    CedAsoc: 1234644887, CedProp: 1234644887
+2026-03-31 10:30:32,482 - INFO - ============================================================
+2026-03-31 10:30:32,482 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1234644887)...
+2026-03-31 10:30:32,483 - INFO - 
+======================================================================
+2026-03-31 10:30:32,483 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:30:32,483 - INFO - Cédula: 1234644887, Placa: DRW68G
+2026-03-31 10:30:32,483 - INFO - ======================================================================
+2026-03-31 10:30:36,493 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:30:39,446 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:30:40,475 - INFO - 📝 Llenando placa...
+2026-03-31 10:30:43,440 - ERROR - ⚠️ Error al limpiar el campo 'PLACA': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x650c53]
+	chromedriver!(No symbol) [0x6e431b]
+	chromedriver!(No symbol) [0x6fa309]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:30:43,944 - ERROR - ❌ Error al llenar placa: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x650c53]
+	chromedriver!(No symbol) [0x6e431b]
+	chromedriver!(No symbol) [0x6fa309]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:30:43,945 - INFO - 
+======================================================================
+2026-03-31 10:30:43,946 - INFO - 🔍 Procesando consulta [2/3]
+2026-03-31 10:30:43,946 - INFO - Cédula: 1234644887, Placa: DRW68G
+2026-03-31 10:30:43,947 - INFO - ======================================================================
+2026-03-31 10:30:43,947 - INFO - 🔄 REINTENTANDO CON LOS MISMOS DATOS (Intento 2/3)
+2026-03-31 10:30:43,951 - ERROR - ❌ Error en reintento 2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x650c53]
+	chromedriver!(No symbol) [0x6e431b]
+	chromedriver!(No symbol) [0x6fa309]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:30:43,951 - INFO - 
+======================================================================
+2026-03-31 10:30:43,951 - INFO - 🔍 Procesando consulta [3/3]
+2026-03-31 10:30:43,952 - INFO - Cédula: 1234644887, Placa: DRW68G
+2026-03-31 10:30:43,952 - INFO - ======================================================================
+2026-03-31 10:30:43,953 - INFO - 🔄 REINTENTANDO CON LOS MISMOS DATOS (Intento 3/3)
+2026-03-31 10:30:43,955 - ERROR - ❌ Error en reintento 3: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x650c53]
+	chromedriver!(No symbol) [0x6e431b]
+	chromedriver!(No symbol) [0x6fa309]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:30:43,956 - ERROR - ❌ No se completó la consulta para DRW68G tras 3 intentos
+2026-03-31 10:30:44,003 - WARNING - ⚠️ Error crítico consultando Cédula ASOCIADO para DRW68G.
+2026-03-31 10:30:44,005 - INFO - ✅ Avance ciclo Verificación: 6/83 procesados.
+2026-03-31 10:37:54,741 - INFO - ✅ Diccionario cargado: 28 variaciones para 28 caracteres
+2026-03-31 10:37:54,742 - INFO -    Caracteres disponibles: ['2', '4', '5', '6', '8', 'A', 'B', 'D', 'G', 'J', 'K', 'Q', 'S', 'Y', 'Z', 'a', 'b', 'd', 'g', 'i', 'j', 'k', 'o', 'q', 'r', 's', 'y', 'z']
+2026-03-31 10:37:54,742 - INFO - ✅ Funciones core de Runt.py importadas correctamente
+2026-03-31 10:37:54,743 - INFO - 
+================================================================================
+2026-03-31 10:37:54,743 - INFO - 🚀 INICIANDO BOT VERIFICADOR DE FALLOS RUNT
+2026-03-31 10:37:54,743 - INFO - ================================================================================
+2026-03-31 10:37:54,806 - INFO - ✅ Conexión a Google Sheets establecida para Verificación
+2026-03-31 10:37:57,680 - INFO - 📊 Se encontraron 78 registros marcados como 'Falló' para verificar.
+2026-03-31 10:37:58,075 - INFO - ✅ Hoja 'Sin Asociados' detectada.
+2026-03-31 10:37:58,079 - INFO - ====== WebDriver manager ======
+2026-03-31 10:37:59,378 - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-31 10:38:00,210 - INFO - Get LATEST chromedriver version for google-chrome
+2026-03-31 10:38:01,025 - INFO - Driver [C:\Users\cmarroquin\.wdm\drivers\chromedriver\win64\146.0.7680.165\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-31 10:38:02,015 - INFO - 
+============================================================
+2026-03-31 10:38:02,016 - INFO - 🔍 VERIFICANDO PLACA: DRW68G
+2026-03-31 10:38:02,016 - INFO -    CedAsoc: 1234644887, CedProp: 1234644887
+2026-03-31 10:38:02,016 - INFO - ============================================================
+2026-03-31 10:38:02,017 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1234644887)...
+2026-03-31 10:38:02,017 - INFO - 
+======================================================================
+2026-03-31 10:38:02,018 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:38:02,019 - INFO - Cédula: 1234644887, Placa: DRW68G
+2026-03-31 10:38:02,020 - INFO - ======================================================================
+2026-03-31 10:38:07,269 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:38:11,155 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:38:12,218 - INFO - 📝 Llenando placa...
+2026-03-31 10:38:16,693 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:38:18,055 - INFO - ✅ Placa escrita: DRW68G
+2026-03-31 10:38:18,594 - INFO - 📝 Llenando cédula...
+2026-03-31 10:38:23,039 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:38:24,942 - INFO - ✅ Cédula escrita: 1234644887
+2026-03-31 10:38:25,943 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:38:27,952 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:38:27,953 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:38:29,662 - INFO - 📝 Tesseract extrajo: 'ECHHs'
+2026-03-31 10:38:29,663 - INFO - 📝 Después limpieza básica: 'ECHHs'
+2026-03-31 10:38:29,663 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:38:29,663 - INFO -    Carácter 1: 'E'
+2026-03-31 10:38:29,663 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:38:29,664 - INFO -    Carácter 2: 'C'
+2026-03-31 10:38:29,664 - INFO -    ⚠️ 'C' NO en diccionario, manteniendo...
+2026-03-31 10:38:29,665 - INFO -    Carácter 3: 'H'
+2026-03-31 10:38:29,665 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:38:29,665 - INFO -    Carácter 4: 'H'
+2026-03-31 10:38:29,666 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:38:29,666 - INFO -    Carácter 5: 's'
+2026-03-31 10:38:29,666 - INFO -    ✅ 's' ENCONTRADO en templates
+2026-03-31 10:38:29,667 - INFO - ✅ Captcha después verificación: 'ECHHs'
+2026-03-31 10:38:29,667 - INFO - 📝 Captcha final a escribir: ECHHs
+2026-03-31 10:38:29,719 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:38:33,566 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:38:34,067 - INFO - ⌨️ Escribiendo: ECHHs
+2026-03-31 10:38:35,275 - INFO - ✅ Captcha escrito
+2026-03-31 10:38:36,314 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:38:36,419 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:38:37,420 - INFO -    (1/4s) Verificando...
+2026-03-31 10:38:37,421 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:38:37,453 - INFO - ✅ Modal detectado
+2026-03-31 10:38:38,489 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:38:38,490 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:38:38,490 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:38:38,491 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:38:40,491 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:38:40,516 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:38:40,517 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:38:40,517 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:38:40,538 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:38:40,554 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:38:40,571 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:38:40,588 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:38:40,616 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:38:41,006 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:38:43,061 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:38:43,061 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:38:43,111 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para DRW68G.
+2026-03-31 10:38:43,111 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1234644887)...
+2026-03-31 10:38:46,123 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:38:49,021 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:38:49,022 - INFO - 
+======================================================================
+2026-03-31 10:38:49,022 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:38:49,022 - INFO - Cédula: 1234644887, Placa: DRW68G
+2026-03-31 10:38:49,023 - INFO - ======================================================================
+2026-03-31 10:38:53,036 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:38:55,930 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:38:56,965 - INFO - 📝 Llenando placa...
+2026-03-31 10:39:01,454 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:39:02,778 - INFO - ✅ Placa escrita: DRW68G
+2026-03-31 10:39:03,314 - INFO - 📝 Llenando cédula...
+2026-03-31 10:39:07,575 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:39:09,458 - INFO - ✅ Cédula escrita: 1234644887
+2026-03-31 10:39:10,459 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:39:12,465 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:39:12,466 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:39:14,056 - INFO - 📝 Tesseract extrajo: 'eWpvr'
+2026-03-31 10:39:14,057 - INFO - 📝 Después limpieza básica: 'eWpvr'
+2026-03-31 10:39:14,058 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:39:14,058 - INFO -    Carácter 1: 'e'
+2026-03-31 10:39:14,059 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:39:14,059 - INFO -    Carácter 2: 'W'
+2026-03-31 10:39:14,060 - INFO -    ⚠️ 'W' NO en diccionario, manteniendo...
+2026-03-31 10:39:14,060 - INFO -    Carácter 3: 'p'
+2026-03-31 10:39:14,060 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:39:14,061 - INFO -    Carácter 4: 'v'
+2026-03-31 10:39:14,061 - INFO -    ⚠️ 'v' NO en diccionario, manteniendo...
+2026-03-31 10:39:14,061 - INFO -    Carácter 5: 'r'
+2026-03-31 10:39:14,061 - INFO -    ✅ 'r' ENCONTRADO en templates
+2026-03-31 10:39:14,062 - INFO - ✅ Captcha después verificación: 'eWpvr'
+2026-03-31 10:39:14,062 - INFO - 📝 Captcha final a escribir: eWpvr
+2026-03-31 10:39:14,107 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:39:17,846 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:39:18,346 - INFO - ⌨️ Escribiendo: eWpvr
+2026-03-31 10:39:19,534 - INFO - ✅ Captcha escrito
+2026-03-31 10:39:20,565 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:39:20,660 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:39:21,660 - INFO -    (1/4s) Verificando...
+2026-03-31 10:39:21,661 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:39:21,682 - INFO - ✅ Modal detectado
+2026-03-31 10:39:22,704 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:39:22,705 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:39:22,705 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:39:22,705 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:39:24,706 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:39:24,725 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:39:24,725 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:39:24,726 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:39:24,736 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:39:24,745 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:39:24,756 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:39:24,769 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:39:24,789 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:39:25,169 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:39:27,205 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:39:27,206 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:39:27,206 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:39:27,206 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:39:28,841 - INFO - 📝 Tesseract extrajo: 'WvCQy'
+2026-03-31 10:39:28,842 - INFO - 📝 Después limpieza básica: 'WvCQy'
+2026-03-31 10:39:28,842 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:39:28,843 - INFO -    Carácter 1: 'W'
+2026-03-31 10:39:28,843 - INFO -    ⚠️ 'W' NO en diccionario, manteniendo...
+2026-03-31 10:39:28,844 - INFO -    Carácter 2: 'v'
+2026-03-31 10:39:28,844 - INFO -    ⚠️ 'v' NO en diccionario, manteniendo...
+2026-03-31 10:39:28,844 - INFO -    Carácter 3: 'C'
+2026-03-31 10:39:28,844 - INFO -    ⚠️ 'C' NO en diccionario, manteniendo...
+2026-03-31 10:39:28,845 - INFO -    Carácter 4: 'Q'
+2026-03-31 10:39:28,845 - INFO -    ✅ 'Q' ENCONTRADO en templates
+2026-03-31 10:39:28,846 - INFO -    Carácter 5: 'y'
+2026-03-31 10:39:28,846 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:39:28,846 - INFO - ✅ Captcha después verificación: 'WvCQy'
+2026-03-31 10:39:28,846 - INFO - 📝 Captcha final a escribir: WvCQy
+2026-03-31 10:39:28,890 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:39:32,701 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:39:33,202 - INFO - ⌨️ Escribiendo: WvCQy
+2026-03-31 10:39:34,411 - INFO - ✅ Captcha escrito
+2026-03-31 10:39:35,447 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:39:35,544 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:39:36,545 - INFO -    (1/4s) Verificando...
+2026-03-31 10:39:36,546 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:39:36,572 - INFO - ✅ Modal detectado
+2026-03-31 10:39:37,594 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:39:37,595 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:39:37,595 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:39:37,596 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:39:39,597 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:39:39,619 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:39:39,619 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:39:39,620 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:39:39,633 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:39:39,644 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:39:39,656 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:39:39,667 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:39:39,690 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:39:40,073 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:39:42,119 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:39:42,119 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:39:42,167 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para DRW68G.
+2026-03-31 10:39:42,167 - INFO - 🔍 Verificando si placa DRW68G ya está en 'Sin Asociados'...
+2026-03-31 10:39:42,743 - INFO - ✅ Placa DRW68G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:39:44,447 - INFO - ✅ Hoja Resultados actualizada (Fila 145): Estado=Sin personas asociadas, Cédula=Asoc:1234644887 / Prop:1234644887
+2026-03-31 10:39:44,449 - INFO - ✅ Avance: 1/78 | Sesión: 1/5
+2026-03-31 10:39:46,450 - INFO - 
+============================================================
+2026-03-31 10:39:46,450 - INFO - 🔍 VERIFICANDO PLACA: DVC94G
+2026-03-31 10:39:46,451 - INFO -    CedAsoc: 15438085, CedProp: 15438085
+2026-03-31 10:39:46,451 - INFO - ============================================================
+2026-03-31 10:39:46,451 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (15438085)...
+2026-03-31 10:39:46,452 - INFO - 
+======================================================================
+2026-03-31 10:39:46,452 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:39:46,452 - INFO - Cédula: 15438085, Placa: DVC94G
+2026-03-31 10:39:46,453 - INFO - ======================================================================
+2026-03-31 10:39:50,463 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:39:53,412 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:39:54,446 - INFO - 📝 Llenando placa...
+2026-03-31 10:39:58,799 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:40:00,137 - INFO - ✅ Placa escrita: DVC94G
+2026-03-31 10:40:00,677 - INFO - 📝 Llenando cédula...
+2026-03-31 10:40:05,031 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:40:06,645 - INFO - ✅ Cédula escrita: 15438085
+2026-03-31 10:40:07,646 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:40:09,656 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:40:09,657 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:40:11,321 - INFO - 📝 Tesseract extrajo: 'bstCm'
+2026-03-31 10:40:11,322 - INFO - 📝 Después limpieza básica: 'bstCm'
+2026-03-31 10:40:11,323 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:40:11,324 - INFO -    Carácter 1: 'b'
+2026-03-31 10:40:11,324 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:40:11,325 - INFO -    Carácter 2: 's'
+2026-03-31 10:40:11,325 - INFO -    ✅ 's' ENCONTRADO en templates
+2026-03-31 10:40:11,326 - INFO -    Carácter 3: 't'
+2026-03-31 10:40:11,326 - INFO -    ⚠️ 't' NO en diccionario, manteniendo...
+2026-03-31 10:40:11,327 - INFO -    Carácter 4: 'C'
+2026-03-31 10:40:11,327 - INFO -    ⚠️ 'C' NO en diccionario, manteniendo...
+2026-03-31 10:40:11,328 - INFO -    Carácter 5: 'm'
+2026-03-31 10:40:11,328 - INFO -    ⚠️ 'm' NO en diccionario, manteniendo...
+2026-03-31 10:40:11,329 - INFO - ✅ Captcha después verificación: 'bstCm'
+2026-03-31 10:40:11,329 - INFO - 📝 Captcha final a escribir: bstCm
+2026-03-31 10:40:11,380 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:40:15,206 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:40:15,709 - INFO - ⌨️ Escribiendo: bstCm
+2026-03-31 10:40:16,922 - INFO - ✅ Captcha escrito
+2026-03-31 10:40:17,961 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:40:18,069 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:40:19,070 - INFO -    (1/4s) Verificando...
+2026-03-31 10:40:19,071 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:40:19,105 - INFO - ✅ Modal detectado
+2026-03-31 10:40:20,129 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:40:20,129 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:40:20,130 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:40:20,130 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:40:22,134 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:40:22,187 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:40:22,187 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:40:22,187 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:40:22,203 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:40:22,220 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:40:22,237 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:40:22,253 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:40:22,278 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:40:22,687 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:40:24,725 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:40:24,726 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:40:24,726 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:40:24,727 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:40:26,492 - INFO - 📝 Tesseract extrajo: 'EcFbA'
+2026-03-31 10:40:26,493 - INFO - 📝 Después limpieza básica: 'EcFbA'
+2026-03-31 10:40:26,494 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:40:26,499 - INFO -    Carácter 1: 'E'
+2026-03-31 10:40:26,501 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:40:26,503 - INFO -    Carácter 2: 'c'
+2026-03-31 10:40:26,504 - INFO -    ⚠️ 'c' NO en diccionario, manteniendo...
+2026-03-31 10:40:26,506 - INFO -    Carácter 3: 'F'
+2026-03-31 10:40:26,510 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:40:26,515 - INFO -    Carácter 4: 'b'
+2026-03-31 10:40:26,520 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:40:26,524 - INFO -    Carácter 5: 'A'
+2026-03-31 10:40:26,530 - INFO -    ✅ 'A' ENCONTRADO en templates
+2026-03-31 10:40:26,540 - INFO - ✅ Captcha después verificación: 'EcFbA'
+2026-03-31 10:40:26,543 - INFO - 📝 Captcha final a escribir: EcFbA
+2026-03-31 10:40:26,615 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:40:30,571 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:40:31,130 - INFO - ⌨️ Escribiendo: EcFbA
+2026-03-31 10:40:32,368 - INFO - ✅ Captcha escrito
+2026-03-31 10:40:33,406 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:40:33,516 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:40:34,517 - INFO -    (1/4s) Verificando...
+2026-03-31 10:40:34,518 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:40:34,543 - INFO - ✅ Modal detectado
+2026-03-31 10:40:35,570 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:40:35,571 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:40:35,571 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:40:35,572 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:40:37,572 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:40:37,597 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:40:37,597 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:40:37,597 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:40:37,611 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:40:37,624 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:40:37,638 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:40:37,652 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:40:37,677 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:40:38,070 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:40:40,110 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:40:40,110 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:40:40,157 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para DVC94G.
+2026-03-31 10:40:40,158 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (15438085)...
+2026-03-31 10:40:43,168 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:40:46,167 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:40:46,171 - INFO - 
+======================================================================
+2026-03-31 10:40:46,172 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:40:46,173 - INFO - Cédula: 15438085, Placa: DVC94G
+2026-03-31 10:40:46,173 - INFO - ======================================================================
+2026-03-31 10:40:50,184 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:40:53,070 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:40:54,107 - INFO - 📝 Llenando placa...
+2026-03-31 10:40:58,584 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:40:59,949 - INFO - ✅ Placa escrita: DVC94G
+2026-03-31 10:41:00,489 - INFO - 📝 Llenando cédula...
+2026-03-31 10:41:05,062 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:41:06,675 - INFO - ✅ Cédula escrita: 15438085
+2026-03-31 10:41:07,676 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:41:09,684 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:41:09,685 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:41:11,284 - INFO - 📝 Tesseract extrajo: 'obH4n'
+2026-03-31 10:41:11,285 - INFO - 📝 Después limpieza básica: 'obH4n'
+2026-03-31 10:41:11,285 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:41:11,285 - INFO -    Carácter 1: 'o'
+2026-03-31 10:41:11,286 - INFO -    ✅ 'o' ENCONTRADO en templates
+2026-03-31 10:41:11,286 - INFO -    Carácter 2: 'b'
+2026-03-31 10:41:11,287 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:41:11,287 - INFO -    Carácter 3: 'H'
+2026-03-31 10:41:11,287 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:41:11,288 - INFO -    Carácter 4: '4'
+2026-03-31 10:41:11,288 - INFO -    ✅ '4' ENCONTRADO en templates
+2026-03-31 10:41:11,289 - INFO -    Carácter 5: 'n'
+2026-03-31 10:41:11,289 - INFO -    ⚠️ 'n' NO en diccionario, manteniendo...
+2026-03-31 10:41:11,290 - INFO - ✅ Captcha después verificación: 'obH4n'
+2026-03-31 10:41:11,290 - INFO - 📝 Captcha final a escribir: obH4n
+2026-03-31 10:41:11,338 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:41:15,211 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:41:15,712 - INFO - ⌨️ Escribiendo: obH4n
+2026-03-31 10:41:16,943 - INFO - ✅ Captcha escrito
+2026-03-31 10:41:17,979 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:41:18,074 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:41:19,077 - INFO -    (1/4s) Verificando...
+2026-03-31 10:41:19,078 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:41:19,100 - INFO - ✅ Modal detectado
+2026-03-31 10:41:20,123 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:41:20,123 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:41:20,124 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:41:20,124 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:41:22,125 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:41:22,147 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:41:22,148 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:41:22,148 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:41:22,161 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:41:22,173 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:41:22,187 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:41:22,200 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:41:22,225 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:41:22,613 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:41:24,652 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:41:24,653 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:41:24,702 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para DVC94G.
+2026-03-31 10:41:24,703 - INFO - 🔍 Verificando si placa DVC94G ya está en 'Sin Asociados'...
+2026-03-31 10:41:25,430 - INFO - ✅ Placa DVC94G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:41:26,275 - INFO - ✅ Hoja Resultados actualizada (Fila 151): Estado=Sin personas asociadas, Cédula=Asoc:15438085 / Prop:15438085
+2026-03-31 10:41:26,278 - INFO - ✅ Avance: 2/78 | Sesión: 2/5
+2026-03-31 10:41:28,278 - INFO - 
+============================================================
+2026-03-31 10:41:28,279 - INFO - 🔍 VERIFICANDO PLACA: DYM14E
+2026-03-31 10:41:28,280 - INFO -    CedAsoc: 72333599, CedProp: 72333599
+2026-03-31 10:41:28,280 - INFO - ============================================================
+2026-03-31 10:41:28,281 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (72333599)...
+2026-03-31 10:41:28,281 - INFO - 
+======================================================================
+2026-03-31 10:41:28,281 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:41:28,282 - INFO - Cédula: 72333599, Placa: DYM14E
+2026-03-31 10:41:28,282 - INFO - ======================================================================
+2026-03-31 10:41:32,291 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:41:35,197 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:41:36,233 - INFO - 📝 Llenando placa...
+2026-03-31 10:41:40,591 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:41:41,916 - INFO - ✅ Placa escrita: DYM14E
+2026-03-31 10:41:42,449 - INFO - 📝 Llenando cédula...
+2026-03-31 10:41:46,718 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:41:48,332 - INFO - ✅ Cédula escrita: 72333599
+2026-03-31 10:41:49,333 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:41:51,340 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:41:51,341 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:41:52,984 - INFO - 📝 Tesseract extrajo: 'FSEWn'
+2026-03-31 10:41:52,984 - INFO - 📝 Después limpieza básica: 'FSEWn'
+2026-03-31 10:41:52,985 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:41:52,985 - INFO -    Carácter 1: 'F'
+2026-03-31 10:41:52,985 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:41:52,986 - INFO -    Carácter 2: 'S'
+2026-03-31 10:41:52,986 - INFO -    ✅ 'S' ENCONTRADO en templates
+2026-03-31 10:41:52,987 - INFO -    Carácter 3: 'E'
+2026-03-31 10:41:52,987 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:41:52,987 - INFO -    Carácter 4: 'W'
+2026-03-31 10:41:52,988 - INFO -    ⚠️ 'W' NO en diccionario, manteniendo...
+2026-03-31 10:41:52,988 - INFO -    Carácter 5: 'n'
+2026-03-31 10:41:52,988 - INFO -    ⚠️ 'n' NO en diccionario, manteniendo...
+2026-03-31 10:41:52,989 - INFO - ✅ Captcha después verificación: 'FSEWn'
+2026-03-31 10:41:52,989 - INFO - 📝 Captcha final a escribir: FSEWn
+2026-03-31 10:41:53,037 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:41:56,807 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:41:57,308 - INFO - ⌨️ Escribiendo: FSEWn
+2026-03-31 10:41:58,492 - INFO - ✅ Captcha escrito
+2026-03-31 10:41:59,529 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:41:59,620 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:42:00,621 - INFO -    (1/4s) Verificando...
+2026-03-31 10:42:00,622 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:42:00,648 - INFO - ✅ Modal detectado
+2026-03-31 10:42:01,670 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:42:01,671 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:42:01,671 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:42:01,671 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:42:03,672 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:42:03,697 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:42:03,698 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:42:03,698 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:42:03,712 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:42:03,724 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:42:03,737 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:42:03,750 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:42:03,775 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:42:04,157 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:42:06,193 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:42:06,194 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:42:06,195 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:42:06,196 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:42:07,808 - INFO - 📝 Tesseract extrajo: 'FDatB'
+2026-03-31 10:42:07,809 - INFO - 📝 Después limpieza básica: 'FDatB'
+2026-03-31 10:42:07,809 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:42:07,810 - INFO -    Carácter 1: 'F'
+2026-03-31 10:42:07,811 - INFO -    ⚠️ 'F' NO en diccionario, manteniendo...
+2026-03-31 10:42:07,812 - INFO -    Carácter 2: 'D'
+2026-03-31 10:42:07,812 - INFO -    ✅ 'D' ENCONTRADO en templates
+2026-03-31 10:42:07,813 - INFO -    Carácter 3: 'a'
+2026-03-31 10:42:07,813 - INFO -    ✅ 'a' ENCONTRADO en templates
+2026-03-31 10:42:07,814 - INFO -    Carácter 4: 't'
+2026-03-31 10:42:07,815 - INFO -    ⚠️ 't' NO en diccionario, manteniendo...
+2026-03-31 10:42:07,816 - INFO -    Carácter 5: 'B'
+2026-03-31 10:42:07,816 - INFO -    ✅ 'B' ENCONTRADO en templates
+2026-03-31 10:42:07,817 - INFO - ✅ Captcha después verificación: 'FDatB'
+2026-03-31 10:42:07,817 - INFO - 📝 Captcha final a escribir: FDatB
+2026-03-31 10:42:07,867 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:42:11,726 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:42:12,226 - INFO - ⌨️ Escribiendo: FDatB
+2026-03-31 10:42:13,483 - INFO - ✅ Captcha escrito
+2026-03-31 10:42:14,517 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:42:14,609 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:42:15,609 - INFO -    (1/4s) Verificando...
+2026-03-31 10:42:15,610 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:42:15,634 - INFO - ✅ Modal detectado
+2026-03-31 10:42:16,655 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:42:16,656 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:42:16,657 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:42:16,657 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:42:18,658 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:42:18,680 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:42:18,680 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:42:18,680 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:42:18,693 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:42:18,705 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:42:18,717 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:42:18,730 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:42:18,751 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:42:19,135 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:42:21,175 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:42:21,176 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:42:21,226 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para DYM14E.
+2026-03-31 10:42:21,227 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (72333599)...
+2026-03-31 10:42:24,239 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:42:27,066 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:42:27,066 - INFO - 
+======================================================================
+2026-03-31 10:42:27,066 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:42:27,067 - INFO - Cédula: 72333599, Placa: DYM14E
+2026-03-31 10:42:27,067 - INFO - ======================================================================
+2026-03-31 10:42:31,076 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:42:33,907 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:42:34,941 - INFO - 📝 Llenando placa...
+2026-03-31 10:42:39,282 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:42:40,615 - INFO - ✅ Placa escrita: DYM14E
+2026-03-31 10:42:41,154 - INFO - 📝 Llenando cédula...
+2026-03-31 10:42:45,441 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:42:47,064 - INFO - ✅ Cédula escrita: 72333599
+2026-03-31 10:42:48,064 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:42:50,072 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:42:50,073 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:42:51,688 - INFO - 📝 Tesseract extrajo: 'hvgDt'
+2026-03-31 10:42:51,689 - INFO - 📝 Después limpieza básica: 'hvgDt'
+2026-03-31 10:42:51,689 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:42:51,690 - INFO -    Carácter 1: 'h'
+2026-03-31 10:42:51,690 - INFO -    ⚠️ 'h' NO en diccionario, manteniendo...
+2026-03-31 10:42:51,690 - INFO -    Carácter 2: 'v'
+2026-03-31 10:42:51,691 - INFO -    ⚠️ 'v' NO en diccionario, manteniendo...
+2026-03-31 10:42:51,692 - INFO -    Carácter 3: 'g'
+2026-03-31 10:42:51,692 - INFO -    ✅ 'g' ENCONTRADO en templates
+2026-03-31 10:42:51,693 - INFO -    Carácter 4: 'D'
+2026-03-31 10:42:51,693 - INFO -    ✅ 'D' ENCONTRADO en templates
+2026-03-31 10:42:51,693 - INFO -    Carácter 5: 't'
+2026-03-31 10:42:51,693 - INFO -    ⚠️ 't' NO en diccionario, manteniendo...
+2026-03-31 10:42:51,694 - INFO - ✅ Captcha después verificación: 'hvgDt'
+2026-03-31 10:42:51,694 - INFO - 📝 Captcha final a escribir: hvgDt
+2026-03-31 10:42:51,741 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:42:55,598 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:42:56,098 - INFO - ⌨️ Escribiendo: hvgDt
+2026-03-31 10:42:57,292 - INFO - ✅ Captcha escrito
+2026-03-31 10:42:58,322 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:42:58,407 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:42:59,408 - INFO -    (1/4s) Verificando...
+2026-03-31 10:42:59,408 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:42:59,437 - INFO - ✅ Modal detectado
+2026-03-31 10:43:00,458 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:43:00,459 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:43:00,460 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:43:00,460 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:43:02,461 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:43:02,484 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:43:02,484 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:43:02,485 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:43:02,498 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:43:02,509 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:43:02,523 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:43:02,537 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:43:02,558 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:43:02,944 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:43:04,986 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:43:04,987 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:43:05,031 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para DYM14E.
+2026-03-31 10:43:05,033 - INFO - 🔍 Verificando si placa DYM14E ya está en 'Sin Asociados'...
+2026-03-31 10:43:05,768 - INFO - ✅ Placa DYM14E registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:43:06,586 - INFO - ✅ Hoja Resultados actualizada (Fila 159): Estado=Sin personas asociadas, Cédula=Asoc:72333599 / Prop:72333599
+2026-03-31 10:43:06,588 - INFO - ✅ Avance: 3/78 | Sesión: 3/5
+2026-03-31 10:43:08,589 - INFO - 
+============================================================
+2026-03-31 10:43:08,589 - INFO - 🔍 VERIFICANDO PLACA: EMV15G
+2026-03-31 10:43:08,590 - INFO -    CedAsoc: 1031167865, CedProp: 1031167865
+2026-03-31 10:43:08,590 - INFO - ============================================================
+2026-03-31 10:43:08,590 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1031167865)...
+2026-03-31 10:43:08,591 - INFO - 
+======================================================================
+2026-03-31 10:43:08,591 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:43:08,591 - INFO - Cédula: 1031167865, Placa: EMV15G
+2026-03-31 10:43:08,592 - INFO - ======================================================================
+2026-03-31 10:43:12,600 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:43:15,476 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:43:16,505 - INFO - 📝 Llenando placa...
+2026-03-31 10:43:20,818 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:43:22,149 - INFO - ✅ Placa escrita: EMV15G
+2026-03-31 10:43:22,679 - INFO - 📝 Llenando cédula...
+2026-03-31 10:43:26,958 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:43:28,813 - INFO - ✅ Cédula escrita: 1031167865
+2026-03-31 10:43:29,814 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:43:31,822 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:43:31,823 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:43:33,475 - INFO - 📝 Tesseract extrajo: '9dhNV'
+2026-03-31 10:43:33,475 - INFO - 📝 Después limpieza básica: '9dhNV'
+2026-03-31 10:43:33,476 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:43:33,476 - INFO -    Carácter 1: '9'
+2026-03-31 10:43:33,476 - INFO -    ⚠️ '9' NO en diccionario, manteniendo...
+2026-03-31 10:43:33,477 - INFO -    Carácter 2: 'd'
+2026-03-31 10:43:33,477 - INFO -    ✅ 'd' ENCONTRADO en templates
+2026-03-31 10:43:33,477 - INFO -    Carácter 3: 'h'
+2026-03-31 10:43:33,478 - INFO -    ⚠️ 'h' NO en diccionario, manteniendo...
+2026-03-31 10:43:33,478 - INFO -    Carácter 4: 'N'
+2026-03-31 10:43:33,478 - INFO -    ⚠️ 'N' NO en diccionario, manteniendo...
+2026-03-31 10:43:33,479 - INFO -    Carácter 5: 'V'
+2026-03-31 10:43:33,479 - INFO -    ⚠️ 'V' NO en diccionario, manteniendo...
+2026-03-31 10:43:33,479 - INFO - ✅ Captcha después verificación: '9dhNV'
+2026-03-31 10:43:33,480 - INFO - 📝 Captcha final a escribir: 9dhNV
+2026-03-31 10:43:33,525 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:43:37,483 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:43:37,984 - INFO - ⌨️ Escribiendo: 9dhNV
+2026-03-31 10:43:39,201 - INFO - ✅ Captcha escrito
+2026-03-31 10:43:40,241 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:43:40,333 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:43:41,334 - INFO -    (1/4s) Verificando...
+2026-03-31 10:43:41,335 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:43:41,362 - INFO - ✅ Modal detectado
+2026-03-31 10:43:42,387 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:43:42,388 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:43:42,388 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:43:42,388 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:43:44,389 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:43:44,411 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:43:44,411 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:43:44,411 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:43:44,425 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:43:44,438 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:43:44,450 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:43:44,465 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:43:44,490 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:43:44,872 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:43:46,914 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:43:46,914 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:43:46,965 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para EMV15G.
+2026-03-31 10:43:46,966 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1031167865)...
+2026-03-31 10:43:49,977 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:43:52,826 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:43:52,826 - INFO - 
+======================================================================
+2026-03-31 10:43:52,827 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:43:52,827 - INFO - Cédula: 1031167865, Placa: EMV15G
+2026-03-31 10:43:52,827 - INFO - ======================================================================
+2026-03-31 10:43:56,837 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:43:59,685 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:44:00,720 - INFO - 📝 Llenando placa...
+2026-03-31 10:44:05,101 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:44:06,413 - INFO - ✅ Placa escrita: EMV15G
+2026-03-31 10:44:06,943 - INFO - 📝 Llenando cédula...
+2026-03-31 10:44:11,221 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:44:13,112 - INFO - ✅ Cédula escrita: 1031167865
+2026-03-31 10:44:14,113 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:44:16,121 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:44:16,122 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:44:17,714 - INFO - 📝 Tesseract extrajo: 'uPkzH'
+2026-03-31 10:44:17,715 - INFO - 📝 Después limpieza básica: 'uPkzH'
+2026-03-31 10:44:17,715 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:44:17,715 - INFO -    Carácter 1: 'u'
+2026-03-31 10:44:17,715 - INFO -    ⚠️ 'u' NO en diccionario, manteniendo...
+2026-03-31 10:44:17,716 - INFO -    Carácter 2: 'P'
+2026-03-31 10:44:17,716 - INFO -    ⚠️ 'P' NO en diccionario, manteniendo...
+2026-03-31 10:44:17,716 - INFO -    Carácter 3: 'k'
+2026-03-31 10:44:17,717 - INFO -    ✅ 'k' ENCONTRADO en templates
+2026-03-31 10:44:17,717 - INFO -    Carácter 4: 'z'
+2026-03-31 10:44:17,717 - INFO -    ✅ 'z' ENCONTRADO en templates
+2026-03-31 10:44:17,717 - INFO -    Carácter 5: 'H'
+2026-03-31 10:44:17,718 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:44:17,718 - INFO - ✅ Captcha después verificación: 'uPkzH'
+2026-03-31 10:44:17,718 - INFO - 📝 Captcha final a escribir: uPkzH
+2026-03-31 10:44:17,768 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:44:21,566 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:44:22,067 - INFO - ⌨️ Escribiendo: uPkzH
+2026-03-31 10:44:23,243 - INFO - ✅ Captcha escrito
+2026-03-31 10:44:24,272 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:44:24,356 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:44:25,358 - INFO -    (1/4s) Verificando...
+2026-03-31 10:44:25,358 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:44:25,380 - INFO - ✅ Modal detectado
+2026-03-31 10:44:26,402 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:44:26,403 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:44:26,404 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:44:26,404 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:44:28,405 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:44:28,426 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:44:28,427 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:44:28,427 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:44:28,439 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:44:28,451 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:44:28,462 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:44:28,475 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:44:28,494 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:44:28,870 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:44:30,914 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:44:30,915 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:44:30,964 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para EMV15G.
+2026-03-31 10:44:30,965 - INFO - 🔍 Verificando si placa EMV15G ya está en 'Sin Asociados'...
+2026-03-31 10:44:31,485 - INFO - ✅ Placa EMV15G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:44:32,355 - INFO - ✅ Hoja Resultados actualizada (Fila 183): Estado=Sin personas asociadas, Cédula=Asoc:1031167865 / Prop:1031167865
+2026-03-31 10:44:32,357 - INFO - ✅ Avance: 4/78 | Sesión: 4/5
+2026-03-31 10:44:34,358 - INFO - 
+============================================================
+2026-03-31 10:44:34,358 - INFO - 🔍 VERIFICANDO PLACA: ENH28D
+2026-03-31 10:44:34,359 - INFO -    CedAsoc: 80749035, CedProp: 51846038
+2026-03-31 10:44:34,359 - INFO - ============================================================
+2026-03-31 10:44:34,359 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (80749035)...
+2026-03-31 10:44:34,359 - INFO - 
+======================================================================
+2026-03-31 10:44:34,360 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:44:34,360 - INFO - Cédula: 80749035, Placa: ENH28D
+2026-03-31 10:44:34,360 - INFO - ======================================================================
+2026-03-31 10:44:38,370 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:44:41,252 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:44:42,284 - INFO - 📝 Llenando placa...
+2026-03-31 10:44:46,596 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:44:47,930 - INFO - ✅ Placa escrita: ENH28D
+2026-03-31 10:44:48,462 - INFO - 📝 Llenando cédula...
+2026-03-31 10:44:52,738 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:44:54,337 - INFO - ✅ Cédula escrita: 80749035
+2026-03-31 10:44:55,338 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:44:57,347 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:44:57,348 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:44:59,083 - INFO - 📝 Tesseract extrajo: 'g6BpG'
+2026-03-31 10:44:59,083 - INFO - 📝 Después limpieza básica: 'g6BpG'
+2026-03-31 10:44:59,084 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:44:59,084 - INFO -    Carácter 1: 'g'
+2026-03-31 10:44:59,085 - INFO -    ✅ 'g' ENCONTRADO en templates
+2026-03-31 10:44:59,085 - INFO -    Carácter 2: '6'
+2026-03-31 10:44:59,085 - INFO -    ✅ '6' ENCONTRADO en templates
+2026-03-31 10:44:59,086 - INFO -    Carácter 3: 'B'
+2026-03-31 10:44:59,086 - INFO -    ✅ 'B' ENCONTRADO en templates
+2026-03-31 10:44:59,086 - INFO -    Carácter 4: 'p'
+2026-03-31 10:44:59,087 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:44:59,087 - INFO -    Carácter 5: 'G'
+2026-03-31 10:44:59,088 - INFO -    ✅ 'G' ENCONTRADO en templates
+2026-03-31 10:44:59,088 - INFO - ✅ Captcha después verificación: 'g6BpG'
+2026-03-31 10:44:59,089 - INFO - 📝 Captcha final a escribir: g6BpG
+2026-03-31 10:44:59,140 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:45:02,944 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:45:03,444 - INFO - ⌨️ Escribiendo: g6BpG
+2026-03-31 10:45:04,626 - INFO - ✅ Captcha escrito
+2026-03-31 10:45:05,657 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:45:05,738 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:45:06,738 - INFO -    (1/4s) Verificando...
+2026-03-31 10:45:06,739 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:45:06,761 - INFO - ✅ Modal detectado
+2026-03-31 10:45:07,783 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:45:07,783 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:45:07,784 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:45:07,784 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:45:09,785 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:45:09,809 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:45:09,809 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:45:09,810 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:45:09,823 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:45:09,834 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:45:09,847 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:45:09,859 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:45:09,881 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:45:10,279 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:45:12,317 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:45:12,318 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:45:12,318 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:45:12,319 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:45:13,979 - INFO - 📝 Tesseract extrajo: 'wdXqe'
+2026-03-31 10:45:13,979 - INFO - 📝 Después limpieza básica: 'wdXqe'
+2026-03-31 10:45:13,980 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:45:13,980 - INFO -    Carácter 1: 'w'
+2026-03-31 10:45:13,981 - INFO -    ⚠️ 'w' NO en diccionario, manteniendo...
+2026-03-31 10:45:13,981 - INFO -    Carácter 2: 'd'
+2026-03-31 10:45:13,982 - INFO -    ✅ 'd' ENCONTRADO en templates
+2026-03-31 10:45:13,982 - INFO -    Carácter 3: 'X'
+2026-03-31 10:45:13,983 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:45:13,983 - INFO -    Carácter 4: 'q'
+2026-03-31 10:45:13,984 - INFO -    ✅ 'q' ENCONTRADO en templates
+2026-03-31 10:45:13,984 - INFO -    Carácter 5: 'e'
+2026-03-31 10:45:13,985 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:45:13,986 - INFO - ✅ Captcha después verificación: 'wdXqe'
+2026-03-31 10:45:13,986 - INFO - 📝 Captcha final a escribir: wdXqe
+2026-03-31 10:45:14,036 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:45:17,810 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:45:18,310 - INFO - ⌨️ Escribiendo: wdXqe
+2026-03-31 10:45:19,494 - INFO - ✅ Captcha escrito
+2026-03-31 10:45:20,527 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:45:20,613 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:45:21,614 - INFO -    (1/4s) Verificando...
+2026-03-31 10:45:21,615 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:45:21,641 - INFO - ✅ Modal detectado
+2026-03-31 10:45:22,664 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:45:22,665 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:45:22,665 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:45:22,665 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:45:24,666 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:45:24,686 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:45:24,686 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:45:24,686 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:45:24,700 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:45:24,714 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:45:24,726 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:45:24,741 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:45:24,765 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:45:25,148 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:45:27,185 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:45:27,186 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:45:27,244 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para ENH28D.
+2026-03-31 10:45:27,245 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (51846038)...
+2026-03-31 10:45:30,259 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:45:33,154 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:45:33,155 - INFO - 
+======================================================================
+2026-03-31 10:45:33,155 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:45:33,156 - INFO - Cédula: 51846038, Placa: ENH28D
+2026-03-31 10:45:33,156 - INFO - ======================================================================
+2026-03-31 10:45:37,165 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:45:40,006 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:45:41,035 - INFO - 📝 Llenando placa...
+2026-03-31 10:45:45,476 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:45:46,833 - INFO - ✅ Placa escrita: ENH28D
+2026-03-31 10:45:47,367 - INFO - 📝 Llenando cédula...
+2026-03-31 10:45:51,711 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:45:53,319 - INFO - ✅ Cédula escrita: 51846038
+2026-03-31 10:45:54,320 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:45:56,328 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:45:56,329 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:45:57,902 - INFO - 📝 Tesseract extrajo: 'UziEQ'
+2026-03-31 10:45:57,903 - INFO - 📝 Después limpieza básica: 'UziEQ'
+2026-03-31 10:45:57,903 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:45:57,904 - INFO -    Carácter 1: 'U'
+2026-03-31 10:45:57,904 - INFO -    ⚠️ 'U' NO en diccionario, manteniendo...
+2026-03-31 10:45:57,904 - INFO -    Carácter 2: 'z'
+2026-03-31 10:45:57,904 - INFO -    ✅ 'z' ENCONTRADO en templates
+2026-03-31 10:45:57,905 - INFO -    Carácter 3: 'i'
+2026-03-31 10:45:57,905 - INFO -    ✅ 'i' ENCONTRADO en templates
+2026-03-31 10:45:57,905 - INFO -    Carácter 4: 'E'
+2026-03-31 10:45:57,906 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:45:57,906 - INFO -    Carácter 5: 'Q'
+2026-03-31 10:45:57,906 - INFO -    ✅ 'Q' ENCONTRADO en templates
+2026-03-31 10:45:57,907 - INFO - ✅ Captcha después verificación: 'UziEQ'
+2026-03-31 10:45:57,907 - INFO - 📝 Captcha final a escribir: UziEQ
+2026-03-31 10:45:57,947 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:46:01,701 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:46:02,201 - INFO - ⌨️ Escribiendo: UziEQ
+2026-03-31 10:46:03,391 - INFO - ✅ Captcha escrito
+2026-03-31 10:46:04,428 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:46:04,514 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:46:05,515 - INFO -    (1/4s) Verificando...
+2026-03-31 10:46:05,516 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:46:05,538 - INFO - ✅ Modal detectado
+2026-03-31 10:46:06,560 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:46:06,561 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:46:06,561 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:46:06,561 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:46:08,562 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:46:08,587 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:46:08,587 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:46:08,587 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:46:08,600 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:46:08,612 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:46:08,626 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:46:08,638 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:46:08,659 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:46:09,041 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:46:11,079 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:46:11,079 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:46:11,127 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para ENH28D.
+2026-03-31 10:46:11,127 - INFO - 🔍 Verificando si placa ENH28D ya está en 'Sin Asociados'...
+2026-03-31 10:46:11,710 - INFO - ✅ Placa ENH28D registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:46:12,527 - INFO - ✅ Hoja Resultados actualizada (Fila 185): Estado=Sin personas asociadas, Cédula=Asoc:80749035 / Prop:51846038
+2026-03-31 10:46:12,530 - INFO - ✅ Avance: 5/78 | Sesión: 5/5
+2026-03-31 10:46:14,530 - INFO - 🔄 REINGRESO VISUAL: Refrescando página principal del Runt...
+2026-03-31 10:46:19,541 - INFO - 
+============================================================
+2026-03-31 10:46:19,541 - INFO - 🔍 VERIFICANDO PLACA: FJZ83G
+2026-03-31 10:46:19,542 - INFO -    CedAsoc: 1024587587, CedProp: 1024587587
+2026-03-31 10:46:19,542 - INFO - ============================================================
+2026-03-31 10:46:19,543 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1024587587)...
+2026-03-31 10:46:19,543 - INFO - 
+======================================================================
+2026-03-31 10:46:19,544 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:46:19,544 - INFO - Cédula: 1024587587, Placa: FJZ83G
+2026-03-31 10:46:19,544 - INFO - ======================================================================
+2026-03-31 10:46:23,559 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:46:26,453 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:46:27,483 - INFO - 📝 Llenando placa...
+2026-03-31 10:46:31,784 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:46:33,104 - INFO - ✅ Placa escrita: FJZ83G
+2026-03-31 10:46:33,639 - INFO - 📝 Llenando cédula...
+2026-03-31 10:46:37,979 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:46:39,910 - INFO - ✅ Cédula escrita: 1024587587
+2026-03-31 10:46:40,911 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:46:42,918 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:46:42,919 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:46:44,570 - INFO - 📝 Tesseract extrajo: 'i20AM'
+2026-03-31 10:46:44,571 - INFO - 📝 Después limpieza básica: 'i20AM'
+2026-03-31 10:46:44,571 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:46:44,571 - INFO -    Carácter 1: 'i'
+2026-03-31 10:46:44,572 - INFO -    ✅ 'i' ENCONTRADO en templates
+2026-03-31 10:46:44,572 - INFO -    Carácter 2: '2'
+2026-03-31 10:46:44,572 - INFO -    ✅ '2' ENCONTRADO en templates
+2026-03-31 10:46:44,573 - INFO -    Carácter 3: '0'
+2026-03-31 10:46:44,573 - INFO -    ⚠️ '0' NO en diccionario, manteniendo...
+2026-03-31 10:46:44,573 - INFO -    Carácter 4: 'A'
+2026-03-31 10:46:44,573 - INFO -    ✅ 'A' ENCONTRADO en templates
+2026-03-31 10:46:44,574 - INFO -    Carácter 5: 'M'
+2026-03-31 10:46:44,574 - INFO -    ⚠️ 'M' NO en diccionario, manteniendo...
+2026-03-31 10:46:44,575 - INFO - ✅ Captcha después verificación: 'i20AM'
+2026-03-31 10:46:44,575 - INFO - 📝 Captcha final a escribir: i20AM
+2026-03-31 10:46:44,627 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:46:48,430 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:46:48,931 - INFO - ⌨️ Escribiendo: i20AM
+2026-03-31 10:46:50,127 - INFO - ✅ Captcha escrito
+2026-03-31 10:46:51,161 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:46:51,248 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:46:52,249 - INFO -    (1/4s) Verificando...
+2026-03-31 10:46:52,249 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:46:52,271 - INFO - ✅ Modal detectado
+2026-03-31 10:46:53,294 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:46:53,294 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:46:53,294 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:46:53,295 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:46:55,295 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:46:55,316 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:46:55,317 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:46:55,317 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:46:55,329 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:46:55,343 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:46:55,356 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:46:55,369 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:46:55,390 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:46:55,781 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:46:57,827 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:46:57,828 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:46:57,828 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:46:57,829 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:46:59,465 - INFO - 📝 Tesseract extrajo: 'HDyub'
+2026-03-31 10:46:59,466 - INFO - 📝 Después limpieza básica: 'HDyub'
+2026-03-31 10:46:59,467 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:46:59,467 - INFO -    Carácter 1: 'H'
+2026-03-31 10:46:59,467 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:46:59,468 - INFO -    Carácter 2: 'D'
+2026-03-31 10:46:59,468 - INFO -    ✅ 'D' ENCONTRADO en templates
+2026-03-31 10:46:59,469 - INFO -    Carácter 3: 'y'
+2026-03-31 10:46:59,469 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:46:59,469 - INFO -    Carácter 4: 'u'
+2026-03-31 10:46:59,470 - INFO -    ⚠️ 'u' NO en diccionario, manteniendo...
+2026-03-31 10:46:59,470 - INFO -    Carácter 5: 'b'
+2026-03-31 10:46:59,471 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:46:59,471 - INFO - ✅ Captcha después verificación: 'HDyub'
+2026-03-31 10:46:59,472 - INFO - 📝 Captcha final a escribir: HDyub
+2026-03-31 10:46:59,520 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:47:03,398 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:47:03,899 - INFO - ⌨️ Escribiendo: HDyub
+2026-03-31 10:47:05,100 - INFO - ✅ Captcha escrito
+2026-03-31 10:47:06,136 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:47:06,230 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:47:07,231 - INFO -    (1/4s) Verificando...
+2026-03-31 10:47:07,232 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:47:07,260 - INFO - ✅ Modal detectado
+2026-03-31 10:47:08,285 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:47:08,285 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:47:08,285 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:47:08,286 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:47:10,286 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:47:10,307 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:47:10,308 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:47:10,308 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:47:10,321 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:47:10,332 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:47:10,344 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:47:10,356 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:47:10,377 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:47:10,762 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:47:12,798 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:47:12,799 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:47:12,799 - INFO - 
+======================================================================
+2026-03-31 10:47:12,800 - INFO - 🔍 Procesando consulta [2/3]
+2026-03-31 10:47:12,800 - INFO - Cédula: 1024587587, Placa: FJZ83G
+2026-03-31 10:47:12,800 - INFO - ======================================================================
+2026-03-31 10:47:12,801 - INFO - 🔄 REINTENTANDO CON LOS MISMOS DATOS (Intento 2/3)
+2026-03-31 10:47:16,809 - INFO - 🔧 Iniciando limpieza individual y validada de campos...
+2026-03-31 10:47:17,819 - INFO - 🧹 Limpiando campo PLACA...
+2026-03-31 10:47:22,171 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:47:22,172 - INFO -    ✅ Campo PLACA limpiado correctamente
+2026-03-31 10:47:22,672 - INFO - 🧹 Limpiando campo CÉDULA...
+2026-03-31 10:47:27,028 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:47:27,028 - INFO -    ✅ Campo CÉDULA limpiado correctamente
+2026-03-31 10:47:27,529 - INFO - 🧹 Limpiando campo CAPTCHA...
+2026-03-31 10:47:29,619 - ERROR - ⚠️ Error al limpiar el campo 'CAPTCHA': Message: element click intercepted: Element <input _ngcontent-bbb-c455="" matinput="" type="text" maxlength="20" formcontrolname="captcha" autocomplete="off" class="mat-input-element mat-form-field-autofill-control ng-tns-c75-9 cdk-text-field-autofill-monitored ng-dirty ng-touched ng-invalid" aria-describedby="mat-hint-3" required="" id="mat-input-2" aria-required="true"> is not clickable at point (948, 659). Other element would receive the click: <div _ngcontent-bbb-c338="" class="container-footer">...</div>
+  (Session info: chrome=146.0.7680.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x6c12b8]
+	chromedriver!(No symbol) [0x6bf4c9]
+	chromedriver!(No symbol) [0x6bce82]
+	chromedriver!(No symbol) [0x6bc094]
+	chromedriver!(No symbol) [0x6b1ca8]
+	chromedriver!(No symbol) [0x6ddb0c]
+	chromedriver!(No symbol) [0x6b16e4]
+	chromedriver!(No symbol) [0x6ddcd4]
+	chromedriver!(No symbol) [0x6fa9a5]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:47:29,620 - INFO -    ✅ Campo CAPTCHA limpiado correctamente
+2026-03-31 10:47:29,621 - INFO - ✅ Limpieza individual completada
+2026-03-31 10:47:30,653 - INFO - 📝 Llenando placa...
+2026-03-31 10:47:34,942 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:47:36,275 - INFO - ✅ Placa escrita: FJZ83G
+2026-03-31 10:47:36,813 - INFO - 📝 Llenando cédula...
+2026-03-31 10:47:41,104 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:47:42,988 - INFO - ✅ Cédula escrita: 1024587587
+2026-03-31 10:47:43,988 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:47:45,996 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:47:45,997 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:47:47,597 - INFO - 📝 Tesseract extrajo: 'xm7b6'
+2026-03-31 10:47:47,598 - INFO - 📝 Después limpieza básica: 'xm7b6'
+2026-03-31 10:47:47,598 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:47:47,599 - INFO -    Carácter 1: 'x'
+2026-03-31 10:47:47,599 - INFO -    ⚠️ 'x' NO en diccionario, manteniendo...
+2026-03-31 10:47:47,600 - INFO -    Carácter 2: 'm'
+2026-03-31 10:47:47,600 - INFO -    ⚠️ 'm' NO en diccionario, manteniendo...
+2026-03-31 10:47:47,600 - INFO -    Carácter 3: '7'
+2026-03-31 10:47:47,601 - INFO -    ⚠️ '7' NO en diccionario, manteniendo...
+2026-03-31 10:47:47,601 - INFO -    Carácter 4: 'b'
+2026-03-31 10:47:47,601 - INFO -    ✅ 'b' ENCONTRADO en templates
+2026-03-31 10:47:47,602 - INFO -    Carácter 5: '6'
+2026-03-31 10:47:47,602 - INFO -    ✅ '6' ENCONTRADO en templates
+2026-03-31 10:47:47,602 - INFO - ✅ Captcha después verificación: 'xm7b6'
+2026-03-31 10:47:47,603 - INFO - 📝 Captcha final a escribir: xm7b6
+2026-03-31 10:47:47,712 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:47:51,512 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:47:52,013 - INFO - ⌨️ Escribiendo: xm7b6
+2026-03-31 10:47:53,216 - INFO - ✅ Captcha escrito
+2026-03-31 10:47:54,263 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:47:54,393 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:47:55,394 - INFO -    (1/4s) Verificando...
+2026-03-31 10:47:55,394 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:47:55,418 - INFO - ✅ Modal detectado
+2026-03-31 10:47:56,440 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:47:56,440 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:47:56,441 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:47:56,441 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:47:58,442 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:47:58,464 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:47:58,464 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:47:58,464 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:47:58,477 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:47:58,486 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:47:58,497 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:47:58,508 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:47:58,528 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:47:58,911 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:48:00,949 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:48:00,950 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:48:00,994 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para FJZ83G.
+2026-03-31 10:48:00,995 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1024587587)...
+2026-03-31 10:48:04,008 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:48:06,892 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:48:06,892 - INFO - 
+======================================================================
+2026-03-31 10:48:06,892 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:48:06,893 - INFO - Cédula: 1024587587, Placa: FJZ83G
+2026-03-31 10:48:06,893 - INFO - ======================================================================
+2026-03-31 10:48:10,902 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:48:13,727 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:48:14,765 - INFO - 📝 Llenando placa...
+2026-03-31 10:48:19,111 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:48:20,422 - INFO - ✅ Placa escrita: FJZ83G
+2026-03-31 10:48:20,951 - INFO - 📝 Llenando cédula...
+2026-03-31 10:48:25,259 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:48:27,115 - INFO - ✅ Cédula escrita: 1024587587
+2026-03-31 10:48:28,116 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:48:30,124 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:48:30,125 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:48:31,716 - INFO - 📝 Tesseract extrajo: 'yP7KX'
+2026-03-31 10:48:31,716 - INFO - 📝 Después limpieza básica: 'yP7KX'
+2026-03-31 10:48:31,716 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:48:31,717 - INFO -    Carácter 1: 'y'
+2026-03-31 10:48:31,717 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:48:31,717 - INFO -    Carácter 2: 'P'
+2026-03-31 10:48:31,717 - INFO -    ⚠️ 'P' NO en diccionario, manteniendo...
+2026-03-31 10:48:31,717 - INFO -    Carácter 3: '7'
+2026-03-31 10:48:31,718 - INFO -    ⚠️ '7' NO en diccionario, manteniendo...
+2026-03-31 10:48:31,718 - INFO -    Carácter 4: 'K'
+2026-03-31 10:48:31,718 - INFO -    ✅ 'K' ENCONTRADO en templates
+2026-03-31 10:48:31,719 - INFO -    Carácter 5: 'X'
+2026-03-31 10:48:31,719 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:48:31,719 - INFO - ✅ Captcha después verificación: 'yP7KX'
+2026-03-31 10:48:31,720 - INFO - 📝 Captcha final a escribir: yP7KX
+2026-03-31 10:48:31,761 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:48:35,514 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:48:36,015 - INFO - ⌨️ Escribiendo: yP7KX
+2026-03-31 10:48:37,194 - INFO - ✅ Captcha escrito
+2026-03-31 10:48:38,228 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:48:38,305 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:48:39,307 - INFO -    (1/4s) Verificando...
+2026-03-31 10:48:39,307 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:48:39,328 - INFO - ✅ Modal detectado
+2026-03-31 10:48:40,350 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:48:40,351 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:48:40,351 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:48:40,351 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:48:42,352 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:48:42,372 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:48:42,372 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:48:42,373 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:48:42,383 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:48:42,394 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:48:42,403 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:48:42,417 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:48:42,438 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:48:42,812 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:48:44,849 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:48:44,850 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:48:44,910 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para FJZ83G.
+2026-03-31 10:48:44,910 - INFO - 🔍 Verificando si placa FJZ83G ya está en 'Sin Asociados'...
+2026-03-31 10:48:45,661 - INFO - ✅ Placa FJZ83G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:48:46,523 - INFO - ✅ Hoja Resultados actualizada (Fila 207): Estado=Sin personas asociadas, Cédula=Asoc:1024587587 / Prop:1024587587
+2026-03-31 10:48:46,525 - INFO - ✅ Avance: 6/78 | Sesión: 6/5
+2026-03-31 10:48:48,526 - INFO - 
+============================================================
+2026-03-31 10:48:48,527 - INFO - 🔍 VERIFICANDO PLACA: FOZ22G
+2026-03-31 10:48:48,527 - INFO -    CedAsoc: 1004799076, CedProp: 1004799076
+2026-03-31 10:48:48,527 - INFO - ============================================================
+2026-03-31 10:48:48,528 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1004799076)...
+2026-03-31 10:48:48,528 - INFO - 
+======================================================================
+2026-03-31 10:48:48,528 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:48:48,529 - INFO - Cédula: 1004799076, Placa: FOZ22G
+2026-03-31 10:48:48,529 - INFO - ======================================================================
+2026-03-31 10:48:52,539 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:48:55,443 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:48:56,473 - INFO - 📝 Llenando placa...
+2026-03-31 10:49:00,710 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:49:02,024 - INFO - ✅ Placa escrita: FOZ22G
+2026-03-31 10:49:02,553 - INFO - 📝 Llenando cédula...
+2026-03-31 10:49:06,795 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:49:08,637 - INFO - ✅ Cédula escrita: 1004799076
+2026-03-31 10:49:09,638 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:49:11,645 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:49:11,645 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:49:13,272 - INFO - 📝 Tesseract extrajo: 'zefjy7'
+2026-03-31 10:49:13,273 - INFO - 📝 Después limpieza básica: 'zefjy7'
+2026-03-31 10:49:13,273 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:49:13,273 - INFO -    Carácter 1: 'z'
+2026-03-31 10:49:13,274 - INFO -    ✅ 'z' ENCONTRADO en templates
+2026-03-31 10:49:13,274 - INFO -    Carácter 2: 'e'
+2026-03-31 10:49:13,274 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:49:13,275 - INFO -    Carácter 3: 'f'
+2026-03-31 10:49:13,275 - INFO -    ⚠️ 'f' NO en diccionario, manteniendo...
+2026-03-31 10:49:13,275 - INFO -    Carácter 4: 'j'
+2026-03-31 10:49:13,276 - INFO -    ✅ 'j' ENCONTRADO en templates
+2026-03-31 10:49:13,276 - INFO -    Carácter 5: 'y'
+2026-03-31 10:49:13,276 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:49:13,277 - INFO -    Carácter 6: '7'
+2026-03-31 10:49:13,277 - INFO -    ⚠️ '7' NO en diccionario, manteniendo...
+2026-03-31 10:49:13,277 - INFO - ✅ Captcha después verificación: 'zefjy7'
+2026-03-31 10:49:13,278 - INFO - 📝 Captcha final a escribir: zefjy7
+2026-03-31 10:49:13,316 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:49:17,048 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:49:17,548 - INFO - ⌨️ Escribiendo: zefjy7
+2026-03-31 10:49:18,963 - INFO - ✅ Captcha escrito
+2026-03-31 10:49:19,998 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:49:20,086 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:49:21,087 - INFO -    (1/4s) Verificando...
+2026-03-31 10:49:21,087 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:49:21,109 - INFO - ✅ Modal detectado
+2026-03-31 10:49:22,130 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:49:22,130 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:49:22,131 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:49:22,131 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:49:24,132 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:49:24,152 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:49:24,152 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:49:24,153 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:49:24,162 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:49:24,172 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:49:24,183 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:49:24,194 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:49:24,216 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:49:24,593 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:49:26,630 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:49:26,630 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:49:26,631 - INFO - 
+🔐 Intento 2 de resolver captcha...
+2026-03-31 10:49:26,631 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:49:28,218 - INFO - 📝 Tesseract extrajo: 'SQKKZ'
+2026-03-31 10:49:28,219 - INFO - 📝 Después limpieza básica: 'SQKKZ'
+2026-03-31 10:49:28,219 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:49:28,220 - INFO -    Carácter 1: 'S'
+2026-03-31 10:49:28,220 - INFO -    ✅ 'S' ENCONTRADO en templates
+2026-03-31 10:49:28,221 - INFO -    Carácter 2: 'Q'
+2026-03-31 10:49:28,221 - INFO -    ✅ 'Q' ENCONTRADO en templates
+2026-03-31 10:49:28,221 - INFO -    Carácter 3: 'K'
+2026-03-31 10:49:28,222 - INFO -    ✅ 'K' ENCONTRADO en templates
+2026-03-31 10:49:28,222 - INFO -    Carácter 4: 'K'
+2026-03-31 10:49:28,223 - INFO -    ✅ 'K' ENCONTRADO en templates
+2026-03-31 10:49:28,223 - INFO -    Carácter 5: 'Z'
+2026-03-31 10:49:28,224 - INFO -    ✅ 'Z' ENCONTRADO en templates
+2026-03-31 10:49:28,224 - INFO - ✅ Captcha después verificación: 'SQKKZ'
+2026-03-31 10:49:28,224 - INFO - 📝 Captcha final a escribir: SQKKZ
+2026-03-31 10:49:28,269 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:49:32,011 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:49:32,512 - INFO - ⌨️ Escribiendo: SQKKZ
+2026-03-31 10:49:33,687 - INFO - ✅ Captcha escrito
+2026-03-31 10:49:34,719 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:49:34,803 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:49:35,804 - INFO -    (1/4s) Verificando...
+2026-03-31 10:49:35,805 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:49:35,826 - INFO - ✅ Modal detectado
+2026-03-31 10:49:36,846 - INFO - 📄 Mensaje capturado: El captcha no es valido.
+2026-03-31 10:49:36,846 - WARNING - ⚠️ Modal detectado pero no reconocido: El captcha no es valido.
+2026-03-31 10:49:36,846 - INFO -    ⚠️ Error detectado: error_desconocido
+2026-03-31 10:49:36,847 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:49:38,847 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:49:38,866 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:49:38,866 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:49:38,866 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:49:38,877 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:49:38,888 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:49:38,899 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:49:38,910 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:49:38,929 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:49:39,306 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:49:41,358 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:49:41,358 - WARNING - ⚠️ Error desconocido detectado
+2026-03-31 10:49:41,359 - INFO - 
+======================================================================
+2026-03-31 10:49:41,359 - INFO - 🔍 Procesando consulta [2/3]
+2026-03-31 10:49:41,360 - INFO - Cédula: 1004799076, Placa: FOZ22G
+2026-03-31 10:49:41,360 - INFO - ======================================================================
+2026-03-31 10:49:41,360 - INFO - 🔄 REINTENTANDO CON LOS MISMOS DATOS (Intento 2/3)
+2026-03-31 10:49:45,369 - INFO - 🔧 Iniciando limpieza individual y validada de campos...
+2026-03-31 10:49:46,379 - INFO - 🧹 Limpiando campo PLACA...
+2026-03-31 10:49:50,704 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:49:50,705 - INFO -    ✅ Campo PLACA limpiado correctamente
+2026-03-31 10:49:51,206 - INFO - 🧹 Limpiando campo CÉDULA...
+2026-03-31 10:49:55,460 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:49:55,460 - INFO -    ✅ Campo CÉDULA limpiado correctamente
+2026-03-31 10:49:55,962 - INFO - 🧹 Limpiando campo CAPTCHA...
+2026-03-31 10:49:58,090 - ERROR - ⚠️ Error al limpiar el campo 'CAPTCHA': Message: element click intercepted: Element <input _ngcontent-bbb-c455="" matinput="" type="text" maxlength="20" formcontrolname="captcha" autocomplete="off" class="mat-input-element mat-form-field-autofill-control ng-tns-c75-9 cdk-text-field-autofill-monitored ng-dirty ng-touched ng-invalid" aria-describedby="mat-hint-3" required="" id="mat-input-2" aria-required="true"> is not clickable at point (948, 659). Other element would receive the click: <div _ngcontent-bbb-c338="" class="container-footer">...</div>
+  (Session info: chrome=146.0.7680.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x88cdf3+10b03]
+	chromedriver!GetHandleVerifier [0x88cf24+10c34]
+	chromedriver!(No symbol) [0x672120]
+	chromedriver!(No symbol) [0x6c12b8]
+	chromedriver!(No symbol) [0x6bf4c9]
+	chromedriver!(No symbol) [0x6bce82]
+	chromedriver!(No symbol) [0x6bc094]
+	chromedriver!(No symbol) [0x6b1ca8]
+	chromedriver!(No symbol) [0x6ddb0c]
+	chromedriver!(No symbol) [0x6b16e4]
+	chromedriver!(No symbol) [0x6ddcd4]
+	chromedriver!(No symbol) [0x6fa9a5]
+	chromedriver!(No symbol) [0x6dd8a6]
+	chromedriver!(No symbol) [0x6b0229]
+	chromedriver!(No symbol) [0x6b0fe4]
+	chromedriver!GetHandleVerifier [0xaf48b9+2785c9]
+	chromedriver!GetHandleVerifier [0xaefeb5+273bc5]
+	chromedriver!GetHandleVerifier [0xb0e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x8a5cc8+299d8]
+	chromedriver!GetHandleVerifier [0x8ad9fd+3170d]
+	chromedriver!GetHandleVerifier [0x8958c8+195d8]
+	chromedriver!GetHandleVerifier [0x895a92+197a2]
+	chromedriver!GetHandleVerifier [0x87ee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x75cf5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x76f2d81b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f2d7a1+231]
+
+2026-03-31 10:49:58,091 - INFO -    ✅ Campo CAPTCHA limpiado correctamente
+2026-03-31 10:49:58,092 - INFO - ✅ Limpieza individual completada
+2026-03-31 10:49:59,121 - INFO - 📝 Llenando placa...
+2026-03-31 10:50:03,371 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:50:04,682 - INFO - ✅ Placa escrita: FOZ22G
+2026-03-31 10:50:05,213 - INFO - 📝 Llenando cédula...
+2026-03-31 10:50:09,450 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:50:11,312 - INFO - ✅ Cédula escrita: 1004799076
+2026-03-31 10:50:12,312 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:50:14,319 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:50:14,319 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:50:15,900 - INFO - 📝 Tesseract extrajo: 'h2HBn'
+2026-03-31 10:50:15,900 - INFO - 📝 Después limpieza básica: 'h2HBn'
+2026-03-31 10:50:15,901 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:50:15,901 - INFO -    Carácter 1: 'h'
+2026-03-31 10:50:15,901 - INFO -    ⚠️ 'h' NO en diccionario, manteniendo...
+2026-03-31 10:50:15,901 - INFO -    Carácter 2: '2'
+2026-03-31 10:50:15,902 - INFO -    ✅ '2' ENCONTRADO en templates
+2026-03-31 10:50:15,902 - INFO -    Carácter 3: 'H'
+2026-03-31 10:50:15,902 - INFO -    ⚠️ 'H' NO en diccionario, manteniendo...
+2026-03-31 10:50:15,903 - INFO -    Carácter 4: 'B'
+2026-03-31 10:50:15,903 - INFO -    ✅ 'B' ENCONTRADO en templates
+2026-03-31 10:50:15,903 - INFO -    Carácter 5: 'n'
+2026-03-31 10:50:15,903 - INFO -    ⚠️ 'n' NO en diccionario, manteniendo...
+2026-03-31 10:50:15,904 - INFO - ✅ Captcha después verificación: 'h2HBn'
+2026-03-31 10:50:15,904 - INFO - 📝 Captcha final a escribir: h2HBn
+2026-03-31 10:50:15,945 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:50:19,706 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:50:20,208 - INFO - ⌨️ Escribiendo: h2HBn
+2026-03-31 10:50:21,389 - INFO - ✅ Captcha escrito
+2026-03-31 10:50:22,424 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:50:22,524 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:50:23,526 - INFO -    (1/4s) Verificando...
+2026-03-31 10:50:23,526 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:50:23,553 - INFO - ✅ Modal detectado
+2026-03-31 10:50:24,574 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:50:24,574 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:50:24,575 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:50:24,575 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:50:26,575 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:50:26,596 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:50:26,596 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:50:26,596 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:50:26,607 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:50:26,617 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:50:26,627 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:50:26,641 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:50:26,662 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:50:27,042 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:50:29,084 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:50:29,084 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:50:29,133 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para FOZ22G.
+2026-03-31 10:50:29,133 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1004799076)...
+2026-03-31 10:50:32,148 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:50:35,065 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:50:35,066 - INFO - 
+======================================================================
+2026-03-31 10:50:35,066 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:50:35,066 - INFO - Cédula: 1004799076, Placa: FOZ22G
+2026-03-31 10:50:35,067 - INFO - ======================================================================
+2026-03-31 10:50:39,077 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:50:41,902 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:50:42,933 - INFO - 📝 Llenando placa...
+2026-03-31 10:50:47,296 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:50:48,644 - INFO - ✅ Placa escrita: FOZ22G
+2026-03-31 10:50:49,180 - INFO - 📝 Llenando cédula...
+2026-03-31 10:50:53,451 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:50:55,338 - INFO - ✅ Cédula escrita: 1004799076
+2026-03-31 10:50:56,339 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:50:58,347 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:50:58,348 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:50:59,923 - INFO - 📝 Tesseract extrajo: 'VVypA'
+2026-03-31 10:50:59,924 - INFO - 📝 Después limpieza básica: 'VVypA'
+2026-03-31 10:50:59,925 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:50:59,925 - INFO -    Carácter 1: 'V'
+2026-03-31 10:50:59,925 - INFO -    ⚠️ 'V' NO en diccionario, manteniendo...
+2026-03-31 10:50:59,926 - INFO -    Carácter 2: 'V'
+2026-03-31 10:50:59,926 - INFO -    ⚠️ 'V' NO en diccionario, manteniendo...
+2026-03-31 10:50:59,926 - INFO -    Carácter 3: 'y'
+2026-03-31 10:50:59,927 - INFO -    ✅ 'y' ENCONTRADO en templates
+2026-03-31 10:50:59,927 - INFO -    Carácter 4: 'p'
+2026-03-31 10:50:59,927 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:50:59,928 - INFO -    Carácter 5: 'A'
+2026-03-31 10:50:59,928 - INFO -    ✅ 'A' ENCONTRADO en templates
+2026-03-31 10:50:59,929 - INFO - ✅ Captcha después verificación: 'VVypA'
+2026-03-31 10:50:59,929 - INFO - 📝 Captcha final a escribir: VVypA
+2026-03-31 10:50:59,971 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:51:03,760 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:51:04,261 - INFO - ⌨️ Escribiendo: VVypA
+2026-03-31 10:51:05,440 - INFO - ✅ Captcha escrito
+2026-03-31 10:51:06,475 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:51:06,559 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:51:07,559 - INFO -    (1/4s) Verificando...
+2026-03-31 10:51:07,560 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:51:07,582 - INFO - ✅ Modal detectado
+2026-03-31 10:51:08,606 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:51:08,607 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:51:08,607 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:51:08,607 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:51:10,608 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:51:10,627 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:51:10,628 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:51:10,628 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:51:10,639 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:51:10,650 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:51:10,660 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:51:10,671 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:51:10,690 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:51:11,068 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:51:13,119 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:51:13,119 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:51:13,164 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para FOZ22G.
+2026-03-31 10:51:13,164 - INFO - 🔍 Verificando si placa FOZ22G ya está en 'Sin Asociados'...
+2026-03-31 10:51:13,670 - INFO - ✅ Placa FOZ22G registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:51:14,569 - INFO - ✅ Hoja Resultados actualizada (Fila 213): Estado=Sin personas asociadas, Cédula=Asoc:1004799076 / Prop:1004799076
+2026-03-31 10:51:14,573 - INFO - ✅ Avance: 7/78 | Sesión: 7/5
+2026-03-31 10:51:16,574 - INFO - 
+============================================================
+2026-03-31 10:51:16,574 - INFO - 🔍 VERIFICANDO PLACA: FVT85F
+2026-03-31 10:51:16,575 - INFO -    CedAsoc: 1088279705, CedProp: 1088279705
+2026-03-31 10:51:16,575 - INFO - ============================================================
+2026-03-31 10:51:16,575 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1088279705)...
+2026-03-31 10:51:16,575 - INFO - 
+======================================================================
+2026-03-31 10:51:16,576 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:51:16,576 - INFO - Cédula: 1088279705, Placa: FVT85F
+2026-03-31 10:51:16,577 - INFO - ======================================================================
+2026-03-31 10:51:20,591 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:51:23,494 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:51:24,524 - INFO - 📝 Llenando placa...
+2026-03-31 10:51:28,835 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:51:30,177 - INFO - ✅ Placa escrita: FVT85F
+2026-03-31 10:51:30,713 - INFO - 📝 Llenando cédula...
+2026-03-31 10:51:35,041 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:51:36,897 - INFO - ✅ Cédula escrita: 1088279705
+2026-03-31 10:51:37,897 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:51:39,905 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:51:39,906 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:51:41,514 - INFO - 📝 Tesseract extrajo: 'zptmV'
+2026-03-31 10:51:41,514 - INFO - 📝 Después limpieza básica: 'zptmV'
+2026-03-31 10:51:41,515 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:51:41,515 - INFO -    Carácter 1: 'z'
+2026-03-31 10:51:41,515 - INFO -    ✅ 'z' ENCONTRADO en templates
+2026-03-31 10:51:41,516 - INFO -    Carácter 2: 'p'
+2026-03-31 10:51:41,516 - INFO -    ⚠️ 'p' NO en diccionario, manteniendo...
+2026-03-31 10:51:41,517 - INFO -    Carácter 3: 't'
+2026-03-31 10:51:41,517 - INFO -    ⚠️ 't' NO en diccionario, manteniendo...
+2026-03-31 10:51:41,517 - INFO -    Carácter 4: 'm'
+2026-03-31 10:51:41,518 - INFO -    ⚠️ 'm' NO en diccionario, manteniendo...
+2026-03-31 10:51:41,518 - INFO -    Carácter 5: 'V'
+2026-03-31 10:51:41,518 - INFO -    ⚠️ 'V' NO en diccionario, manteniendo...
+2026-03-31 10:51:41,519 - INFO - ✅ Captcha después verificación: 'zptmV'
+2026-03-31 10:51:41,519 - INFO - 📝 Captcha final a escribir: zptmV
+2026-03-31 10:51:41,563 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:51:45,344 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:51:45,844 - INFO - ⌨️ Escribiendo: zptmV
+2026-03-31 10:51:47,021 - INFO - ✅ Captcha escrito
+2026-03-31 10:51:48,052 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:51:48,134 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:51:49,135 - INFO -    (1/4s) Verificando...
+2026-03-31 10:51:49,136 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:51:49,156 - INFO - ✅ Modal detectado
+2026-03-31 10:51:50,181 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:51:50,182 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:51:50,182 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:51:50,182 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:51:52,183 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:51:52,205 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:51:52,205 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:51:52,206 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:51:52,220 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:51:52,232 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:51:52,245 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:51:52,258 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:51:52,281 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:51:52,674 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:51:54,720 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:51:54,720 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:51:54,763 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para FVT85F.
+2026-03-31 10:51:54,764 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1088279705)...
+2026-03-31 10:51:57,777 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:52:00,711 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:52:00,715 - INFO - 
+======================================================================
+2026-03-31 10:52:00,745 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:52:00,746 - INFO - Cédula: 1088279705, Placa: FVT85F
+2026-03-31 10:52:00,746 - INFO - ======================================================================
+2026-03-31 10:52:04,762 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:52:07,606 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:52:08,642 - INFO - 📝 Llenando placa...
+2026-03-31 10:52:12,910 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:52:14,216 - INFO - ✅ Placa escrita: FVT85F
+2026-03-31 10:52:14,745 - INFO - 📝 Llenando cédula...
+2026-03-31 10:52:18,991 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:52:20,852 - INFO - ✅ Cédula escrita: 1088279705
+2026-03-31 10:52:21,853 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:52:23,863 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:52:23,863 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:52:25,427 - INFO - 📝 Tesseract extrajo: 'E2TB3'
+2026-03-31 10:52:25,428 - INFO - 📝 Después limpieza básica: 'E2TB3'
+2026-03-31 10:52:25,428 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:52:25,428 - INFO -    Carácter 1: 'E'
+2026-03-31 10:52:25,428 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:52:25,429 - INFO -    Carácter 2: '2'
+2026-03-31 10:52:25,429 - INFO -    ✅ '2' ENCONTRADO en templates
+2026-03-31 10:52:25,429 - INFO -    Carácter 3: 'T'
+2026-03-31 10:52:25,429 - INFO -    ⚠️ 'T' NO en diccionario, manteniendo...
+2026-03-31 10:52:25,430 - INFO -    Carácter 4: 'B'
+2026-03-31 10:52:25,430 - INFO -    ✅ 'B' ENCONTRADO en templates
+2026-03-31 10:52:25,430 - INFO -    Carácter 5: '3'
+2026-03-31 10:52:25,431 - INFO -    ⚠️ '3' NO en diccionario, manteniendo...
+2026-03-31 10:52:25,431 - INFO - ✅ Captcha después verificación: 'E2TB3'
+2026-03-31 10:52:25,432 - INFO - 📝 Captcha final a escribir: E2TB3
+2026-03-31 10:52:25,476 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:52:29,188 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:52:29,689 - INFO - ⌨️ Escribiendo: E2TB3
+2026-03-31 10:52:30,869 - INFO - ✅ Captcha escrito
+2026-03-31 10:52:31,914 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:52:31,993 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:52:32,993 - INFO -    (1/4s) Verificando...
+2026-03-31 10:52:32,994 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:52:33,019 - INFO - ✅ Modal detectado
+2026-03-31 10:52:34,040 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:52:34,040 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:52:34,040 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:52:34,041 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:52:36,042 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:52:36,061 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:52:36,061 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:52:36,061 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:52:36,072 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:52:36,084 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:52:36,094 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:52:36,104 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:52:36,124 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:52:36,501 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:52:38,538 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:52:38,538 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:52:38,581 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para FVT85F.
+2026-03-31 10:52:38,582 - INFO - 🔍 Verificando si placa FVT85F ya está en 'Sin Asociados'...
+2026-03-31 10:52:39,191 - INFO - ✅ Placa FVT85F registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:52:40,027 - INFO - ✅ Hoja Resultados actualizada (Fila 217): Estado=Sin personas asociadas, Cédula=Asoc:1088279705 / Prop:1088279705
+2026-03-31 10:52:40,029 - INFO - ✅ Avance: 8/78 | Sesión: 8/5
+2026-03-31 10:52:42,030 - INFO - 
+============================================================
+2026-03-31 10:52:42,030 - INFO - 🔍 VERIFICANDO PLACA: FZR17F
+2026-03-31 10:52:42,030 - INFO -    CedAsoc: 1118572203, CedProp: 1118572203
+2026-03-31 10:52:42,031 - INFO - ============================================================
+2026-03-31 10:52:42,031 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1118572203)...
+2026-03-31 10:52:42,031 - INFO - 
+======================================================================
+2026-03-31 10:52:42,031 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:52:42,032 - INFO - Cédula: 1118572203, Placa: FZR17F
+2026-03-31 10:52:42,032 - INFO - ======================================================================
+2026-03-31 10:52:46,041 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:52:48,893 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:52:49,921 - INFO - 📝 Llenando placa...
+2026-03-31 10:52:54,194 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:52:55,522 - INFO - ✅ Placa escrita: FZR17F
+2026-03-31 10:52:56,052 - INFO - 📝 Llenando cédula...
+2026-03-31 10:53:00,384 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:53:02,292 - INFO - ✅ Cédula escrita: 1118572203
+2026-03-31 10:53:03,292 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:53:05,300 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:53:05,301 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:53:06,878 - INFO - 📝 Tesseract extrajo: 'Xe8xS'
+2026-03-31 10:53:06,879 - INFO - 📝 Después limpieza básica: 'Xe8xS'
+2026-03-31 10:53:06,879 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:53:06,879 - INFO -    Carácter 1: 'X'
+2026-03-31 10:53:06,879 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:53:06,880 - INFO -    Carácter 2: 'e'
+2026-03-31 10:53:06,880 - INFO -    ⚠️ 'e' NO en diccionario, manteniendo...
+2026-03-31 10:53:06,880 - INFO -    Carácter 3: '8'
+2026-03-31 10:53:06,881 - INFO -    ✅ '8' ENCONTRADO en templates
+2026-03-31 10:53:06,881 - INFO -    Carácter 4: 'x'
+2026-03-31 10:53:06,881 - INFO -    ⚠️ 'x' NO en diccionario, manteniendo...
+2026-03-31 10:53:06,881 - INFO -    Carácter 5: 'S'
+2026-03-31 10:53:06,882 - INFO -    ✅ 'S' ENCONTRADO en templates
+2026-03-31 10:53:06,882 - INFO - ✅ Captcha después verificación: 'Xe8xS'
+2026-03-31 10:53:06,882 - INFO - 📝 Captcha final a escribir: Xe8xS
+2026-03-31 10:53:06,923 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:53:10,665 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:53:11,166 - INFO - ⌨️ Escribiendo: Xe8xS
+2026-03-31 10:53:12,339 - INFO - ✅ Captcha escrito
+2026-03-31 10:53:13,380 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:53:13,474 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:53:14,475 - INFO -    (1/4s) Verificando...
+2026-03-31 10:53:14,475 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:53:14,498 - INFO - ✅ Modal detectado
+2026-03-31 10:53:15,530 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:53:15,531 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:53:15,532 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:53:15,532 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:53:17,533 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:53:17,552 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:53:17,553 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:53:17,553 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:53:17,565 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:53:17,576 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:53:17,587 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:53:17,598 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:53:17,620 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:53:17,999 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:53:20,039 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:53:20,040 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:53:20,085 - INFO - ⚠️ Cédula ASOCIADO confirmó: Sin personas asociadas para FZR17F.
+2026-03-31 10:53:20,085 - INFO - ⏱️ Fase 2: Intentando con Cédula PROPIETARIO (1118572203)...
+2026-03-31 10:53:23,095 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:53:25,953 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:53:25,954 - INFO - 
+======================================================================
+2026-03-31 10:53:25,954 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:53:25,955 - INFO - Cédula: 1118572203, Placa: FZR17F
+2026-03-31 10:53:25,955 - INFO - ======================================================================
+2026-03-31 10:53:29,963 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:53:32,800 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:53:33,831 - INFO - 📝 Llenando placa...
+2026-03-31 10:53:38,220 - INFO - ✅ Campo 'PLACA' limpiado
+2026-03-31 10:53:39,544 - INFO - ✅ Placa escrita: FZR17F
+2026-03-31 10:53:40,074 - INFO - 📝 Llenando cédula...
+2026-03-31 10:53:44,351 - INFO - ✅ Campo 'CÉDULA' limpiado
+2026-03-31 10:53:46,204 - INFO - ✅ Cédula escrita: 1118572203
+2026-03-31 10:53:47,205 - INFO - 📜 Scrolling para ver el captcha...
+2026-03-31 10:53:49,212 - INFO - 
+🔐 Intento 1 de resolver captcha...
+2026-03-31 10:53:49,213 - INFO - 🔍 Buscando imagen del captcha...
+2026-03-31 10:53:50,830 - INFO - 📝 Tesseract extrajo: '4X6ED'
+2026-03-31 10:53:50,831 - INFO - 📝 Después limpieza básica: '4X6ED'
+2026-03-31 10:53:50,831 - INFO - 🔍 Verificando caracteres contra diccionario...
+2026-03-31 10:53:50,831 - INFO -    Carácter 1: '4'
+2026-03-31 10:53:50,832 - INFO -    ✅ '4' ENCONTRADO en templates
+2026-03-31 10:53:50,832 - INFO -    Carácter 2: 'X'
+2026-03-31 10:53:50,832 - INFO -    ⚠️ 'X' NO en diccionario, manteniendo...
+2026-03-31 10:53:50,833 - INFO -    Carácter 3: '6'
+2026-03-31 10:53:50,833 - INFO -    ✅ '6' ENCONTRADO en templates
+2026-03-31 10:53:50,833 - INFO -    Carácter 4: 'E'
+2026-03-31 10:53:50,833 - INFO -    ⚠️ 'E' NO en diccionario, manteniendo...
+2026-03-31 10:53:50,834 - INFO -    Carácter 5: 'D'
+2026-03-31 10:53:50,834 - INFO -    ✅ 'D' ENCONTRADO en templates
+2026-03-31 10:53:50,834 - INFO - ✅ Captcha después verificación: '4X6ED'
+2026-03-31 10:53:50,834 - INFO - 📝 Captcha final a escribir: 4X6ED
+2026-03-31 10:53:50,963 - INFO - 🧹 Limpiando campo de captcha...
+2026-03-31 10:53:54,710 - INFO - ✅ Campo 'CAPTCHA' limpiado
+2026-03-31 10:53:55,211 - INFO - ⌨️ Escribiendo: 4X6ED
+2026-03-31 10:53:56,384 - INFO - ✅ Captcha escrito
+2026-03-31 10:53:57,417 - INFO - 🔘 Clickeando botón 'Consultar'...
+2026-03-31 10:53:57,491 - INFO - ⏱️ Esperando respuesta del servidor (máx. 4s)...
+2026-03-31 10:53:58,492 - INFO -    (1/4s) Verificando...
+2026-03-31 10:53:58,493 - INFO - 🔍 Detectando tipo de mensaje de error...
+2026-03-31 10:53:58,514 - INFO - ✅ Modal detectado
+2026-03-31 10:53:59,535 - INFO - 📄 Mensaje capturado: Los datos registrados no corresponden con los propietarios activos para el vehículo consultado.
+2026-03-31 10:53:59,535 - WARNING - ❌ DETECCIÓN: No hay personas asociadas al vehículo
+2026-03-31 10:53:59,536 - INFO -    ⚠️ Error detectado: no_personas
+2026-03-31 10:53:59,536 - INFO - 🏁 Fin de la espera de respuesta.
+2026-03-31 10:54:01,537 - INFO - 🔍 [MODAL DETECTOR] Buscando modales abiertos...
+2026-03-31 10:54:01,556 - INFO - ✅ Modal detectado: swal2
+2026-03-31 10:54:01,557 - INFO - 
+🔄 Intento 1/4
+2026-03-31 10:54:01,558 - INFO -    🔍 XPATH - Botón 'Aceptar'
+2026-03-31 10:54:01,568 - INFO -    🔍 XPATH - Botón 'OK'
+2026-03-31 10:54:01,579 - INFO -    🔍 XPATH - Botón 'Cerrar'
+2026-03-31 10:54:01,589 - INFO -    🔍 XPATH - Botón 'Continuar'
+2026-03-31 10:54:01,599 - INFO -    🔍 CSS - SweetAlert2 Confirm
+2026-03-31 10:54:01,620 - INFO -       ✓ Elemento encontrado
+2026-03-31 10:54:01,993 - INFO -       ✓ Click normal ejecutado
+2026-03-31 10:54:04,031 - INFO - ✅ [MODAL DETECTOR] ¡Modal cerrado exitosamente!
+2026-03-31 10:54:04,032 - WARNING - ℹ️ No hay personas asociadas a este vehículo
+2026-03-31 10:54:04,073 - ERROR - ❌ CONFIRMADO: Ni Asociado ni Propietario tienen dueños activos para FZR17F.
+2026-03-31 10:54:04,073 - INFO - 🔍 Verificando si placa FZR17F ya está en 'Sin Asociados'...
+2026-03-31 10:54:04,599 - INFO - ✅ Placa FZR17F registrada exitosamente en 'Sin Asociados'.
+2026-03-31 10:54:05,381 - INFO - ✅ Hoja Resultados actualizada (Fila 223): Estado=Sin personas asociadas, Cédula=Asoc:1118572203 / Prop:1118572203
+2026-03-31 10:54:05,384 - INFO - ✅ Avance: 9/78 | Sesión: 9/5
+2026-03-31 10:54:07,385 - INFO - 
+============================================================
+2026-03-31 10:54:07,386 - INFO - 🔍 VERIFICANDO PLACA: GDH07G
+2026-03-31 10:54:07,386 - INFO -    CedAsoc: 1066178529, CedProp: 1066178529
+2026-03-31 10:54:07,387 - INFO - ============================================================
+2026-03-31 10:54:07,387 - INFO - ⏱️ Fase 1: Intentando con Cédula ASOCIADO (1066178529)...
+2026-03-31 10:54:07,387 - INFO - 
+======================================================================
+2026-03-31 10:54:07,388 - INFO - 🔍 Procesando consulta [1/3]
+2026-03-31 10:54:07,388 - INFO - Cédula: 1066178529, Placa: GDH07G
+2026-03-31 10:54:07,388 - INFO - ======================================================================
+2026-03-31 10:54:11,399 - INFO - 🧹 Limpiando todos los campos de la página...
+2026-03-31 10:54:14,286 - INFO - ✅ Se limpiaron 3 campos
+2026-03-31 10:54:15,316 - INFO - 📝 Llenando placa...
+2026-03-31 10:54:18,540 - ERROR - ⚠️ Error al limpiar el campo 'PLACA': ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))

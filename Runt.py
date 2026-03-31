@@ -673,7 +673,7 @@ def procesar_reintentos_finales_pendientes(driver, datos_validos, max_intentos=5
 
             # ⭐ NUEVO: Guardar en hoja "Sin asociados"
             fecha_actual = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            guardar_sin_personas_en_sheets(fecha_actual, placa, cedula_a, cedula_p)
+            
             
             resultados_finales["sin_personas_confirmado"].append({
                 "placa": placa,
@@ -878,7 +878,7 @@ def guardar_resultado_en_resultados(cedula_asociado, cedula_propietario, placa, 
         )
 
         client = gspread.authorize(creds)
-        sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
+        sheet = client.open_by_key("1hYwf3AMdUWY6Lk6VjeGKPiDnR003ftkybv79b_pUN64")
         
         # ═══ OBTENER WORKSHEET ═══
         try:
@@ -964,117 +964,6 @@ def guardar_resultado_en_resultados(cedula_asociado, cedula_propietario, placa, 
 
 
 
-def guardar_sin_personas_en_sheets(fecha, placa, cedula_asociado, cedula_propietario):
-    """
-    Guarda en la hoja 'Sin asociados' los registros sin personas
-    Columnas:
-    A: Fecha
-    B: Placa
-    C: Cédula Asociado
-    D: Cédula Propietario
-    E: Estado (Sin personas asociados)
-    
-    ⭐ BUSCA LA FILA EXISTENTE Y LA ACTUALIZA (sin duplicados)
-    ⭐ SI NO EXISTE, CREA UNA NUEVA
-    """
-    try:
-        SCOPES = [
-            "https://spreadsheets.google.com/feeds",
-            "https://www.googleapis.com/auth/spreadsheets",
-            "https://www.googleapis.com/auth/drive"
-        ]
-
-        creds = Credentials.from_service_account_file(
-            str(GOOGLE_CREDS),
-            scopes=SCOPES
-        )
-
-        client = gspread.authorize(creds)
-        sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
-        
-        # ═══ OBTENER O CREAR WORKSHEET "Sin asociados" ═══
-        try:
-            worksheet = sheet.worksheet("Sin asociados")
-            logging.info("✅ Hoja 'Sin asociados' encontrada")
-        except gspread.WorksheetNotFound:
-            worksheet = sheet.add_worksheet(title="Sin asociados", rows=1000, cols=10)
-            logging.info("📝 Hoja 'Sin asociados' creada")
-            
-            # Crear encabezados
-            encabezados = ["Fecha", "Placa", "Cédula Asociado", "Cédula Propietario", "Estado"]
-            worksheet.update([encabezados], range_name="A1:E1", value_input_option="RAW")
-            logging.info("✅ Encabezados creados en 'Sin asociados'")
-        
-        # ═══ OBTENER TODAS LAS FILAS ═══
-        todas_filas = worksheet.get_all_values()
-        logging.info(f"📊 Total de filas en Sin asociados: {len(todas_filas)}")
-        
-        # ═══ BUSCAR SI YA EXISTE ESTA PLACA + CÉDULA ASOCIADO ═══
-        fila_existente = None
-        numero_fila_existente = None
-        
-        for idx, fila in enumerate(todas_filas[1:], start=2):  # Comienza desde fila 2 (saltando encabezado)
-            # Columna B (índice 1) es la placa
-            # Columna C (índice 2) es la cédula asociado
-            if len(fila) > 2:
-                placa_en_fila = fila[1].strip() if len(fila) > 1 else ""
-                cedula_en_fila = fila[2].strip() if len(fila) > 2 else ""
-                
-                if placa_en_fila == placa.strip() and cedula_en_fila == cedula_asociado.strip():
-                    fila_existente = fila
-                    numero_fila_existente = idx
-                    logging.info(f"🔍 Fila existente encontrada en fila {numero_fila_existente}")
-                    logging.info(f"   Contenido actual: {fila}")
-                    break
-        
-        # ═══ PREPARAR DATOS ═══
-        nueva_fila = [
-            fecha,
-            placa,
-            cedula_asociado,
-            cedula_propietario if cedula_propietario else "",  # Vacío si no hay
-            "Sin personas asociados"
-        ]
-        
-        # ═══ ACTUALIZAR O CREAR NUEVA ═══
-        if numero_fila_existente:
-            # ⭐ ACTUALIZAR FILA EXISTENTE (SIN DUPLICAR)
-            logging.info(f"\n🔄 ACTUALIZANDO fila {numero_fila_existente}")
-            logging.info(f"   Anterior: {fila_existente}")
-            logging.info(f"   Nuevo:    {nueva_fila}")
-            
-            rango = f"A{numero_fila_existente}:E{numero_fila_existente}"
-            worksheet.update([nueva_fila], range_name=rango, value_input_option="RAW")
-            
-            logging.info(f"✅ Registro ACTUALIZADO en 'Sin asociados' (fila {numero_fila_existente}):")
-            logging.info(f"   Fecha: {fecha}")
-            logging.info(f"   Placa: {placa}")
-            logging.info(f"   Cédula Asociado: {cedula_asociado}")
-            logging.info(f"   Cédula Propietario: {cedula_propietario}")
-            logging.info(f"   Estado: Sin personas asociados")
-            
-        else:
-            # ⭐ CREAR NUEVA FILA (al final, sin duplicados)
-            fila_nueva = len(todas_filas) + 1
-            
-            if fila_nueva < 2:
-                fila_nueva = 2
-            
-            logging.info(f"\n📝 CREANDO nueva fila {fila_nueva}")
-            logging.info(f"   (No existía previamente)")
-            
-            rango = f"A{fila_nueva}:E{fila_nueva}"
-            worksheet.update([nueva_fila], range_name=rango, value_input_option="RAW")
-            
-            logging.info(f"✅ Registro INSERTADO en 'Sin asociados' (fila {fila_nueva}):")
-            logging.info(f"   Fecha: {fecha}")
-            logging.info(f"   Placa: {placa}")
-            logging.info(f"   Cédula Asociado: {cedula_asociado}")
-            logging.info(f"   Cédula Propietario: {cedula_propietario}")
-            logging.info(f"   Estado: Sin personas asociados")
-        
-    except Exception as e:
-        logging.error(f"❌ Error escribiendo en 'Sin asociados': {e}", exc_info=True)
 
 
 
@@ -1173,7 +1062,7 @@ def guardar_en_sheets(resultados, actualizar_existente=False):
         )
 
         client = gspread.authorize(creds)
-        sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
+        sheet = client.open_by_key("1hYwf3AMdUWY6Lk6VjeGKPiDnR003ftkybv79b_pUN64")
         worksheet = sheet.worksheet("Datos Runt")
 
         # ═══ PROCESAR CADA RESULTADO ═══
@@ -2065,7 +1954,7 @@ def escribir_datos_vehiculo_en_sheets(datos_vehiculo, cedula, placa):
 
         client = gspread.authorize(creds)
         # MISMA ID donde están SOAT y RTM
-        sheet = client.open_by_key("1vs414iH3QVeLoTcY2CExg4kD9eCkXZRRfax_WTlUXPk")
+        sheet = client.open_by_key("1hYwf3AMdUWY6Lk6VjeGKPiDnR003ftkybv79b_pUN64")
         
         # Obtener o crear worksheet "Datos Vehiculo"
         try:
@@ -2590,15 +2479,8 @@ def procesar_consulta_interno(driver, cedula, placa, fila_numero, es_reintento=F
                                 
                                 # ⭐ NUEVO: Guardar en hoja "Sin asociados"
                                 # Buscar cedula_propietario correspondiente
-                                cedula_prop_temp = ""
-                                for ced_a, ced_p, plac, _, _ in datos_validos:
-                                    if plac == placa:
-                                        cedula_prop_temp = ced_p
-                                        break
-                                
                                 fecha_actual = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                                guardar_sin_personas_en_sheets(fecha_actual, placa, cedula, cedula_prop_temp)
-                                
+
                                 return resultado, fila_numero
 
                             elif error_detectado == "error_desconocido":
@@ -2956,16 +2838,16 @@ def main():
                 # ═══ GENERAR REPORTE FINAL DE INTENTOS 1-3 ═══
         generar_reporte_final(tracking_resultados)
         
-        # 🔴 FASE FINAL: REINTENTAR PENDIENTES PARA CONFIRMAR ESTADO
-        logging.info(f"\n\n{'='*70}")
-        logging.info(f"⭐ INICIANDO FASE FINAL: VALIDAR PENDIENTES")
-        logging.info(f"{'='*70}\n")
+        # # 🔴 FASE FINAL: REINTENTAR PENDIENTES PARA CONFIRMAR ESTADO
+        # logging.info(f"\n\n{'='*70}")
+        # logging.info(f"⭐ INICIANDO FASE FINAL: VALIDAR PENDIENTES")
+        # logging.info(f"{'='*70}\n")
         
-        resultados_finales = procesar_reintentos_finales_pendientes(
-            driver,
-            datos_validos,
-            max_intentos=5  # ← Máximo 5 intentos por pendiente
-        )
+        # resultados_finales = procesar_reintentos_finales_pendientes(
+        #     driver,
+        #     datos_validos,
+        #     max_intentos=5  # ← Máximo 5 intentos por pendiente
+        # )
         
         # ═════════════════════════════════════════════════════════════
         
